@@ -1,0 +1,56 @@
+<?php
+require_once '../includes/includes.php';
+require_once '../templates/admin_header.php';
+
+/**
+ * SUPPRESSION
+ */
+if(isset($_GET['delete'])) {
+    checkCsrfDelete();
+    $deleted = $pdo->quote($_GET['delete']);
+    $pdo->query("DELETE FROM categorie WHERE id=$deleted");
+    $_SESSION['flash']['success'] = 'La catégorie a bien été supprimée';
+    header('Location: category.php');
+    die();
+}
+
+/**
+ * CATEGORIES
+ */
+$select = $pdo->query('SELECT id, name, slug FROM categorie');
+$select->setFetchMode(PDO::FETCH_ASSOC);
+$categories = $select->fetchAll();
+
+?>
+
+<h1>Les catégories</h1>
+
+    <p><a href="category_edit.php" class="btn btn-success">Ajouter une nouvelle catégorie</a></p>
+
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Nom</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    <?php foreach ($categories as $category): ?>
+        <tr>
+            <td><?= $category['id']; ?></td>
+            <td><?= $category['name']; ?></td>
+            <td>
+                <a href="category_edit.php?id=<?= $category['id']; ?>" class="btn btn-warning">Editer</a>
+                <a href="?delete=<?= $category['id']; ?>&<?= csrf(); ?>" class="btn btn-danger" onclick="confirm('Voulez-vous vraiment supprimer cette catégorie ?)">Supprimer</a>
+            </td>
+        </tr>
+    <?php endforeach; ?>
+    </tbody>
+</table>
+
+
+
+
+
+<?php require_once '../templates/footer.php';
