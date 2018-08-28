@@ -1,6 +1,7 @@
 <?php
 require_once '../includes/includes.php';
 require_once '../templates/admin_header.php';
+logged_only();
 
 if(isset($_POST['name']) && isset($_POST['slug'])) {
     checkCsrf();
@@ -13,8 +14,9 @@ if(isset($_POST['name']) && isset($_POST['slug'])) {
             $pdo->query("UPDATE categorie SET name=$name, slug=$slug WHERE id=$id");
         } else {
             $pdo->query("INSERT INTO categorie SET name=$name, slug=$slug");
+            /*$pdo->query("INSERT INTO categorie_article SET id=$id WHERE categorieId=$id");*/
         }
-        $_SESSION['flash']['success'] = 'La catégorie a bien été ajouté';
+        $_SESSION['flash']['success'] = 'La catégorie a bien été ajoutée';
         header('Location: category.php');
         die();
     }else{
@@ -52,7 +54,7 @@ $categories = $select->fetchAll();
             <!--<input type="text" name="name" class="form-control"/>-->
         </div>
         <div class="form-group">
-            <label for="">URL de la catégorie</label>
+            <label for="slug">URL de la catégorie</label>
             <?= input('slug'); ?>
             <!--<input type="text" name="slug" class="form-control"/>-->
         </div>

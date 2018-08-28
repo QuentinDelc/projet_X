@@ -8,11 +8,6 @@ function str_random($length){
     return substr(str_shuffle(str_repeat($alphabet, $length)), 0, $length);
 }
 
-function input($id) {
-    $value = isset($_POST[$id]) ? $_POST[$id] : '';
-    return "<input type='text' name='$id' class='form-control' id='$id' value='$value'>";
-}
-
 function logged_only(){
     if(session_status() == PHP_SESSION_NONE){
         session_start();
@@ -66,6 +61,29 @@ function setFlash($message, $type = 'success'){
     $_SESSION['Flash']['message'] = $message;
     $_SESSION['Flash']['type'] = $type;
     //return "<div class='alert alert-$type'>$message<button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button></div>";
+}
+
+
+function input($id) {
+    $value = isset($_POST[$id]) ? $_POST[$id] : '';
+    return "<input type='text' name='$id' class='form-control' id='$id' value='$value'>";
+}
+function textarea($id) {
+    $value = isset($_POST[$id]) ? $_POST[$id] : '';
+    return "<textarea type='text' name='$id' class='form-control ckeditor' id='$id'>$value</textarea>";
+}
+
+function select($id, $options = array()) {
+    $return = "<select type='text' name='$id' class='form-control' id='$id'>";
+    foreach ($options as $k => $v) {
+        $selected = '';
+        if(isset($_POST[$id]) && $k == $_POST[$id]) {
+            $selected = 'selected="selected"';
+        }
+        $return .= "<option value='$id' $selected>$v</option>";
+    }
+    $return.= '</select>';
+    return $return;
 }
 
 /*

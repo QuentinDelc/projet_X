@@ -39,7 +39,7 @@ if(empty($errors)){
     $token = str_random(60);
     $req->execute([$_POST['username'], $password, $_POST['email'], $token]);
     $user_id = $pdo->lastInsertId();
-    mail($_POST['email'], 'Confirmation de votre compte', "Afin de valider votre compte merci de cliquer sur ce lien\n\nhttp://localhost/espacemembre/confirm.php?id=$user_id&token=$token");
+    mail($_POST['email'], 'Confirmation de votre compte', "Afin de valider votre compte merci de cliquer sur ce lien\n\nhttp://localhost/project_X/confirm.php?id=$user_id&token=$token");
     $_SESSION['flash']['success'] = 'Un email de confirmation vous a été envoyé pour valider votre compte';
     header('Location: login.php');
     die();

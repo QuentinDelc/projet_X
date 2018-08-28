@@ -1,6 +1,7 @@
 <?php
 require_once '../includes/includes.php';
 require_once '../templates/admin_header.php';
+logged_only();
 
 /**
  * SUPPRESSION

@@ -1,5 +1,4 @@
 <?php
-//require_once './includes/session.php';
 $close =  '<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>';
 if(session_status() == PHP_SESSION_NONE){
     session_start();
@@ -11,20 +10,14 @@ if(session_status() == PHP_SESSION_NONE){
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
-
-    <title>Mon super projet</title>
-
-    <!-- Bootstrap core CSS -->
+    <title>Mon projet</title>
     <link href="css/app.css" rel="stylesheet">
-
 </head>
 
 <body>
-
 <nav class="navbar navbar-inverse">
     <div class="container">
         <div class="navbar-header">
@@ -47,7 +40,7 @@ if(session_status() == PHP_SESSION_NONE){
                     <li><a href="login.php">Se connecter</a></li>
                 <?php endif; ?>
             </ul>
-        </div><!--/.nav-collapse -->
+        </div>
     </div>
 </nav>
 
