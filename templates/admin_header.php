@@ -1,8 +1,17 @@
 <?php
-$close =  '<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>';
 if(session_status() == PHP_SESSION_NONE){
     session_start();
 }
+if (empty($_SESSION['auth']) && basename($_SERVER['SCRIPT_FILENAME']) !== 'login.php' || isset($_SESSION['auth']  ) && !$_SESSION['auth']->isAdmin && basename($_SERVER['SCRIPT_FILENAME']) !== 'login.php') {
+    if (isset($_SESSION['auth']) && !$_SESSION['auth']->isAdmin) {
+        header('Location: ../login.php');
+    }
+    else {
+        header('Location: ../login.php');
+    }
+    die();
+}
+$close = '<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>';
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -20,12 +29,21 @@ if(session_status() == PHP_SESSION_NONE){
 
 <body>
 
+<?php if (basename($_SERVER['SCRIPT_FILENAME']) !== 'login_admin.php') : ?>
 <nav class="navbar navbar-inverse admin">
     <div class="container admin">
         <div class="navbar-header">
             <a href="" class="navbar-brand">Administration du site</a>
         </div>
         <ul class="nav navbar-nav">
+            <?php if (isset($_SESSION['auth'])): ?>
+                <li><a href="account.php" class="nav-links">Bonjour <?= $_SESSION['auth']->username; ?> !</a></li>
+                <li><a href="logout.php" class="nav-links">Se déconnecter</a></li>
+                <li><a href="account.php" class="nav-links">Mon compte</a></li>
+            <?php else: ?>
+                <li><a href="login.php" class="nav-links">Se connecter</a></li>
+                <li><a href="register.php" class=nav-links"">S'inscrire</a></li>
+            <?php endif; ?>
             <li><a href="article.php">Articles</a></li>
             <li><a href="category.php">Catégories</a></li>
             <li><a href="difficulty.php">Difficultés</a></li>
@@ -34,6 +52,7 @@ if(session_status() == PHP_SESSION_NONE){
         </ul>
     </div>
 </nav>
+<?php endif; ?>
 
 <div class="container admin">
 

@@ -4,7 +4,7 @@ require_once '../templates/admin_header.php';
 logged_only();
 
 /************* INSERTION ET EDITION D'UN ARTICLE ************************/
-if(isset($_POST['name']) && isset($_POST['slug']) && isset($_POST['description']) && isset($_POST['content']) && isset ($_POST['content']) && isset($_POST['difficultyId'])) {
+if(isset($_POST['name']) && isset($_POST['slug']) && isset($_POST['description']) && isset($_POST['content']) && isset ($_POST['categorieId']) && isset($_POST['difficultyId'])) {
     checkCsrf();
     $slug = $_POST['slug'];
     if(preg_match('/^[a-z\-0-9]+$/', $slug)) {
@@ -14,7 +14,6 @@ if(isset($_POST['name']) && isset($_POST['slug']) && isset($_POST['description']
         $content = $pdo->quote($_POST['content']);
         $categorieId = $pdo->quote($_POST['categorieId']);
         $difficultyId = $pdo->quote($_POST['difficultyId']);
-
 
         if (isset($_GET['id'])) {
             $id = $pdo->quote($_GET['id']);

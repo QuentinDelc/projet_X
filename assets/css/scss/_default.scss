@@ -5,44 +5,28 @@
 }
 
 body {
+	margin: 0;
+	line-height: 1.5;
 	font-family: $regular-font;
 	@include fontSize(18px);
-	color: $default-color;
-
-	&.push-menu {
-		overflow-x: hidden;
-		position: relative;
-		left: 0;
-		@include transition(.3s ease-in all);
-	}
-
-	&.push-toright-menu {
-		left: 240px;
-
-		.fa-bars{
-				display: none;
-			}
-	}
-
+	letter-spacing: .98px;
 }
 
-a {
-	text-decoration: none;
-	@include transition(.3s ease-in all);
-}
-
-img {
-	max-width: 100%;
-	height: auto;
-}
-
-.wrapper {
-	max-width: 100%;
-	width: 982px;
+.container {
 	margin: 0 auto;
+	max-width: 1170px;
 
-	@media (max-width: 982px) {
-		padding-left: 2%;
-		padding-right: 2%;
-	}
+}
+
+.form-control:focus {
+	box-shadow: none;
+	border: 2px solid $button-color;
+}
+
+.primary:focus {
+	box-shadow: none;
+}
+
+.btn:focus {
+	box-shadow: none;
 }

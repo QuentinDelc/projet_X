@@ -1,31 +1,34 @@
 <?php
 require_once 'includes/includes.php';
-require_once 'templates/header.php';
 
-
-$select = $pdo->query("
-      SELECT article.name, article.id, article.description, article.slug, image.name as imageName 
-      FROM article 
-      LEFT JOIN image 
-      ON image.id = article.imageId");
+if(!isset($_GET['id'])) {
+    header("HTTP/1.1 301 Moved Permanently");
+    header('Location:index.php');
+    die();
+}
+$articleId = $pdo->quote($_GET['id']);
+$select = $pdo->query("SELECT * FROM article WHERE id = $articleId");
 $select->setFetchMode(PDO::FETCH_ASSOC);
-$article = $select->fetchAll();
-//var_dump($article);
+if($select->rowCount() == 0) {
+    header("HTTP/1.1 301 Moved Permanently");
+    header('Location:index.php');
+    die();
+}
+$article = $select->fetch();
+
+$select = $pdo->query("SELECT * FROM image WHERE articleId = $articleId");
+$select->setFetchMode(PDO::FETCH_ASSOC);
+$images = $select->fetchAll();
+
+require_once 'templates/header.php';
 ?>
 
-    <h1>Couture et tutos !</h1>
+<h1><?= $article['name']; ?></h1>
 
-    <div class="row">
+<?= $article['content']; ?>
+    <?php foreach ($images as $k => $image): ?>
+        <img src="assets/images/articles/<?= $image['name']; ?>"  alt="">
+    <?php endforeach; ?>
 
-        <?php foreach ($article as $k => $v): ?>
-            <div class="col-sm-3">
-                <a href="view.php?id=<?= $v['id']; ?>">
-                    <img src="<?= WEBROOT; ?>assets/images/articles/<?= $v['imageName']; ?>" alt="" width="200">
-                    <h2><?= $v['name']; ?></h2>
-                </a>
-            </div>
-
-        <?php endforeach; ?>
-    </div>
 
 <?php require_once 'templates/footer.php'; ?>

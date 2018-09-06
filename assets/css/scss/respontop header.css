@@ -1,0 +1,17 @@
+.widget-account {
+    float: none;
+    padding: 0;
+    padding-left: 6px;
+}
+
+.widget-account .top-bar-account ul li {
+    float: left;
+    margin-right: 4px;
+}
+
+.widget-account .top-bar-account ul li a {
+    color: #8f9294;
+    text-decoration: none;
+    font-size: 12px;
+    /* text-transform: uppercase; */
+}

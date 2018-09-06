@@ -20,17 +20,14 @@ if(!empty($_POST) && !empty($_POST['email'])){
 ?>
 <?php require 'templates/header.php'; ?>
 
+<div class="container forget">
     <h1>Mot de passe oublié</h1>
-
     <form action="" method="POST">
-
         <div class="form-group">
-            <label for="">Email</label>
+            <label for="">Entrez votre Email</label>
             <input type="email" name="email" class="form-control"/>
         </div>
-
-        <button type="submit" class="btn btn-primary">Se connecter</button>
-
+        <button type="submit" class="btn btn-primary">Réinitialiser mon mot de passe</button>
     </form>
-
+</div>
 <?php require 'templates/footer.php'; ?>

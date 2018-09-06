@@ -4,13 +4,14 @@
 // Colors
 $default-color: #5e6372;
 $title-color: #ca0034;
-$button-color: #264699;
+$button-color: #654EA3;
+$second-color: #D27497;
 
 // Fonts
-$regular-font: 	'proxima_novaregular', sans-serif;
-$bold-font: 	'proxima_novabold', sans-serif;
-$extra-font: 	'proxima_novaextrabold', sans-serif;
-$light-font: 	'proxima_novathin', sans-serif;
+$regular-font: 	'RobotoSlab-Regular', sans-serif;
+$bold-font: 	'RobotoSlab-Bold', sans-serif;
+$thin-font: 	'RobotoSlab-Thin', sans-serif;
+$light-font: 	'RobotoSlab-Light', sans-serif;
 
 // Imports files
 @import 'fonts';
@@ -19,3 +20,9 @@ $light-font: 	'proxima_novathin', sans-serif;
 @import 'header';
 @import 'home';
 @import 'footer';
+@import 'slider';
+@import 'login';
+@import 'register';
+@import 'forget';
+@import 'account';
+@import 'contact';

@@ -1,0 +1,197 @@
+.slider-section__carousel {
+
+  @media(max-width: 990px) {
+    margin-top: -87px;
+  }
+
+  .main-carousel__slide.slide1 {
+    background-image: url("../images/slider/couture1.jpg");
+  }
+
+  .main-carousel__slide.slide2 {
+    background-image: url("../images/slider/tricot.jpg");
+  }
+
+  .main-carousel__slide.slide3 {
+    background-image: url("../images/slider/crochet1.jpg");
+  }
+
+  .main-carousel__slide.slide4 {
+    background-image: url("../images/slider/enfant.jpg");
+  }
+
+  .main-carousel__slide {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    .main-carousel__overlay {
+      height: 570px;
+      padding-top: 1px;
+      text-align: center;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -ms-flex-align: center;
+      align-items: center;
+
+      @media(max-width: 550px) {
+        margin-top: 70px;
+      }
+
+      .content-slide {
+        position: absolute;
+        background: rgba(101, 78, 163, 0.7);
+        border: 6px solid transparent;
+        outline: 2px dashed $second-color;
+        background-clip: padding-box;
+        top: 175px;
+        height: 225px;
+        width: 565px;
+        padding: 0 20px;
+
+        @media(max-width: 590px) {
+          width: 400px;
+        }
+
+        h3 {
+          font-size: 32px;
+          text-align: center;
+          color: #fff;
+          margin-top: 15px;
+          line-height: 1.6;
+          font-weight: 600;
+        }
+
+        .main-carousel__description {
+          color: #fff;
+          font-size: 15px;
+          margin-top: 17px;
+          text-align: center;
+        }
+
+        a.main-carousel__btn.btn {
+          padding: 7px 20px;
+          font-size: 22px;
+          margin-top: 30px;
+          border: 1px solid $second-color;
+          background-color: $second-color;
+          color: #fff;
+
+          &:hover {
+            font-weight: bold;
+            background: transparent;
+            text-decoration: none;
+            color: $second-color !important;
+          }
+/*
+          &::after {
+            position: absolute;
+            content: "";
+            width: 14px;
+            height: 10px;
+            right: 20%;
+            top: 160px;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-image: url(../images/icones/double-arrow.svg);
+          }*/
+        }
+      }
+    }
+  }
+
+  .owl-carousel .owl-item img {
+    display: block;
+    width: 100%;
+  }
+
+  .main-carousel.owl-theme .owl-dots {
+    position: absolute;
+    bottom: 15px;
+    left: 32%;
+    right: 0;
+    width: 33%;
+
+    @media(max-width: 768px) {
+      display: none;
+    }
+  }
+
+  .main-carousel.owl-theme .owl-nav [class*=owl-] {
+    font-size: 0;
+    width: 57px;
+    height: 56px;
+    border-radius: 35px;
+    background-size: 11px auto;
+  }
+
+  button.owl-prev,
+  button.owl-next {
+    position: absolute;
+  }
+
+  button.owl-next {
+    top: 265px;
+  }
+
+  button.owl-prev {
+    top: 265px;
+  }
+
+  .btn {
+    text-transform: uppercase;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    font-weight: 500;
+
+  }
+
+  .main-carousel.owl-theme .owl-nav [class*=owl-].owl-next {
+    background: rgba(101, 78, 163, 0.7) url(../images/icones/arrow-right.svg) center no-repeat;
+    background-size: 20px auto;
+    right: 4%;
+
+    @media(max-width: 990px) {
+      display: none;
+    }
+  }
+
+  .main-carousel.owl-theme .owl-nav [class*=owl-].owl-prev {
+    background: rgba(101, 78, 163, 0.7) url(../images/icones/arrow-left.svg) center no-repeat;
+    background-size: 20px auto;
+    left: 4%;
+
+    @media(max-width: 990px) {
+      display: none;
+    }
+  }
+
+  .owl-theme .owl-nav [class*=owl-] {
+    color: #fff;
+    font-size: 14px;
+    margin: 5px;
+    padding: 4px 7px;
+    background: #d6d6d6;
+    cursor: pointer;
+  }
+
+  .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: $button-color !important;
+  }
+
+  .owl-theme .owl-dots .owl-dot span {
+    width: 45px;
+    height: 7px;
+    margin: 5px 7px;
+    background: #D6D6D6;
+    display: block;
+    -webkit-backface-visibility: visible;
+    transition: opacity .2s ease;
+  }
+}
+

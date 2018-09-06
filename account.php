@@ -16,18 +16,19 @@ if(!empty($_POST)){
 }
 require 'templates/header.php';
 ?>
-
-    <h1>Bonjour <?= $_SESSION['auth']->username; ?></h1>
-
+<div class="container account">
+    <h1 class="main-title">Bonjour <?= $_SESSION['auth']->username; ?></h1>
     <form action="" method="post">
         <div class="form-group">
-            <input class="form-control" type="password" name="password" placeholder="Changer de mot de passe"/>
+            <label for="">Changer de mot de passe</label>
+            <input class="form-control" type="password" name="password"/>
         </div>
         <div class="form-group">
-            <input class="form-control" type="password" name="password_confirm" placeholder="Confirmation du mot de passe"/>
+            <label for="">Confirmez le mot de passe</label>
+            <input class="form-control" type="password" name="password_confirm" />
         </div>
         <button class="btn btn-primary">Changer mon mot de passe</button>
     </form>
-
+</div>
 
 <?php require 'templates/footer.php'; ?>

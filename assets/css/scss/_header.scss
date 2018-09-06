@@ -1,262 +1,254 @@
-.wrapper {
-  ul {
-    li {
-      a {
-        color: #fff;
+.top-header {
+  height: 50px;
+  font-size: 18px;
+  margin-bottom: 0;
+  border-bottom: 1px solid #eee;
+
+  @media(max-width: 990px){
+    display: none;
+  }
+
+  .container {
+    padding: 0;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    clear: both;
+
+    .top-bar-text {
+      float: right;
+      margin-top: 10px;
+
+      .social-media {
+        float: right;
+
+        a {
+          padding-left: 5px;
+        }
+
+        i:before {
+          color: #8f9294;
+
+          &:hover:before {
+            color: $button-color;
+          }
+        }
+      }
+
+      .search-bar {
+        float: right;
+
+        .form-inline {
+          @media(max-width: 990px) {
+            padding-left: 20px;
+          }
+
+          .form-control.search {
+            border: none;
+            border-radius: 0;
+            padding: 0;
+
+            &:focus {
+              outline: 0;
+              box-shadow: none;
+            }
+          }
+        }
       }
     }
   }
 }
 
-/*
+  .widget-account {
+    font-size: 18px;
+    float: left;
+    margin-bottom: 0;
+    text-align: left;
 
-.home {
-	#header {
-		height: 100vh;
-		padding-bottom: 110px;
-		margin-bottom: 0;
-	}
+    @media(max-width: 990px) {
+      float: none;
+      text-align: center;
+    }
+
+    .top-bar-account {
+      display: inline-block;
+      position: relative;
+      margin-top: 10px;
+
+      ul li {
+        float: left;
+        margin-right: 15px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        a {
+          color: #8f9294;
+          text-decoration: none;
+          font-size: 14px;
+          text-transform: uppercase;
+
+          &:hover,
+          &:focus {
+            color: $button-color;
+            font-weight: bold;
+            transition: .3s ease-in all;
+          }
+        }
+      }
+    }
+  }
+
+/********** LOGO ***********/
+
+.middle-header {
+  text-align: center;
+  margin-top: 10px;
+
+  @media(max-width: 990px) {
+    text-align: left;
+    margin-left: 10%;
+  }
+
+  @media(max-width: 550px) {
+    margin-left: 2%;
+    text-align: center;
+  }
+
+    .logo {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+
+      @media(max-width: 990px) {
+        max-width: 250px;
+        margin-bottom: 10px;
+      }
+  }
 }
 
-#header {
-	position: relative;
-	height: auto;
-	padding: 50px 0;
-	font-size: 0;
-	background: url('../images/banner.jpg') no-repeat bottom center transparent;
-	@include background-size(cover);
-	margin-bottom: 50px;
-
-	#button-header {
-		display: none;
-
-		@media(max-width: 840px){
-			display: block;
-			position: absolute;
-			top: 46px;
-			left: 2%;
-		}
-	}
-	
-	//#buttonMenu{
-	.button-menu{
-		border: none;
-		background: transparent;
-		color: #fff;
-		cursor: pointer;
-		@include fontSize(30px);
-		outline: none;
-		@include transition(.3s ease-in all);
-		padding: 0;
-
-		
-
-		&:hover,
-		&:focus{
-			opacity: .5;
-		}
 
 
-	}
+/***************** NAVBAR ************************/
+header {
+  position: relative;
+  z-index: 9;
 
-	#logo,
-	#menu {
-		display: inline-block;
-		vertical-align: middle;
-		width: 20%;
-	}
+  .separate-nav {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    height: 88px;
 
-	#logo {
-		a {
-			#logo-svg {
-				fill: #fff;
-			}
+    @media(max-width: 990px) {
+      border-bottom: none;
+    }
 
-			&:hover,
-			&:focus {
-				#logo-svg {
-					fill: $default-color;
-				}
-			}
-		}
+    .navbar {
+      box-shadow: none;
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
 
-		@media(max-width: 840px){
+      button.navbar-toggler {
+        background-color: $second-color;
 
-			margin: 0 auto;
-			width: 100%;
-			text-align: center;
-		}
-	}
+        @media(max-width: 990px) {
+          position: relative;
+          margin-top: 13px;
+          top: -150px;
+          left: 40%;
+          width: 70px;
+          height: 50px;
+        }
 
-	#menu {
-		margin-left: 5%;
-		width: 75%;
-		text-align: right;
+        @media(max-width: 550px) {
+          position: relative;
+          top: -20px;
+          left: 0;
+          width: 70px;
+          height: 50px;
+          margin: 0 auto;
+        }
+      }
 
-		#button_menu{
-			display: none;
+      #navbarSupportedContent {
+        @media(max-width: 990px) {
+          position: absolute;
+          z-index: 2;
+          top: -21px;
+          background-color: #f7f7f7;
+          width: 105%;
+          height: 420px;
+          text-align: center;
+        }
 
-			@media(max-width: 840px){
-				display: block;
-				margin: 0 auto;
-				padding-top: 46px;
-			}
-		}
+        .nav-links.hidden {
+          display: none;
+          text-decoration: none;
 
-		@media(max-width: 840px){
-				margin-left: 0;
-				position: fixed;
-				top: 0;
-				left: -240px;
-				width: 240px;
-				height: 100%;
-				z-index: 1000;
-				background: #264699;
-				transition: all 0.3s ease-in;
+          @media(max-width: 990px) {
+            display: block;
+            margin-top: 10px;
+            font-size: 24px;
+            color: #000;
 
-				&.open-menu{
-					left: 0px;
-				}
-		}
+            &:last-child {
+              /*border-bottom: 1px dashed $button-color;*/
+            }
+          }
+        }
 
-		li {
-			display: inline-block;
-			vertical-align: bottom;
-			margin-right: 5%;
-			@include fontSize(17px);
+        .nav-item {
+          margin-right: 60px;
 
-			@media(max-width: 840px){
-				margin-right: 0;
-				display: block;
-				text-align: center;
-				line-height: 50px;
-			}
+          @media(max-width: 990px) {
+            margin-right: 0;
+            margin-top: 10px;
+            font-size: 24px;
+          }
 
-			&.current-menu-item a {
-				font-weight: 700;
+          a {
+            position: relative;
+            color: #000;
+            z-index: 1;
 
-				&:after {
-					width: 100%;
-				}
-			}
+            @media(max-width: 900px) {
+            }
 
-			&.button-menu {
-				margin-right: 0;
+            &:hover,
+            &:focus {
+              color: $button-color;
+              font-weight: bold;
+              text-decoration: none;
+            }
 
-				@media(max-width: 840px){
-					text-align: center;
-				}
+            &:before {
+              content: "";
+              position: absolute;
+              width: 100%;
+              height: 3px;
+              bottom: -8px;
+              left: 0;
+              background: $button-color;
+              visibility: hidden;
+              border-radius: 5px;
+              transform: scaleX(0);
+              transition: .25s linear;
+            }
 
-				a {
-					display: block;
-					padding: 10px 20px;
-					border: 1px solid #fff;
-					@include border-radius(20px);
+            &:hover:before,
+            &:focus:before {
+              visibility: visible;
+              transform: scaleX(1);
+            }
+          }
+        }
+      }
+    }
+  }
+}
 
-					@media(max-width: 840px){
-					border: none;
-					padding: 0;
-					@include border-radius(0);
-					}
 
-					&:hover,
-					&:focus {
-						color: $title-color;
-						background-color: #fff;
 
-						@media(max-width: 840px){
-						color: $title-color;
-						background-color: $button-color;
-						}
-					}
 
-					&:after {
-						display: none;
-					}
-				}
-			}
-
-			a {
-				color: #fff;
-
-				&:hover,
-				&:focus {
-					@media(max-width: 840px){
-							color: $title-color;
-						}
-					&:after {
-						width: 100%;
-					}
-				}
-
-				&:after {
-					content: '';
-					display: block;
-					margin-top: 10px;
-					width: 0;
-					height: 2px;
-					background-color: #fff;
-					@include transition(.3s ease-in all);
-
-					@media(max-width: 840px){
-							display: none;
-						}
-				}
-			}
-		}
-	}
-
-	#banner {
-		position: absolute;
-		top: 50%;
-		left: 0;
-		right: 0;
-		transform: translateY(-50%);
-		text-align: center;
-		@include fontSize(16px);
-
-		h1 {
-			margin-bottom: 20px;
-			@include fontSize(44px);
-			color: #fff;
-			font-weight: 700;
-		}
-
-		.description-banner {
-			margin-bottom: 60px;
-			color: #fff;
-			line-height: 30px;
-		}
-
-		.buttons-banner {
-			
-			.button {
-				padding: 10px 35px;
-				@include border-radius(30px);
-				border: 1px solid #fff;
-				color: #fff;
-				font-family: $light-font;
-				margin-right: 2%;
-
-				&:last-child {
-					margin-right: 0;
-				}
-
-				&:hover,
-				&:focus,
-				&.btn-primary {
-					color: $title-color;
-					background-color: #fff;
-				}
-
-				&.btn-primary {
-					&:hover,
-					&:focus {
-						background-color: transparent;
-						color: #fff;
-					}
-				}
-			}
-		}
-	}
-}*/
