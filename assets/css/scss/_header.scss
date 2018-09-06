@@ -1,0 +1,262 @@
+.wrapper {
+  ul {
+    li {
+      a {
+        color: #fff;
+      }
+    }
+  }
+}
+
+/*
+
+.home {
+	#header {
+		height: 100vh;
+		padding-bottom: 110px;
+		margin-bottom: 0;
+	}
+}
+
+#header {
+	position: relative;
+	height: auto;
+	padding: 50px 0;
+	font-size: 0;
+	background: url('../images/banner.jpg') no-repeat bottom center transparent;
+	@include background-size(cover);
+	margin-bottom: 50px;
+
+	#button-header {
+		display: none;
+
+		@media(max-width: 840px){
+			display: block;
+			position: absolute;
+			top: 46px;
+			left: 2%;
+		}
+	}
+	
+	//#buttonMenu{
+	.button-menu{
+		border: none;
+		background: transparent;
+		color: #fff;
+		cursor: pointer;
+		@include fontSize(30px);
+		outline: none;
+		@include transition(.3s ease-in all);
+		padding: 0;
+
+		
+
+		&:hover,
+		&:focus{
+			opacity: .5;
+		}
+
+
+	}
+
+	#logo,
+	#menu {
+		display: inline-block;
+		vertical-align: middle;
+		width: 20%;
+	}
+
+	#logo {
+		a {
+			#logo-svg {
+				fill: #fff;
+			}
+
+			&:hover,
+			&:focus {
+				#logo-svg {
+					fill: $default-color;
+				}
+			}
+		}
+
+		@media(max-width: 840px){
+
+			margin: 0 auto;
+			width: 100%;
+			text-align: center;
+		}
+	}
+
+	#menu {
+		margin-left: 5%;
+		width: 75%;
+		text-align: right;
+
+		#button_menu{
+			display: none;
+
+			@media(max-width: 840px){
+				display: block;
+				margin: 0 auto;
+				padding-top: 46px;
+			}
+		}
+
+		@media(max-width: 840px){
+				margin-left: 0;
+				position: fixed;
+				top: 0;
+				left: -240px;
+				width: 240px;
+				height: 100%;
+				z-index: 1000;
+				background: #264699;
+				transition: all 0.3s ease-in;
+
+				&.open-menu{
+					left: 0px;
+				}
+		}
+
+		li {
+			display: inline-block;
+			vertical-align: bottom;
+			margin-right: 5%;
+			@include fontSize(17px);
+
+			@media(max-width: 840px){
+				margin-right: 0;
+				display: block;
+				text-align: center;
+				line-height: 50px;
+			}
+
+			&.current-menu-item a {
+				font-weight: 700;
+
+				&:after {
+					width: 100%;
+				}
+			}
+
+			&.button-menu {
+				margin-right: 0;
+
+				@media(max-width: 840px){
+					text-align: center;
+				}
+
+				a {
+					display: block;
+					padding: 10px 20px;
+					border: 1px solid #fff;
+					@include border-radius(20px);
+
+					@media(max-width: 840px){
+					border: none;
+					padding: 0;
+					@include border-radius(0);
+					}
+
+					&:hover,
+					&:focus {
+						color: $title-color;
+						background-color: #fff;
+
+						@media(max-width: 840px){
+						color: $title-color;
+						background-color: $button-color;
+						}
+					}
+
+					&:after {
+						display: none;
+					}
+				}
+			}
+
+			a {
+				color: #fff;
+
+				&:hover,
+				&:focus {
+					@media(max-width: 840px){
+							color: $title-color;
+						}
+					&:after {
+						width: 100%;
+					}
+				}
+
+				&:after {
+					content: '';
+					display: block;
+					margin-top: 10px;
+					width: 0;
+					height: 2px;
+					background-color: #fff;
+					@include transition(.3s ease-in all);
+
+					@media(max-width: 840px){
+							display: none;
+						}
+				}
+			}
+		}
+	}
+
+	#banner {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		right: 0;
+		transform: translateY(-50%);
+		text-align: center;
+		@include fontSize(16px);
+
+		h1 {
+			margin-bottom: 20px;
+			@include fontSize(44px);
+			color: #fff;
+			font-weight: 700;
+		}
+
+		.description-banner {
+			margin-bottom: 60px;
+			color: #fff;
+			line-height: 30px;
+		}
+
+		.buttons-banner {
+			
+			.button {
+				padding: 10px 35px;
+				@include border-radius(30px);
+				border: 1px solid #fff;
+				color: #fff;
+				font-family: $light-font;
+				margin-right: 2%;
+
+				&:last-child {
+					margin-right: 0;
+				}
+
+				&:hover,
+				&:focus,
+				&.btn-primary {
+					color: $title-color;
+					background-color: #fff;
+				}
+
+				&.btn-primary {
+					&:hover,
+					&:focus {
+						background-color: transparent;
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+}*/

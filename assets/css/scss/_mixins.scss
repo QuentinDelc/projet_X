@@ -1,0 +1,18 @@
+@function calculateRem($size) {
+	$remSize: $size / 16px;
+	@return #{$remSize}rem;
+}
+
+@mixin fontSize($size) {
+	font-size: $size;
+	font-size: calculateRem($size);
+}
+
+@mixin buttonColor() {
+	@include background-image(linear-gradient(left, rgba(38, 70, 153, 1) 0%,rgba(38, 70, 153, .6) 100%));
+
+	&:hover,
+	&:focus {
+		@include background-image(linear-gradient(left, rgba(38, 70, 153, .6) 0, rgba(38, 70, 153, 1) 100%));
+	}
+}

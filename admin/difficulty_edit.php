@@ -17,7 +17,7 @@ if(isset($_POST['name'])) {
         die();
     }else{
         $_SESSION['flash']['danger'] = 'La difficulté n\'a pas été ajouté';
-        header('Location: difficulty_edit.php');
+        //header('Location: difficulty_edit.php');
 }
 
 if(isset($_GET['id'])) {

@@ -35,7 +35,7 @@ function reconnect_from_cookie(){
         $req->execute([$user_id]);
         $user = $req->fetch();
         if($user){
-            $expected = $user_id . '==' . $user->remember_token . sha1($user_id . 'ratonlaveurs');
+            $expected = $user_id . '==' . $user->remember_token . sha1($user_id . 'toto');
             if($expected == $remember_token){
                 session_start();
                 $_SESSION['auth'] = $user;
@@ -63,11 +63,11 @@ function setFlash($message, $type = 'success'){
     //return "<div class='alert alert-$type'>$message<button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button></div>";
 }
 
-
 function input($id) {
     $value = isset($_POST[$id]) ? $_POST[$id] : '';
     return "<input type='text' name='$id' class='form-control' id='$id' value='$value'>";
 }
+
 function textarea($id) {
     $value = isset($_POST[$id]) ? $_POST[$id] : '';
     return "<textarea type='text' name='$id' class='form-control ckeditor' id='$id'>$value</textarea>";
@@ -80,7 +80,7 @@ function select($id, $options = array()) {
         if(isset($_POST[$id]) && $k == $_POST[$id]) {
             $selected = 'selected="selected"';
         }
-        $return .= "<option value='$id' $selected>$v</option>";
+        $return .= "<option value='$k' $selected>$v</option>";
     }
     $return.= '</select>';
     return $return;
@@ -89,8 +89,6 @@ function select($id, $options = array()) {
 /*
  * FAILLE CSRF
  */
-
-
 if(!isset($_SESSION['csrf'])) {
     $_SESSION['csrf'] = bin2hex(openssl_random_pseudo_bytes(6));
 }
@@ -125,4 +123,35 @@ function checkCsrf() {
     die();
 }
 
+/*
+function convertSize($octet) {
+    $unit = ['octets', 'ko', 'mo', 'go'];
+
+    if ($octet < 1000) : // Octet
+        $result = $octet . ' ' . $unit[0];
+    elseif ($octet < 1000000) : // Ko
+        $ko     = round($octet/1024, 2);
+        $result = $ko . ' ' . $unit[1];
+    elseif ($octet < 1000000000) : // Mo
+        $mo     = round($octet/(1024*1024), 2);
+        $result = $mo . ' ' . $unit[2];
+    else : // Go
+        $go     = round($octet/(1024*1024*1024), 2);
+        $result = $go . ' ' . $unit[3];
+    endif;
+
+    return $result;
+}*/
+
+function resizeImage($file, $width, $height) {
+    $info = pathinfo($file);
+    $return = '';
+    if($info['dirname'] != '.') {
+        $return .= $info['dirname'] . '/';
+    }
+    $return .= $info['filename'] . "_$width" . "x$height." . $info['extension'];
+    return $return;
+}
+
 ?>
+

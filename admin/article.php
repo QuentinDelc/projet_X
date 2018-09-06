@@ -8,12 +8,9 @@ logged_only();
  */
 if(isset($_GET['delete'])) {
     checkCsrfDelete();
-    $deleted = $pdo->quote($_GET['delete']);
-    $pdo->query("DELETE FROM article WHERE id=$deleted");
-    $_GET['id'] = $pdo->lastInsertId();
-    $articleId = $_GET['id'];
-    $pdo->query("DELETE FROM categorie_article SET categorieId=$categorieId, articleId=$articleId");
-    $_SESSION['flash']['success'] = 'L\article a bien été supprimée';
+    $delete = $pdo->quote($_GET['delete']);
+    $pdo->query("DELETE FROM article WHERE id=$delete");
+    $_SESSION['flash']['success'] = 'L\'article a bien été supprimée';
     header('Location: article.php');
     die();
 }
@@ -23,7 +20,7 @@ if(isset($_GET['delete'])) {
  */
 $select = $pdo->query('SELECT id, name, description, slug FROM article');
 $select->setFetchMode(PDO::FETCH_ASSOC);
-$categories = $select->fetchAll();
+$articles = $select->fetchAll();
 
 ?>
 
@@ -41,14 +38,14 @@ $categories = $select->fetchAll();
         </tr>
         </thead>
         <tbody>
-        <?php foreach ($categories as $category): ?>
+        <?php foreach ($articles as $article): ?>
             <tr>
-                <td><?= $category['id']; ?></td>
-                <td><?= $category['name']; ?></td>
-                <td><?= $category['slug']; ?></td>
+                <td><?= $article['id']; ?></td>
+                <td><?= $article['name']; ?></td>
+                <td><?= $article['slug']; ?></td>
                 <td>
-                    <a href="article_edit.php?id=<?= $category['id']; ?>" class="btn btn-warning">Editer</a>
-                    <a href="?delete=<?= $category['id']; ?>&<?= csrf(); ?>" class="btn btn-danger" onclick="confirm('Voulez-vous vraiment supprimer cet article ?)">Supprimer</a>
+                    <a href="article_edit.php?id=<?= $article['id']; ?>" class="btn btn-warning">Editer</a>
+                    <a href="?delete=<?= $article['id']; ?>&<?= csrf(); ?>" class="btn btn-danger" onclick="confirm('Voulez-vous vraiment supprimer cet article ?)">Supprimer</a>
                 </td>
             </tr>
         <?php endforeach; ?>

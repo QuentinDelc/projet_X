@@ -1,0 +1,239 @@
+.section-home {
+	padding: 160px 0;
+
+	@media(max-width: 1000px){
+		padding: 160px 50px
+	}
+}
+
+.background-content {
+	background-color: #f6f6f6;
+}
+
+.content {
+	.title-content {
+		margin-bottom: 30px;
+		@include fontSize(48px);
+		color: $title-color;
+		font-family: $extra-font;
+	}
+
+	.button-content {
+		display: inline-block;
+		margin-top: 60px;
+		padding: 18px 50px;
+		font-family: $light-font;
+		color: #fff;
+		@include border-radius(40px);
+		@include buttonColor();
+	}
+
+	p {
+		line-height: 36px;
+	}
+
+	.list-home {
+		margin-top: 60px;
+		font-size: 0;
+
+		li {
+			display: inline-block;
+			vertical-align: top;
+			width: 45%;
+			margin-bottom: 50px;
+			line-height: 24px;
+			color: #a7acbc;
+
+			@media(max-width: 700px){
+
+				display: block;
+				
+			}
+
+			&:nth-child(2n) {
+				margin-left: 5%;
+
+				@media(max-width: 700px){
+
+				margin-left: 0;
+				}
+			}
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			.number-list,
+			.inner-list {
+				display: inline-block;
+				vertical-align: top;
+				@include fontSize(14px);
+			}
+
+			.number-list {
+				width: 14%;
+				
+				span {
+					display: block;
+					width: 50px;
+					height: 50px;
+					text-align: center;
+					@include border-radius(50%);
+					@include fontSize(24px);
+					color: #3f4e76;
+					border: 1px solid #c7cde0;
+					line-height: 50px;
+					font-family: $regular-font;
+				}
+			}
+
+			.inner-list {
+				margin-left: 5%;
+				width: 81%;
+			}
+		}
+	}
+}
+
+#newsletter {
+	position: relative;
+	background: url('../images/newsletter-2.jpg') center center no-repeat;
+	@include background-size(cover);
+	/*z-index: 2;
+	background-image: -moz-linear-gradient( 51deg, rgb(203,0,53) 0%, rgb(224,105,0) 100%);
+	background-image: -webkit-linear-gradient( 51deg, rgb(203,0,53) 0%, rgb(224,105,0) 100%);
+	background-image: -ms-linear-gradient( 51deg, rgb(203,0,53) 0%, rgb(224,105,0) 100%);
+
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		z-index: -1;
+		background: url('../images/newsletter.jpg') center center no-repeat;
+		@include background-size(cover);
+		opacity: .5;
+	}*/
+
+	.title-newsletter {
+		margin-bottom: 55px;
+		@include fontSize(48px);
+		text-align: center;
+		color: #fff;
+		font-family: $bold-font;
+	}
+
+	form {
+		position: relative;
+		max-width: 400px;
+		width: 100%;
+		margin: 0 auto;
+
+		.input input{
+			width: 100%;
+			outline: none;
+			background-color: transparent;
+			border: 1px solid rgba(#fff, .3);
+			@include border-radius(30px);
+			padding: 15px 145px 15px 20px;
+			font-family: $light-font;
+			@include fontSize(18px);
+			color: #fff;
+
+			&::placeholder {
+				color: #fff;
+			}
+		}
+
+		.validate {
+			input {
+				font-family: 'Open Sans', sans-serif;
+				position: absolute;
+				top: 0;
+				right: 0;
+				padding: 16px 45px;
+				@include border-radius(30px);
+				color: $title-color;
+				@include fontSize(18px);
+				border: none;
+				outline: none;
+				font-family: $light-font;
+				cursor: pointer;
+				@include buttonColor();
+				background-color: #fff;
+				background-image: none;
+
+				&:hover,
+				&:focus {
+					color: #fff;
+				}
+			}
+		}
+	}
+}
+
+
+#drones-home {
+	text-align: center;
+
+	ul {
+		font-size: 0;
+
+		li {
+			display: inline-block;
+			vertical-align: top;
+			width: 22.5%;
+			margin-right: 3.33%;
+			@include fontSize(18px);
+
+			&:last-child {
+				margin-right: 0;
+			}
+
+			.title-drones {
+				margin-bottom: 30px;
+				@include fontSize(30px);
+				font-family: $bold-font;
+
+				a {
+					color: $title-color;
+
+					&:hover, 
+					&:focus {
+						color: $button-color;
+					}
+				}
+			}
+
+			p {
+				line-height: 30px;
+			}
+
+			img {
+				display: inline-block;
+				margin-bottom: 25px;
+			}
+		}
+	}
+
+	.button-content {
+		line-height: inherit;
+		margin-top: 110px;
+	}
+}
+
+#background-home {
+	background: url('../images/background.jpg') no-repeat center center;
+	@include background-size(cover);
+
+	.wrapper {
+		max-width: 700px;
+		width: 100%;
+		padding: 70px 45px 45px;
+		background-color: #fff;
+		@include box-shadow(0 0 14.4px 1.6px rgba(0, 0, 0, .2));
+	}
+}
+

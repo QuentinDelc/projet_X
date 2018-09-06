@@ -1,0 +1,25 @@
+#footer {
+	padding-top: 55px;
+	padding-bottom: 55px;
+	text-align: center;
+
+	@media (max-width: 768px) {
+		padding-top: 25px;
+		padding-bottom: 25px;
+	}
+	
+	p {
+		margin-bottom: 20px;
+		color: #a7acbc;
+		@include fontSize(18px);
+		font-family: $light-font;
+
+		@media (max-width: 768px) {
+			margin-bottom: 10px;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}

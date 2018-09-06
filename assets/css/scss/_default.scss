@@ -1,0 +1,48 @@
+@import 'compass/reset';
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: $regular-font;
+	@include fontSize(18px);
+	color: $default-color;
+
+	&.push-menu {
+		overflow-x: hidden;
+		position: relative;
+		left: 0;
+		@include transition(.3s ease-in all);
+	}
+
+	&.push-toright-menu {
+		left: 240px;
+
+		.fa-bars{
+				display: none;
+			}
+	}
+
+}
+
+a {
+	text-decoration: none;
+	@include transition(.3s ease-in all);
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.wrapper {
+	max-width: 100%;
+	width: 982px;
+	margin: 0 auto;
+
+	@media (max-width: 982px) {
+		padding-left: 2%;
+		padding-right: 2%;
+	}
+}

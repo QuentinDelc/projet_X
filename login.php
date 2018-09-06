@@ -1,6 +1,6 @@
 <?php
 require_once 'includes/functions.php';
-require_once 'includes/session.php';
+/*require_once 'includes/session.php';*/
 reconnect_from_cookie();
 if(isset($_SESSION['auth'])){
     header('Location: account.php');

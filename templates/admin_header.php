@@ -14,37 +14,28 @@ if(session_status() == PHP_SESSION_NONE){
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
     <title>Mon administration</title>
-    <link href="../assets/css/app.css" rel="stylesheet">
+    <link href="../assets/css/bootstrap.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
 </head>
 
 <body>
 
-<nav class="navbar navbar-inverse">
-    <div class="container">
+<nav class="navbar navbar-inverse admin">
+    <div class="container admin">
         <div class="navbar-header">
-            <a href="" class="navbar-brand">Mon portfolio en php</a>
+            <a href="" class="navbar-brand">Administration du site</a>
         </div>
         <ul class="nav navbar-nav">
-            <li>
-                <a href="category.php">Catégories</a>
-            </li>
-            <li>
-                <a href="article.php">Articles</a>
-            </li>
-            <li>
-                <a href="difficulty.php">Difficultés</a>
-            </li>
-            <li>
-                <a href="material.php">Matériaux</a>
-            </li>
-            <li>
-                <a href="index.php">Retour au site</a>
-            </li>
+            <li><a href="article.php">Articles</a></li>
+            <li><a href="category.php">Catégories</a></li>
+            <li><a href="difficulty.php">Difficultés</a></li>
+            <li><a href="material.php">Matériaux</a></li>
+            <li><a href="../index.php">Retour au site</a></li>
         </ul>
     </div>
 </nav>
 
-<div class="container">
+<div class="container admin">
 
     <?php if(isset($_SESSION['flash'])): ?>
         <?php foreach($_SESSION['flash'] as $type => $message): ?>

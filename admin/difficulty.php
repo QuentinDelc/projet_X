@@ -8,8 +8,8 @@ logged_only();
  */
 if(isset($_GET['delete'])) {
     checkCsrfDelete();
-    $deleted = $pdo->quote($_GET['delete']);
-    $pdo->query("DELETE FROM difficulty id=$deleted");
+    $delete = $pdo->quote($_GET['delete']);
+    $pdo->query("DELETE FROM difficulty WHERE id=$delete");
     $_SESSION['flash']['success'] = 'La difficulté a bien été supprimée';
     header('Location: difficulty.php');
     die();
@@ -18,37 +18,38 @@ if(isset($_GET['delete'])) {
 /**
  * CATEGORIES
  */
-$select = $pdo->query('SELECT * FROM difficulty');
+$select = $pdo->query('SELECT id, name FROM difficulty');
 $select->setFetchMode(PDO::FETCH_ASSOC);
-$categories = $select->fetchAll();
+$difficultys = $select->fetchAll();
 
 ?>
 
-    <h1>Les difficultés</h1>
+    <h1>Difficultés</h1>
 
     <p><a href="difficulty_edit.php" class="btn btn-success">Ajouter une nouvelle difficulté</a></p>
 
     <table class="table table-striped">
         <thead>
         <tr>
-            <th>Id</th>
-            <th>Nom</th>
-            <th>Actions</th>
+            <th>Niveau de difficulté</th>
         </tr>
         </thead>
         <tbody>
-        <?php foreach ($categories as $category): ?>
+        <?php foreach ($difficultys as $difficulty): ?>
             <tr>
-                <td><?= $category['id']; ?></td>
-                <td><?= $category['name']; ?></td>
+                <td><?= $difficulty['id']; ?></td>
+                <td><?= $difficulty['name']; ?></td>
                 <td>
-                    <a href="difficulty_edit.php?id=<?= $category['id']; ?>" class="btn btn-warning">Editer</a>
-                    <a href="?delete=<?= $category['id']; ?>&<?= csrf(); ?>" class="btn btn-danger" onclick="confirm('Voulez-vous vraiment supprimer cet difficulté ?)">Supprimer</a>
+                    <a href="difficulty_edit.php?id=<?= $difficulty['id']; ?>" class="btn btn-warning">Editer</a>
+                    <a href="?delete=<?= $difficulty['id']; ?>&<?= csrf(); ?>" class="btn btn-danger" onclick="confirm('Voulez-vous vraiment supprimer cette difficulté ?)">Supprimer</a>
                 </td>
             </tr>
         <?php endforeach; ?>
         </tbody>
     </table>
+
+
+
 
 
 <?php require_once '../templates/footer.php';

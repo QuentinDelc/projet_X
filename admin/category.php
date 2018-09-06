@@ -8,8 +8,8 @@ logged_only();
  */
 if(isset($_GET['delete'])) {
     checkCsrfDelete();
-    $deleted = $pdo->quote($_GET['delete']);
-    $pdo->query("DELETE FROM categorie WHERE id=$deleted");
+    $delete = $pdo->quote($_GET['delete']);
+    $pdo->query("DELETE FROM categorie WHERE id=$delete");
     $_SESSION['flash']['success'] = 'La catégorie a bien été supprimée';
     header('Location: category.php');
     die();

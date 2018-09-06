@@ -7,13 +7,13 @@ if(!empty($_POST)){
     require_once 'includes/db.php';
 
     if(empty($_POST['username']) || !preg_match('/^[a-zA-Z0-9_]+$/', $_POST['username'])){
-        $errors['username'] = "Votre pseudo n'est pas valide (alphanumérique)";
+        $errors['username'] = "Votre pseudo n'est pas valide";
     } else {
         $req = $pdo->prepare('SELECT id FROM user WHERE username = ?');
         $req->execute([$_POST['username']]);
         $user = $req->fetch();
         if($user){
-            $errors['username'] = 'Ce pseudo est déjà pris';
+            $errors['username'] = 'Ce pseudo est déjà utilisé';
         }
     }
 
