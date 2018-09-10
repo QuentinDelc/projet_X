@@ -16,7 +16,7 @@ if(isset($_GET['delete'])) {
 }
 
 /**
- * CATEGORIES
+ * CATEGORYS
  */
 $select = $pdo->query('SELECT id, name FROM material');
 $select->setFetchMode(PDO::FETCH_ASSOC);
@@ -49,8 +49,4 @@ $materials = $select->fetchAll();
         </tbody>
     </table>
 
-
-
-
-
-<?php require_once '../templates/footer.php';
+<?php require_once '../templates/admin_footer.php';

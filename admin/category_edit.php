@@ -11,10 +11,10 @@ if(isset($_POST['name']) && isset($_POST['slug'])) {
         $slug = $pdo->quote($_POST['slug']);
         if(isset($_GET['id'])) {
             $id = $pdo->quote($_GET['id']);
-            $pdo->query("UPDATE categorie SET name=$name, slug=$slug WHERE id=$id");
+            $pdo->query("UPDATE category SET name=$name, slug=$slug WHERE id=$id");
         } else {
-            $pdo->query("INSERT INTO categorie SET name=$name, slug=$slug");
-            /*$pdo->query("INSERT INTO categorie_article SET id=$id WHERE categorieId=$id");*/
+            $pdo->query("INSERT INTO category SET name=$name, slug=$slug");
+            /*$pdo->query("INSERT INTO category_article SET id=$id WHERE categoryId=$id");*/
         }
         $_SESSION['flash']['success'] = 'La catégorie a bien été ajoutée';
         header('Location: category.php');
@@ -27,7 +27,7 @@ if(isset($_POST['name']) && isset($_POST['slug'])) {
 
 if(isset($_GET['id'])) {
     $id = $pdo->quote($_GET['id']);
-    $select = $pdo->query("SELECT * FROM categorie WHERE id=$id");
+    $select = $pdo->query("SELECT * FROM category WHERE id=$id");
     $select->setFetchMode(PDO::FETCH_ASSOC);
     if($select->rowCount() == 0) {
         $_SESSION['flash']['danger'] = 'Il n\'y a pas de catégorie avec cet ID';
@@ -39,9 +39,9 @@ if(isset($_GET['id'])) {
 
 require_once '../templates/admin_header.php';
 /*
-$select = $pdo->query('SELECT id, name, parentId, slug FROM categorie');
+$select = $pdo->query('SELECT id, name, parentId, slug FROM category');
 $select->setFetchMode(PDO::FETCH_ASSOC);
-$categories = $select->fetchAll();
+$categorys = $select->fetchAll();
 */
 ?>
 
@@ -63,4 +63,4 @@ $categories = $select->fetchAll();
     </form>
 
 
-<?php require_once '../templates/footer.php';
+<?php require_once '../templates/admin_footer.php';

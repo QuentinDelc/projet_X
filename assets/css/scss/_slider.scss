@@ -4,6 +4,10 @@
     margin-top: -87px;
   }
 
+  @media(max-width: 550px) {
+    margin-top: -67px;
+  }
+
   .main-carousel__slide.slide1 {
     background-image: url("../images/slider/couture1.jpg");
   }
@@ -38,13 +42,17 @@
       -ms-flex-align: center;
       align-items: center;
 
+      @media(max-width: 768px) {
+        height: 370px;
+      }
+
       @media(max-width: 550px) {
         margin-top: 70px;
       }
 
       .content-slide {
         position: absolute;
-        background: rgba(101, 78, 163, 0.7);
+        background: rgba(101, 78, 163, 0.3);
         border: 6px solid transparent;
         outline: 2px dashed $second-color;
         background-clip: padding-box;
@@ -53,8 +61,16 @@
         width: 565px;
         padding: 0 20px;
 
+        @media(max-width: 768px) {
+          top: 80px;
+        }
+
         @media(max-width: 590px) {
-          width: 400px;
+          width: 90%;
+        }
+
+        @media(max-width: 550px) {
+          top: 145px;
         }
 
         h3 {
@@ -64,13 +80,23 @@
           margin-top: 15px;
           line-height: 1.6;
           font-weight: 600;
+
+          @media(max-width: 590px) {
+            font-size: 22px;
+          }
         }
+
 
         .main-carousel__description {
           color: #fff;
           font-size: 15px;
           margin-top: 17px;
           text-align: center;
+
+
+          @media(max-width: 430px) {
+            margin-top: 10px;
+          }
         }
 
         a.main-carousel__btn.btn {
@@ -87,19 +113,15 @@
             text-decoration: none;
             color: $second-color !important;
           }
-/*
-          &::after {
-            position: absolute;
-            content: "";
-            width: 14px;
-            height: 10px;
-            right: 20%;
-            top: 160px;
-            background-position: center;
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-image: url(../images/icones/double-arrow.svg);
-          }*/
+
+          @media(max-width: 550px) {
+            font-size: 15px;
+            margin-top: 30px;
+          }
+
+          @media(max-width: 430px) {
+            margin-top: 20px;
+          }
         }
       }
     }
@@ -152,7 +174,7 @@
   }
 
   .main-carousel.owl-theme .owl-nav [class*=owl-].owl-next {
-    background: rgba(101, 78, 163, 0.7) url(../images/icones/arrow-right.svg) center no-repeat;
+    background: rgba(101, 78, 163, 0.3) url(../images/icones/arrow-right.svg) center no-repeat;
     background-size: 20px auto;
     right: 4%;
 
@@ -162,7 +184,7 @@
   }
 
   .main-carousel.owl-theme .owl-nav [class*=owl-].owl-prev {
-    background: rgba(101, 78, 163, 0.7) url(../images/icones/arrow-left.svg) center no-repeat;
+    background: rgba(101, 78, 163, 0.3) url(../images/icones/arrow-left.svg) center no-repeat;
     background-size: 20px auto;
     left: 4%;
 
@@ -195,3 +217,6 @@
   }
 }
 
+.owl-theme, .owl-nav {
+  margin-top: 0!important;
+}

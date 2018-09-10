@@ -9,18 +9,18 @@ logged_only();
 if(isset($_GET['delete'])) {
     checkCsrfDelete();
     $delete = $pdo->quote($_GET['delete']);
-    $pdo->query("DELETE FROM categorie WHERE id=$delete");
+    $pdo->query("DELETE FROM category WHERE id=$delete");
     $_SESSION['flash']['success'] = 'La catégorie a bien été supprimée';
     header('Location: category.php');
     die();
 }
 
 /**
- * CATEGORIES
+ * CATEGORYS
  */
-$select = $pdo->query('SELECT id, name, slug FROM categorie');
+$select = $pdo->query('SELECT id, name, slug FROM category');
 $select->setFetchMode(PDO::FETCH_ASSOC);
-$categories = $select->fetchAll();
+$categorys = $select->fetchAll();
 
 ?>
 
@@ -37,7 +37,7 @@ $categories = $select->fetchAll();
     </tr>
     </thead>
     <tbody>
-    <?php foreach ($categories as $category): ?>
+    <?php foreach ($categorys as $category): ?>
         <tr>
             <td><?= $category['id']; ?></td>
             <td><?= $category['name']; ?></td>
@@ -54,4 +54,4 @@ $categories = $select->fetchAll();
 
 
 
-<?php require_once '../templates/footer.php';
+<?php require_once '../templates/admin_footer.php';

@@ -11,7 +11,7 @@ if(isset($_POST['name'])) {
         $pdo->query("UPDATE material SET name=$name WHERE id=$id");
     } else {
         $pdo->query("INSERT INTO material SET name=$name");
-        /*$pdo->query("INSERT INTO categorie_article SET id=$id WHERE categorieId=$id");*/
+        /*$pdo->query("INSERT INTO category_article SET id=$id WHERE categoryId=$id");*/
     }
     $_SESSION['flash']['success'] = 'Le matériel a bien été ajoutée';
     header('Location: material.php');
@@ -51,4 +51,4 @@ require_once '../templates/admin_header.php';
     </form>
 
 
-<?php require_once '../templates/footer.php';
+<?php require_once '../templates/admin_footer.php';

@@ -5,6 +5,6 @@ require_once '../templates/admin_header.php';
 
 
 
-<?php require_once '../templates/footer.php';
+<?php require_once '../templates/admin_footer.php';
 
 

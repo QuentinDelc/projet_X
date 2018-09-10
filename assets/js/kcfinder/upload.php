@@ -17,4 +17,12 @@ $uploader = "kcfinder\\uploader";  // To execute core/bootstrap.php on older
 $uploader = new $uploader();       // PHP versions (even PHP 4)
 $uploader->upload();
 
+if(move_uploaded_file($fileTmpLoc, "../images/publications/$fileName"))
+{
+    $funcNum = $_GET['CKEditorFuncNum'] ;
+    $url = "/images/publications/$fileName";
+    echo "<script type='text/javascript'> window.parent.CKEDITOR.tools.callFunction($funcNum, '$url', 'Ok')</script>";
+
+}
+
 ?>

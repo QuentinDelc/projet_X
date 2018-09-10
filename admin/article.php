@@ -16,7 +16,7 @@ if(isset($_GET['delete'])) {
 }
 
 /**
- * CATEGORIES
+ * CATEGORYS
  */
 $select = $pdo->query('SELECT id, name, description, slug FROM article');
 $select->setFetchMode(PDO::FETCH_ASSOC);
@@ -56,4 +56,4 @@ $articles = $select->fetchAll();
 
 
 
-<?php require_once '../templates/footer.php';
+<?php require_once '../templates/admin_footer.php';

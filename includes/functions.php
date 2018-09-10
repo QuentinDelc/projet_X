@@ -85,43 +85,6 @@ function select($id, $options = array()) {
 }
 
 /*
- * FAILLE CSRF
- */
-if(!isset($_SESSION['csrf'])) {
-    $_SESSION['csrf'] = bin2hex(openssl_random_pseudo_bytes(6));
-}
-/*
-echo "<pre>";
-var_dump($_SESSION);
-echo "</pre>";
-die();
-*/
-function csrf() {
-    return 'csrf=' . isset($_SESSION['csrf']);
-}
-
-function csrfInput() {
-    return '<input type="hidden" value="' . $_SESSION['csrf'] . '" name="csrf">';
-}
-
-function checkCsrfDelete() {
-    if(!isset($_GET['csrf']) || $_GET['csrf'] != isset($_SESSION['csrf'])) {
-        header('Location:' . WEBROOT . 'csrf.php');
-        die();
-    }
-}
-
-function checkCsrf() {
-    if(
-        (isset($_POST['csrf']) && $_POST['csrf'] == $_SESSION['csrf']) ||
-        (isset($_GET['csrf']) && $_GET['csrf'] == $_SESSION['csrf'])) {
-        return true;
-    }
-    header('Location:' . WEBROOT . 'csrf.php');
-    die();
-}
-
-/*
 function convertSize($octet) {
     $unit = ['octets', 'ko', 'mo', 'go'];
 

@@ -4,7 +4,7 @@ require_once '../templates/admin_header.php';
 logged_only();
 
 /************* INSERTION ET EDITION D'UN ARTICLE ************************/
-if(isset($_POST['name']) && isset($_POST['slug']) && isset($_POST['description']) && isset($_POST['content']) && isset ($_POST['categorieId']) && isset($_POST['difficultyId'])) {
+if(isset($_POST['name']) && isset($_POST['slug']) && isset($_POST['description']) && isset($_POST['content']) && isset ($_POST['categoryId']) && isset($_POST['difficultyId'])) {
     checkCsrf();
     $slug = $_POST['slug'];
     if(preg_match('/^[a-z\-0-9]+$/', $slug)) {
@@ -12,7 +12,7 @@ if(isset($_POST['name']) && isset($_POST['slug']) && isset($_POST['description']
         $slug = $pdo->quote($_POST['slug']);
         $description = $pdo->quote($_POST['description']);
         $content = $pdo->quote($_POST['content']);
-        $categorieId = $pdo->quote($_POST['categorieId']);
+        $categoryId = $pdo->quote($_POST['categoryId']);
         $difficultyId = $pdo->quote($_POST['difficultyId']);
 
         if (isset($_GET['id'])) {
@@ -20,11 +20,19 @@ if(isset($_POST['name']) && isset($_POST['slug']) && isset($_POST['description']
             $pdo->query("UPDATE article SET name=$name, slug=$slug, description=$description, content=$content, difficultyId=$difficultyId WHERE id=$id");
         } else {
             $pdo->query("INSERT INTO article SET name=$name, description=$description, slug=$slug, content=$content, difficultyId=$difficultyId");
-
-            /**********REQUETE TABLE INTERMEDIAIRE CATEGORIE ***********/
+/*
+        if (isset($_GET['id'])) {
+            $id = $pdo->quote($_GET['id']);
+            $pdo->query("UPDATE article SET name=$name, slug=$slug, description=$description, content=$content, difficultyId=$difficultyId WHERE id=$id");
+        } else {
+            $pdo->query("INSERT INTO article (name, description, content, slug) 
+            VALUES ('name', 'description', 'content', 'slug')");
+            $pdo->query("INSERT INTO difficulty (name) VALUES ('difficultId')");
+*/
+            /**********REQUETE TABLE RELATIONNELLE CATEGORY ***********/
             $_GET['id'] = $pdo->lastInsertId();
             $articleId = $_GET['id'];
-            $pdo->query("INSERT INTO categorie_article SET categorieId=$categorieId, articleId=$articleId");
+            $pdo->query("INSERT INTO category_article SET categoryId=$categoryId, articleId=$articleId");
 
         }
         $_SESSION['flash']['success'] = 'L\'article a bien été ajouté';
@@ -75,13 +83,13 @@ if(isset($_GET['id'])) {
     $_POST = $select->fetch();
 }
 
-/***************** AFFICHAGE DES CATEGORIES ********************/
-$select = $pdo->query('SELECT id, name FROM categorie ORDER BY name ASC');
+/***************** AFFICHAGE DES CATEGORYS ********************/
+$select = $pdo->query('SELECT id, name FROM category ORDER BY name ASC');
 $select->setFetchMode(PDO::FETCH_ASSOC);
-$categories = $select->fetchAll();
-$categoriesList = array();
-foreach($categories as $category) {
-    $categoriesList[$category['id']] = $category['name'];
+$categorys = $select->fetchAll();
+$categorysList = array();
+foreach($categorys as $category) {
+    $categorysList[$category['id']] = $category['name'];
 }
 
 /***************** AFFICHAGE DES DIFFICULTES ********************/
@@ -151,12 +159,13 @@ if(isset($_GET['id'])) {
     $pdfs = array();
 }
 
+//var_dump(csrf());
 require_once '../templates/admin_header.php';
 ?>
 
     <h1>Ajouter un article</h1>
 
-    <div class="row">
+
         <form action="" method="POST" enctype="multipart/form-data">
             <div class="col-sm-9">
                 <div class="form-group">
@@ -175,8 +184,8 @@ require_once '../templates/admin_header.php';
                     <?= textarea('content'); ?>
                 </div>
                 <div class="form-group">
-                    <label for="categorieId">Catégorie</label>
-                    <?= select('categorieId', $categoriesList); ?>
+                    <label for="categoryId">Catégorie</label>
+                    <?= select('categoryId', $categorysList); ?>
                 </div>
                 <div class="form-group">
                     <label for="difficultyId">Difficulté</label>
@@ -208,8 +217,8 @@ require_once '../templates/admin_header.php';
                 <?php endforeach; ?>
             </div>
         </form>
-    </div>
+
     <script type="text/javascript" src="../assets/js/ckeditor/ckeditor.js"></script>
 
 
-<?php require_once '../templates/footer.php';
+<?php require_once '../templates/admin_footer.php';

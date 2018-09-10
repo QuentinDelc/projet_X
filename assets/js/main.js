@@ -1,16 +1,20 @@
-/*********** ADD IMAGE EDITION ARTICLE ************
-(function (s) {
+/**************** SCROLL SMOOTH ***************************/
+$(document).ready(function(){
+    $("a").on('click', function(event) {
+        if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 800, function(){
+                window.location.hash = hash;
+            });
+        }
+    });
+});
 
-    $('#addimagebtn').click(function (e) {
-        e.preventDefault();
-        var $clone = $('#addimage').clone().attr('id', '').removeClass('hidden');
-        $('#addimage').before($clone);
-    })
 
-})***/
-
-
-/**********SLIDER***************/
+/*********** SLIDER ***************/
 $('.owl-carousel').owlCarousel({
     loop:true,
     margin:0,
@@ -29,6 +33,40 @@ $('.owl-carousel').owlCarousel({
     }
 });
 
+/************ FACEBOOK **********************/
+(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v3.1&appId=446074062530796&autoLogAppEvents=1';
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
 
 /*************** STICKY MENU ******************/
+window.onscroll = function() {myFunction()};
 
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+    if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+    } else {
+        navbar.classList.remove("sticky");
+    }
+}
+
+/************** MENU HAMBURGER **************/
+$(document).ready(function(){
+    $('#nav-anime-hamburger').click(function(){
+        $(this).toggleClass('open');
+    });
+});
+
+
+/************ AFFICHAGE DES MINIATURES AU SCROLL **************/
+new AnimOnScroll( document.getElementById( 'grid' ), {
+    minDuration : 0.6,
+    maxDuration : 0.9,
+    viewportFactor : 0.2
+} );
