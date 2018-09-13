@@ -5,7 +5,6 @@ function str_random($length){
     return substr(str_shuffle(str_repeat($alphabet, $length)), 0, $length);
 }
 
-
 function logged_only(){
     if(session_status() == PHP_SESSION_NONE){
         session_start();
@@ -63,7 +62,7 @@ function setFlash($message, $type = 'success'){
 
 function input($id) {
     $value = isset($_POST[$id]) ? $_POST[$id] : '';
-    return "<input type='text' name='$id' class='form-control' id='$id' value='$value'>";
+    return "<input type='text' name='$id' class='form-control' id='$id' value='$value' maxlength='255'>";
 }
 
 function textarea($id) {
@@ -83,6 +82,7 @@ function select($id, $options = array()) {
     $return.= '</select>';
     return $return;
 }
+
 
 /*
 function convertSize($octet) {
@@ -114,5 +114,8 @@ function resizeImage($file, $width, $height) {
     return $return;
 }
 
-?>
 
+/**************FONCTION ONCLICK ****************/
+
+
+?>

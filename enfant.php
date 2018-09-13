@@ -14,17 +14,17 @@ $select->setFetchMode(PDO::FETCH_ASSOC);
 $articles = $select->fetchAll();
 
 ?>
-    <div class="banner couture">
+    <div class="banner enfant">
         <div class="banner_overlay">
             <div class="container banner_container">
                 <div class="box-banner box-banner-big">
                     <h1 class="box-banner_title">Côté enfant</h1>
-                </div><a class="banner_arrow-bottom js-scrollto" href="#couture"></a>
+                </div><a class="banner_arrow-bottom js-scrollto" href="#enfant"></a>
             </div>
         </div>
     </div>
 
-    <div class="container" id="couture">
+    <div class="container" id="enfant">
         <ul class="grid effect zoom" id="grid">
             <?php foreach ($articles as $k => $article): ?>
                 <li>
@@ -33,7 +33,7 @@ $articles = $select->fetchAll();
                         <figcaption>
                             <h3><a href="" class="title-article"><?= $article['name']; ?></a></h3>
                             <p><?= $article['description']; ?></p>
-                            <a class="btn-discover" href="decoration.php">DÉCOUVRIR</a>
+                            <a class="btn-discover" href="article.php?id=<?= $article['id']; ?>">DÉCOUVRIR</a>
                         </figcaption>
                     </figure>
                 </li>

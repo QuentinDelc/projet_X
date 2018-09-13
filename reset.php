@@ -30,10 +30,9 @@ if(isset($_GET['id']) && isset($_GET['token'])){
 ?>
 <?php require 'templates/header.php'; ?>
 
-    <h1>Réinitialiser mon mot de passe</h1>
-
+<div class="container log-account">
+    <h1 class="main-title">Réinitialiser mon mot de passe</h1>
     <form action="" method="POST">
-
         <div class="form-group">
             <label for="">Mot de passe</label>
             <input type="password" name="password" class="form-control"/>
@@ -45,7 +44,7 @@ if(isset($_GET['id']) && isset($_GET['token'])){
         </div>
 
         <button type="submit" class="btn btn-primary">Réinitialiser votre mot de passe</button>
-
     </form>
+</div>
 
 <?php require 'templates/footer.php'; ?>

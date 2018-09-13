@@ -2,114 +2,930 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46835192-1cfd-40f2-9c8f-64d308a333f0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.sass-cache/45cc1f071030886738efa1cec7ccf12ace9940dd/_couture.scssc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.sass-cache/45cc1f071030886738efa1cec7ccf12ace9940dd/_index.scssc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/articles/25.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/articles/26.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/articles/27.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/articles/28.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/articles/29.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/articles/30.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/articles/31.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/articles/32.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/articles/33.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/articles/34.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/articles/35.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/articles/36.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/banner/ban-couture.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/banner/ban-couture1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/banner/bobine.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/banner/fils-couleur.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/banner/fils.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/banner/metre.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/banner/pelote-blanche.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/banner/pelote.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/banner/pelotes-laine.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/couture.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/giulia-bertelli-116358-unsplash.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/icones/12883-01.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/icones/down-arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/icones/down-arrow1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/icones/logo.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/kelly-sikkema-488161-unsplash.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/logo/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/logo/sewing-1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/nynne-schroder-691267-unsplash.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/rocknwool-282399-unsplash.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/siora-photography-632987-unsplash.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/slider/fabric-scissor.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/slider/machine.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/terra-evans-721293-unsplash.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/grid/AnimOnScroll.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/grid/classie.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/grid/imagesloaded.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/grid/masonry.pkgd.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/grid/modernizr.custom.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin_footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/cad0078f-a24f-4870-8891-6be8c2cf9dfe.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/cad0078f-a24f-4870-8891-6be8c2cf9dfe.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/scss/_article.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/scss/_crochet.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/scss/_enfant.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/scss/_tricot.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/45cc1f071030886738efa1cec7ccf12ace9940dd/_account.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/.sass-cache/45cc1f071030886738efa1cec7ccf12ace9940dd/_account.scssc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/45cc1f071030886738efa1cec7ccf12ace9940dd/_contact.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/.sass-cache/45cc1f071030886738efa1cec7ccf12ace9940dd/_contact.scssc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/45cc1f071030886738efa1cec7ccf12ace9940dd/_couture.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/.sass-cache/45cc1f071030886738efa1cec7ccf12ace9940dd/_couture.scssc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.sass-cache/45cc1f071030886738efa1cec7ccf12ace9940dd/_default.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/.sass-cache/45cc1f071030886738efa1cec7ccf12ace9940dd/_default.scssc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.sass-cache/45cc1f071030886738efa1cec7ccf12ace9940dd/_footer.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/.sass-cache/45cc1f071030886738efa1cec7ccf12ace9940dd/_footer.scssc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/45cc1f071030886738efa1cec7ccf12ace9940dd/_header.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/.sass-cache/45cc1f071030886738efa1cec7ccf12ace9940dd/_header.scssc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/45cc1f071030886738efa1cec7ccf12ace9940dd/_slider.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/.sass-cache/45cc1f071030886738efa1cec7ccf12ace9940dd/_slider.scssc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/45cc1f071030886738efa1cec7ccf12ace9940dd/_forget.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/.sass-cache/45cc1f071030886738efa1cec7ccf12ace9940dd/_forget.scssc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/45cc1f071030886738efa1cec7ccf12ace9940dd/_index.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/.sass-cache/45cc1f071030886738efa1cec7ccf12ace9940dd/_index.scssc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/45cc1f071030886738efa1cec7ccf12ace9940dd/_login.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/.sass-cache/45cc1f071030886738efa1cec7ccf12ace9940dd/_login.scssc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/45cc1f071030886738efa1cec7ccf12ace9940dd/_register.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/.sass-cache/45cc1f071030886738efa1cec7ccf12ace9940dd/_register.scssc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.sass-cache/45cc1f071030886738efa1cec7ccf12ace9940dd/main.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/.sass-cache/45cc1f071030886738efa1cec7ccf12ace9940dd/main.scssc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account.php" beforeDir="false" afterPath="$PROJECT_DIR$/account.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/article.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/article.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/article_edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/article_edit.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/category.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/category_edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/category_edit.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/couture_admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/couture_admin.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/crochet_admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/crochet_admin.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/difficulty.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/difficulty.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/difficulty_edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/difficulty_edit.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/enfant_admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/enfant_admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/material.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/material.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/material_edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/material_edit.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/tricot_admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/tricot_admin.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/article.php" beforeDir="false" afterPath="$PROJECT_DIR$/article.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/scss/_account.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/scss/_contact.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/scss/_contact.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/scss/_couture.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/scss/_couture.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/scss/_default.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/scss/_default.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/scss/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/scss/_footer.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/scss/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/scss/_header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/scss/_forget.scss" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/scss/_index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/scss/_index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/scss/_slider.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/scss/_slider.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/scss/_login.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/scss/_login.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/scss/_register.scss" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/scss/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/articles/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/articles/2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/articles/3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/articles/38.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/articles/39.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/articles/4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/articles/43.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/articles/47.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/articles/48.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/articles/5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/articles/6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/articles/7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/icones/favicon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/slider/couture.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/slider/couture.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/slider/couture1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/slider/couture1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/slider/crochet.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/slider/crochet.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/slider/crochet1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/slider/crochet1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/slider/enfant.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/slider/enfant.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/slider/tricot.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/slider/tricot.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/slider/tricot1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/slider/tricot1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/conf/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/kcfinder/conf/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/upload.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/kcfinder/upload.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/banner/ban-couture.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/banner/ban-couture1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/CHANGES.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/adapters/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/build-config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/ckeditor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/contents.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/lang/af.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/lang/ar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/lang/az.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/lang/bg.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/lang/bn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/lang/bs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/lang/ca.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/lang/cs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/lang/cy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/lang/da.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/lang/de-ch.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/lang/de.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/lang/el.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/lang/en-au.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/lang/en-ca.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/lang/en-gb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/lang/en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/lang/eo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/lang/es-mx.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/lang/es.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/lang/et.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/lang/eu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/lang/fa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/lang/fi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/lang/fo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/lang/fr-ca.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/lang/fr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/lang/gl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/lang/gu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/lang/he.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/lang/hi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/lang/hr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/lang/hu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/lang/id.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/lang/is.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/lang/it.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/lang/ja.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/lang/ka.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/lang/km.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/lang/ko.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/lang/ku.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/lang/lt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/lang/lv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/lang/mk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/lang/mn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/lang/ms.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/lang/nb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/lang/nl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/lang/no.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/lang/oc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/lang/pl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/lang/pt-br.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/lang/pt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/lang/ro.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/lang/ru.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/lang/si.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/lang/sk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/lang/sl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/lang/sq.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/lang/sr-latn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/lang/sr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/lang/sv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/lang/th.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/lang/tr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/lang/tt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/lang/ug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/lang/uk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/lang/vi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/lang/zh-cn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/lang/zh.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/a11yhelp/dialogs/a11yhelp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/a11yhelp/dialogs/lang/_translationstatus.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/a11yhelp/dialogs/lang/af.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/a11yhelp/dialogs/lang/ar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/a11yhelp/dialogs/lang/az.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/a11yhelp/dialogs/lang/bg.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/a11yhelp/dialogs/lang/ca.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/a11yhelp/dialogs/lang/cs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/a11yhelp/dialogs/lang/cy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/a11yhelp/dialogs/lang/da.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/a11yhelp/dialogs/lang/de-ch.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/a11yhelp/dialogs/lang/de.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/a11yhelp/dialogs/lang/el.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/a11yhelp/dialogs/lang/en-au.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/a11yhelp/dialogs/lang/en-gb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/a11yhelp/dialogs/lang/en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/a11yhelp/dialogs/lang/eo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/a11yhelp/dialogs/lang/es-mx.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/a11yhelp/dialogs/lang/es.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/a11yhelp/dialogs/lang/et.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/a11yhelp/dialogs/lang/eu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/a11yhelp/dialogs/lang/fa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/a11yhelp/dialogs/lang/fi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/a11yhelp/dialogs/lang/fo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/a11yhelp/dialogs/lang/fr-ca.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/a11yhelp/dialogs/lang/fr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/a11yhelp/dialogs/lang/gl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/a11yhelp/dialogs/lang/gu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/a11yhelp/dialogs/lang/he.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/a11yhelp/dialogs/lang/hi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/a11yhelp/dialogs/lang/hr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/a11yhelp/dialogs/lang/hu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/a11yhelp/dialogs/lang/id.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/a11yhelp/dialogs/lang/it.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/a11yhelp/dialogs/lang/ja.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/a11yhelp/dialogs/lang/km.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/a11yhelp/dialogs/lang/ko.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/a11yhelp/dialogs/lang/ku.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/a11yhelp/dialogs/lang/lt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/a11yhelp/dialogs/lang/lv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/a11yhelp/dialogs/lang/mk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/a11yhelp/dialogs/lang/mn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/a11yhelp/dialogs/lang/nb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/a11yhelp/dialogs/lang/nl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/a11yhelp/dialogs/lang/no.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/a11yhelp/dialogs/lang/oc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/a11yhelp/dialogs/lang/pl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/a11yhelp/dialogs/lang/pt-br.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/a11yhelp/dialogs/lang/pt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/a11yhelp/dialogs/lang/ro.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/a11yhelp/dialogs/lang/ru.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/a11yhelp/dialogs/lang/si.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/a11yhelp/dialogs/lang/sk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/a11yhelp/dialogs/lang/sl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/a11yhelp/dialogs/lang/sq.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/a11yhelp/dialogs/lang/sr-latn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/a11yhelp/dialogs/lang/sr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/a11yhelp/dialogs/lang/sv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/a11yhelp/dialogs/lang/th.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/a11yhelp/dialogs/lang/tr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/a11yhelp/dialogs/lang/tt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/a11yhelp/dialogs/lang/ug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/a11yhelp/dialogs/lang/uk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/a11yhelp/dialogs/lang/vi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/a11yhelp/dialogs/lang/zh-cn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/a11yhelp/dialogs/lang/zh.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/about/dialogs/about.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/about/dialogs/hidpi/logo_ckeditor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/about/dialogs/logo_ckeditor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/clipboard/dialogs/paste.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/colordialog/dialogs/colordialog.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/colordialog/dialogs/colordialog.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/copyformatting/cursors/cursor-disabled.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/copyformatting/cursors/cursor.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/copyformatting/styles/copyformatting.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/dialog/dialogDefinition.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/div/dialogs/div.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/find/dialogs/find.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/flash/dialogs/flash.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/flash/images/placeholder.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/forms/dialogs/button.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/forms/dialogs/checkbox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/forms/dialogs/form.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/forms/dialogs/hiddenfield.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/forms/dialogs/radio.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/forms/dialogs/select.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/forms/dialogs/textarea.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/forms/dialogs/textfield.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/forms/images/hiddenfield.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/icons_hidpi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/iframe/dialogs/iframe.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/iframe/images/placeholder.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/image/dialogs/image.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/image/images/noimage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/link/dialogs/anchor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/link/dialogs/link.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/link/images/anchor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/link/images/hidpi/anchor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/liststyle/dialogs/liststyle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/magicline/images/hidpi/icon-rtl.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/magicline/images/hidpi/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/magicline/images/icon-rtl.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/magicline/images/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/pagebreak/images/pagebreak.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/pastefromword/filter/default.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/preview/preview.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/scayt/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/scayt/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/scayt/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/scayt/dialogs/dialog.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/scayt/dialogs/options.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/scayt/dialogs/toolbar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/scayt/skins/moono-lisa/scayt.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/showblocks/images/block_address.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/showblocks/images/block_blockquote.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/showblocks/images/block_div.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/showblocks/images/block_h1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/showblocks/images/block_h2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/showblocks/images/block_h3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/showblocks/images/block_h4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/showblocks/images/block_h5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/showblocks/images/block_h6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/showblocks/images/block_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/showblocks/images/block_pre.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/smiley/dialogs/smiley.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/smiley/images/angel_smile.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/smiley/images/angel_smile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/smiley/images/angry_smile.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/smiley/images/angry_smile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/smiley/images/broken_heart.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/smiley/images/broken_heart.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/smiley/images/confused_smile.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/smiley/images/confused_smile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/smiley/images/cry_smile.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/smiley/images/cry_smile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/smiley/images/devil_smile.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/smiley/images/devil_smile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/smiley/images/embaressed_smile.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/smiley/images/embarrassed_smile.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/smiley/images/embarrassed_smile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/smiley/images/envelope.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/smiley/images/envelope.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/smiley/images/heart.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/smiley/images/heart.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/smiley/images/kiss.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/smiley/images/kiss.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/smiley/images/lightbulb.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/smiley/images/lightbulb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/smiley/images/omg_smile.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/smiley/images/omg_smile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/smiley/images/regular_smile.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/smiley/images/regular_smile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/smiley/images/sad_smile.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/smiley/images/sad_smile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/smiley/images/shades_smile.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/smiley/images/shades_smile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/smiley/images/teeth_smile.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/smiley/images/teeth_smile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/smiley/images/thumbs_down.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/smiley/images/thumbs_down.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/smiley/images/thumbs_up.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/smiley/images/thumbs_up.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/smiley/images/tongue_smile.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/smiley/images/tongue_smile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/smiley/images/tounge_smile.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/smiley/images/whatchutalkingabout_smile.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/smiley/images/whatchutalkingabout_smile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/smiley/images/wink_smile.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/smiley/images/wink_smile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/specialchar/dialogs/lang/_translationstatus.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/specialchar/dialogs/lang/af.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/specialchar/dialogs/lang/ar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/specialchar/dialogs/lang/az.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/specialchar/dialogs/lang/bg.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/specialchar/dialogs/lang/ca.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/specialchar/dialogs/lang/cs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/specialchar/dialogs/lang/cy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/specialchar/dialogs/lang/da.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/specialchar/dialogs/lang/de-ch.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/specialchar/dialogs/lang/de.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/specialchar/dialogs/lang/el.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/specialchar/dialogs/lang/en-au.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/specialchar/dialogs/lang/en-ca.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/specialchar/dialogs/lang/en-gb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/specialchar/dialogs/lang/en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/specialchar/dialogs/lang/eo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/specialchar/dialogs/lang/es-mx.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/specialchar/dialogs/lang/es.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/specialchar/dialogs/lang/et.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/specialchar/dialogs/lang/eu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/specialchar/dialogs/lang/fa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/specialchar/dialogs/lang/fi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/specialchar/dialogs/lang/fr-ca.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/specialchar/dialogs/lang/fr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/specialchar/dialogs/lang/gl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/specialchar/dialogs/lang/he.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/specialchar/dialogs/lang/hr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/specialchar/dialogs/lang/hu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/specialchar/dialogs/lang/id.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/specialchar/dialogs/lang/it.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/specialchar/dialogs/lang/ja.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/specialchar/dialogs/lang/km.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/specialchar/dialogs/lang/ko.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/specialchar/dialogs/lang/ku.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/specialchar/dialogs/lang/lt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/specialchar/dialogs/lang/lv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/specialchar/dialogs/lang/nb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/specialchar/dialogs/lang/nl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/specialchar/dialogs/lang/no.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/specialchar/dialogs/lang/oc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/specialchar/dialogs/lang/pl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/specialchar/dialogs/lang/pt-br.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/specialchar/dialogs/lang/pt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/specialchar/dialogs/lang/ro.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/specialchar/dialogs/lang/ru.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/specialchar/dialogs/lang/si.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/specialchar/dialogs/lang/sk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/specialchar/dialogs/lang/sl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/specialchar/dialogs/lang/sq.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/specialchar/dialogs/lang/sv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/specialchar/dialogs/lang/th.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/specialchar/dialogs/lang/tr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/specialchar/dialogs/lang/tt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/specialchar/dialogs/lang/ug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/specialchar/dialogs/lang/uk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/specialchar/dialogs/lang/vi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/specialchar/dialogs/lang/zh-cn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/specialchar/dialogs/lang/zh.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/specialchar/dialogs/specialchar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/table/dialogs/table.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/tableselection/styles/tableselection.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/tabletools/dialogs/tableCell.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/templates/dialogs/templates.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/templates/dialogs/templates.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/templates/templates/default.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/templates/templates/images/template1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/templates/templates/images/template2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/templates/templates/images/template3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/widget/images/handle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/wsc/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/wsc/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/wsc/dialogs/ciframe.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/wsc/dialogs/tmpFrameset.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/wsc/dialogs/wsc.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/wsc/dialogs/wsc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/wsc/dialogs/wsc_ie.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/plugins/wsc/skins/moono-lisa/wsc.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/samples/css/samples.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/samples/img/github-top.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/samples/img/header-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/samples/img/header-separator.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/samples/img/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/samples/img/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/samples/img/navigation-tip.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/samples/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/samples/js/sample.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/samples/js/sf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/samples/old/ajax.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/samples/old/api.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/samples/old/appendto.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/samples/old/assets/inlineall/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/samples/old/assets/outputxhtml/outputxhtml.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/samples/old/assets/posteddata.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/samples/old/assets/sample.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/samples/old/assets/uilanguages/languages.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/samples/old/datafiltering.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/samples/old/dialog/assets/my_dialog.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/samples/old/dialog/dialog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/samples/old/divreplace.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/samples/old/enterkey/enterkey.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/samples/old/htmlwriter/assets/outputforflash/outputforflash.fla" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/samples/old/htmlwriter/assets/outputforflash/outputforflash.swf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/samples/old/htmlwriter/assets/outputforflash/swfobject.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/samples/old/htmlwriter/outputforflash.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/samples/old/htmlwriter/outputhtml.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/samples/old/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/samples/old/inlineall.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/samples/old/inlinebycode.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/samples/old/inlinetextarea.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/samples/old/jquery.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/samples/old/magicline/magicline.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/samples/old/readonly.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/samples/old/replacebyclass.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/samples/old/replacebycode.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/samples/old/sample.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/samples/old/sample.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/samples/old/sample_posteddata.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/samples/old/tabindex.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/samples/old/toolbar/toolbar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/samples/old/uicolor.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/samples/old/uilanguages.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/samples/old/wysiwygarea/fullpage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/samples/old/xhtmlstyle.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/samples/toolbarconfigurator/css/fontello.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/samples/toolbarconfigurator/font/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/samples/toolbarconfigurator/font/config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/samples/toolbarconfigurator/font/fontello.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/samples/toolbarconfigurator/font/fontello.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/samples/toolbarconfigurator/font/fontello.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/samples/toolbarconfigurator/font/fontello.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/samples/toolbarconfigurator/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/samples/toolbarconfigurator/js/abstracttoolbarmodifier.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/samples/toolbarconfigurator/js/fulltoolbareditor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/samples/toolbarconfigurator/js/toolbarmodifier.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/samples/toolbarconfigurator/js/toolbartextmodifier.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/samples/toolbarconfigurator/lib/codemirror/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/samples/toolbarconfigurator/lib/codemirror/codemirror.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/samples/toolbarconfigurator/lib/codemirror/codemirror.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/samples/toolbarconfigurator/lib/codemirror/javascript.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/samples/toolbarconfigurator/lib/codemirror/neo.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/samples/toolbarconfigurator/lib/codemirror/show-hint.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/samples/toolbarconfigurator/lib/codemirror/show-hint.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/skins/moono-lisa/dialog.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/skins/moono-lisa/dialog_ie.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/skins/moono-lisa/dialog_ie8.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/skins/moono-lisa/dialog_iequirks.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/skins/moono-lisa/editor.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/skins/moono-lisa/editor_gecko.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/skins/moono-lisa/editor_ie.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/skins/moono-lisa/editor_ie8.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/skins/moono-lisa/editor_iequirks.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/skins/moono-lisa/icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/skins/moono-lisa/icons_hidpi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/skins/moono-lisa/images/arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/skins/moono-lisa/images/close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/skins/moono-lisa/images/hidpi/close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/skins/moono-lisa/images/hidpi/lock-open.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/skins/moono-lisa/images/hidpi/lock.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/skins/moono-lisa/images/hidpi/refresh.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/skins/moono-lisa/images/lock-open.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/skins/moono-lisa/images/lock.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/skins/moono-lisa/images/refresh.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/skins/moono-lisa/images/spinner.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/skins/moono-lisa/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/ckeditor/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/browse.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/cache/.htaccess" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/cache/base.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/cache/base.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/cache/theme_dark.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/cache/theme_dark.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/cache/theme_default.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/cache/theme_default.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/conf/.htaccess" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/conf/config.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/conf/upload.htaccess" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/core/.htaccess" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/core/autoload.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/core/bootstrap.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/core/class/browser.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/core/class/minifier.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/core/class/uploader.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/core/types/type_img.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/core/types/type_mime.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/css/000.base.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/css/999.agent.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/css/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/doc/.htaccess" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/doc/Changelog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/doc/LICENSE.GPL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/doc/LICENSE.LGPL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/integration/.htaccess" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/integration/BolmerCMS.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/integration/drupal.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/js/000._jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/js/002._jqueryui.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/js/006.jquery.uniform.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/js/010.jquery.fixes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/js/020.jquery.rightClick.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/js/021.jquery.taphold.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/js/029.jquery.agent.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/js/030.jquery.helper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/js/031.jquery.md5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/js/040.object.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/js/041.dialogs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/js/050.init.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/js/060.toolbar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/js/070.settings.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/js/080.files.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/js/090.folders.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/js/091.menus.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/js/091.viewImage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/js/100.clipboard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/js/110.dropUpload.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/js/120.misc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/js/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/js_localize.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/lang/.htaccess" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/lang/af.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/lang/bg.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/lang/ca.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/lang/cs.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/lang/da.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/lang/de.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/lang/el.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/lang/en.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/lang/es.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/lang/et.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/lang/fa.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/lang/fi.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/lang/fr.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/lang/he.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/lang/hu.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/lang/id.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/lang/it.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/lang/ja.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/lang/lt.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/lang/lv.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/lang/nl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/lang/no.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/lang/pl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/lang/pt-br.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/lang/pt.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/lang/ro.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/lang/ru.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/lang/sk.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/lang/sv.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/lang/tr.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/lang/uk.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/lang/vi.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/lang/zh-cn.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/lib/.htaccess" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/lib/class_fastImage.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/lib/class_image.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/lib/class_image_gd.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/lib/class_image_gmagick.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/lib/class_image_imagick.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/lib/class_zipFolder.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/lib/helper_dir.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/lib/helper_file.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/lib/helper_httpCache.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/lib/helper_path.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/lib/helper_text.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/01.ui.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/02.misc.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/css.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/bg_transparent.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/big/..png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/big/.image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/big/avi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/big/bat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/big/bmp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/big/bz2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/big/ccd.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/big/cgi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/big/com.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/big/csh.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/big/cue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/big/deb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/big/dll.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/big/doc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/big/docx.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/big/exe.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/big/fla.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/big/flv.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/big/fon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/big/gif.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/big/gz.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/big/htm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/big/html.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/big/ini.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/big/iso.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/big/jar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/big/java.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/big/jpeg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/big/jpg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/big/js.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/big/mds.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/big/mdx.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/big/mid.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/big/midi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/big/mkv.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/big/mov.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/big/mp3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/big/mp4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/big/mpeg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/big/mpg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/big/nfo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/big/nrg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/big/ogg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/big/pdf.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/big/php.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/big/phps.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/big/pl.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/big/pm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/big/png.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/big/ppt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/big/pptx.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/big/psd.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/big/qt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/big/rar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/big/rpm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/big/rtf.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/big/sh.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/big/sql.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/big/srt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/big/sub.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/big/swf.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/big/tgz.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/big/tif.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/big/tiff.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/big/torrent.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/big/ttf.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/big/txt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/big/wav.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/big/wma.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/big/xls.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/big/xlsx.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/big/zip.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/small/..png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/small/.image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/small/avi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/small/bat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/small/bmp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/small/bz2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/small/ccd.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/small/cgi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/small/com.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/small/csh.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/small/cue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/small/deb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/small/dll.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/small/doc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/small/docx.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/small/exe.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/small/fla.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/small/flv.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/small/fon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/small/gif.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/small/gz.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/small/htm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/small/html.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/small/ini.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/small/iso.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/small/jar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/small/java.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/small/jpeg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/small/jpg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/small/js.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/small/mds.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/small/mdx.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/small/mid.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/small/midi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/small/mkv.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/small/mov.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/small/mp3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/small/mp4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/small/mpeg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/small/mpg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/small/nfo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/small/nrg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/small/ogg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/small/pdf.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/small/php.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/small/phps.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/small/pl.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/small/pm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/small/png.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/small/ppt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/small/pptx.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/small/psd.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/small/qt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/small/rar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/small/rpm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/small/rtf.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/small/sh.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/small/sql.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/small/srt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/small/sub.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/small/swf.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/small/tgz.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/small/tif.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/small/tiff.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/small/torrent.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/small/ttf.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/small/txt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/small/wav.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/small/wma.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/small/xls.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/small/xlsx.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/files/small/zip.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/icons/about.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/icons/clipboard-add.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/icons/clipboard-clear.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/icons/clipboard.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/icons/copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/icons/delete.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/icons/download.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/icons/folder-new.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/icons/maximize.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/icons/move.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/icons/refresh.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/icons/rename.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/icons/select.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/icons/settings.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/icons/upload.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/icons/view.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/kcf_logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/tree/denied.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/tree/folder.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/tree/minus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/tree/plus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/ui-icons_black.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/ui-icons_grey.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/img/ui-icons_white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/init.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/dark/js.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/01.ui.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/02.misc.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/css.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/bg_transparent.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/big/..png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/big/.image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/big/avi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/big/bat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/big/bmp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/big/bz2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/big/ccd.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/big/cgi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/big/com.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/big/csh.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/big/cue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/big/deb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/big/dll.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/big/doc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/big/docx.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/big/exe.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/big/fla.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/big/flv.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/big/fon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/big/gif.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/big/gz.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/big/htm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/big/html.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/big/ini.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/big/iso.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/big/jar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/big/java.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/big/jpeg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/big/jpg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/big/js.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/big/mds.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/big/mdx.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/big/mid.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/big/midi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/big/mkv.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/big/mov.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/big/mp3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/big/mp4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/big/mpeg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/big/mpg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/big/nfo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/big/nrg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/big/ogg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/big/pdf.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/big/php.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/big/phps.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/big/pl.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/big/pm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/big/png.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/big/ppt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/big/pptx.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/big/psd.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/big/qt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/big/rar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/big/rpm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/big/rtf.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/big/sh.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/big/sql.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/big/srt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/big/sub.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/big/swf.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/big/tgz.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/big/tif.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/big/tiff.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/big/torrent.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/big/ttf.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/big/txt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/big/wav.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/big/wma.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/big/xls.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/big/xlsx.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/big/zip.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/small/..png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/small/.image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/small/avi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/small/bat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/small/bmp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/small/bz2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/small/ccd.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/small/cgi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/small/com.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/small/csh.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/small/cue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/small/deb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/small/dll.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/small/doc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/small/docx.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/small/exe.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/small/fla.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/small/flv.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/small/fon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/small/gif.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/small/gz.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/small/htm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/small/html.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/small/ini.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/small/iso.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/small/jar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/small/java.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/small/jpeg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/small/jpg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/small/js.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/small/mds.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/small/mdx.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/small/mid.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/small/midi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/small/mkv.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/small/mov.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/small/mp3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/small/mp4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/small/mpeg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/small/mpg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/small/nfo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/small/nrg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/small/ogg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/small/pdf.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/small/php.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/small/phps.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/small/pl.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/small/pm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/small/png.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/small/ppt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/small/pptx.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/small/psd.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/small/qt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/small/rar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/small/rpm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/small/rtf.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/small/sh.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/small/sql.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/small/srt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/small/sub.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/small/swf.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/small/tgz.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/small/tif.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/small/tiff.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/small/torrent.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/small/ttf.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/small/txt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/small/wav.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/small/wma.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/small/xls.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/small/xlsx.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/files/small/zip.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/icons/about.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/icons/clipboard-add.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/icons/clipboard-clear.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/icons/clipboard.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/icons/copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/icons/delete.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/icons/download.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/icons/folder-new.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/icons/maximize.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/icons/move.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/icons/refresh.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/icons/rename.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/icons/select.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/icons/settings.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/icons/upload.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/icons/view.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/kcf_logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/tree/denied.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/tree/folder.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/tree/minus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/tree/plus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/ui-icons_black.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/img/ui-icons_white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/init.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/themes/default/js.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/tpl/.htaccess" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/tpl/tpl_browser.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/tpl/tpl_css.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/tpl/tpl_javascript.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/kcfinder/upload.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/couture.php" beforeDir="false" afterPath="$PROJECT_DIR$/couture.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/contact.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/crochet.php" beforeDir="false" afterPath="$PROJECT_DIR$/crochet.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/enfant.php" beforeDir="false" afterPath="$PROJECT_DIR$/enfant.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forget.php" beforeDir="false" afterPath="$PROJECT_DIR$/forget.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/includes/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/includes.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/includes.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/register.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reset.php" beforeDir="false" afterPath="$PROJECT_DIR$/reset.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin_footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin_footer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/admin_header.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin_header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/footer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/prefooter.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/prefooter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/slider.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/slider.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tricot.php" beforeDir="false" afterPath="$PROJECT_DIR$/tricot.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -193,13 +1009,14 @@
     <session id="-979551706">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="12" />
+          <entry key="project.closed" value="13" />
           <entry key="project.open.time.0" value="3" />
           <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.10" value="3" />
           <entry key="project.open.time.11" value="2" />
-          <entry key="project.open.time.12" value="1" />
-          <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.12" value="2" />
+          <entry key="project.open.time.15" value="2" />
+          <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.18" value="2" />
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.22" value="1" />
@@ -210,58 +1027,59 @@
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.5" value="2" />
           <entry key="project.open.time.6" value="3" />
-          <entry key="project.open.time.7" value="3" />
-          <entry key="project.open.time.8" value="5" />
-          <entry key="project.opened" value="35" />
+          <entry key="project.open.time.7" value="4" />
+          <entry key="project.open.time.8" value="7" />
+          <entry key="project.opened" value="41" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="10" />
-          <entry key="htaccess" value="5" />
+          <entry key="css" value="12" />
+          <entry key="htaccess" value="6" />
           <entry key="html" value="2" />
           <entry key="jpg" value="1" />
-          <entry key="js" value="28" />
+          <entry key="js" value="35" />
           <entry key="json" value="1" />
-          <entry key="php" value="327" />
+          <entry key="php" value="415" />
+          <entry key="png" value="1" />
           <entry key="rb" value="2" />
-          <entry key="scss" value="52" />
+          <entry key="scss" value="90" />
           <entry key="sql" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="10" />
+          <entry key="CSS" value="12" />
           <entry key="HTML" value="2" />
-          <entry key="Image" value="1" />
+          <entry key="Image" value="2" />
           <entry key="JSON" value="1" />
-          <entry key="JavaScript" value="28" />
-          <entry key="PHP" value="327" />
-          <entry key="PLAIN_TEXT" value="2" />
-          <entry key="SCSS" value="52" />
+          <entry key="JavaScript" value="35" />
+          <entry key="PHP" value="415" />
+          <entry key="PLAIN_TEXT" value="3" />
+          <entry key="SCSS" value="90" />
           <entry key="SQL" value="1" />
           <entry key="htaccess" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="2073" />
+          <entry key="css" value="2080" />
           <entry key="htaccess" value="53" />
           <entry key="html" value="25" />
-          <entry key="js" value="667" />
-          <entry key="php" value="19987" />
+          <entry key="js" value="720" />
+          <entry key="php" value="21276" />
           <entry key="rb" value="37" />
-          <entry key="scss" value="6471" />
+          <entry key="scss" value="7034" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="2073" />
+          <entry key="CSS" value="2080" />
           <entry key="HTML" value="25" />
-          <entry key="JavaScript" value="667" />
-          <entry key="PHP" value="19667" />
+          <entry key="JavaScript" value="720" />
+          <entry key="PHP" value="20956" />
           <entry key="PLAIN_TEXT" value="37" />
-          <entry key="SCSS" value="6471" />
+          <entry key="SCSS" value="7034" />
           <entry key="SQL" value="320" />
           <entry key="htaccess" value="53" />
         </counts>
@@ -269,106 +1087,14 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.71815383">
+    <splitter split-orientation="horizontal" split-proportion="0.49331552">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/couture.php">
+            <entry file="file://$PROJECT_DIR$/assets/css/scss/main.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="115">
-                  <caret line="5" column="10" selection-start-line="5" selection-end-line="11" selection-end-column="26" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/index.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="644">
-                  <caret line="53" column="45" selection-start-line="53" selection-start-column="45" selection-end-line="53" selection-end-column="45" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/forget.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="276">
-                  <caret line="12" column="74" selection-start-line="12" selection-start-column="74" selection-end-line="12" selection-end-column="74" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/assets/js/kcfinder/upload.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="345">
-                  <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/login.php">
-              <provider selected="true" editor-type-id="text-editor" />
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/logout.php">
-              <provider selected="true" editor-type-id="text-editor" />
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/reset.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-161" />
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/register.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-483" />
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/confirm.php">
-              <provider selected="true" editor-type-id="text-editor" />
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/contact.php">
-              <provider selected="true" editor-type-id="text-editor" />
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/assets/css/scss/_header.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="161">
-                  <caret line="151" column="43" selection-start-line="151" selection-start-column="43" selection-end-line="151" selection-end-column="43" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/assets/css/scss/_footer.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="266">
-                  <caret line="146" column="20" selection-start-line="146" selection-start-column="20" selection-end-line="146" selection-end-column="20" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/templates/slider.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="782">
-                  <caret line="34" column="70" selection-start-line="34" selection-start-column="70" selection-end-line="34" selection-end-column="70" />
+                <state relative-caret-position="497">
+                  <caret line="30" column="16" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
                 </state>
               </provider>
             </entry>
@@ -376,26 +1102,102 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/assets/css/scss/_couture.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="276">
-                  <caret line="192" column="23" selection-start-line="192" selection-start-column="23" selection-end-line="192" selection-end-column="23" />
+                <state relative-caret-position="4232">
+                  <caret line="184" column="21" selection-start-line="184" selection-start-column="21" selection-end-line="184" selection-end-column="21" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/assets/css/scss/_slider.scss">
+            <entry file="file://$PROJECT_DIR$/assets/css/scss/_crochet.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="230">
-                  <caret line="76" column="25" selection-start-line="76" selection-start-column="21" selection-end-line="76" selection-end-column="25" />
+                <state relative-caret-position="4232">
+                  <caret line="184" column="21" selection-start-line="184" selection-start-column="21" selection-end-line="184" selection-end-column="21" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/assets/css/scss/_mixins.scss">
+            <entry file="file://$PROJECT_DIR$/assets/css/scss/_tricot.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="207">
-                  <caret line="9" selection-start-line="9" selection-end-line="9" />
+                <state relative-caret-position="4232">
+                  <caret line="184" column="21" selection-start-line="184" selection-start-column="21" selection-end-line="184" selection-end-column="21" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/assets/css/scss/_enfant.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="253">
+                  <caret line="191" column="18" lean-forward="true" selection-end-line="241" selection-end-column="52" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/tricot.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="598">
+                  <caret line="26" column="33" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/enfant.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="598">
+                  <caret line="26" column="37" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/crochet.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="115">
+                  <caret line="8" column="35" lean-forward="true" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/couture.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="345">
+                  <caret line="15" column="2" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/admin/article_edit.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="679">
+                  <caret line="220" column="51" selection-start-line="220" selection-start-column="51" selection-end-line="220" selection-end-column="51" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/contact.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="46">
+                  <caret line="108" column="26" selection-start-line="108" selection-start-column="26" selection-end-line="108" selection-end-column="26" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/assets/css/scss/_contact.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="23">
+                  <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
                 </state>
               </provider>
             </entry>
@@ -414,8 +1216,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>$id</find>
-      <find>$categories_list</find>
       <find>$imageId</find>
       <find>imageN</find>
       <find>app</find>
@@ -444,6 +1244,8 @@
       <find>border</find>
       <find>map</find>
       <find>container a</find>
+      <find>\/\*\*\n \* \@license Copyright \(c\) 2003\-2018\, CKSource \- Frederico Knabben\. All rights reserved\.\n \* For licensing\, see https\:\/\/ckeditor\.com\/legal\/ckeditor\-oss\-license\n \*\/\n\nCKEDITOR\.editorConfig \= function\( config \) \{\n\	\/\/ Define changes to default configuration here\. For example\:\n\	\/\/ config\.language \= \'fr\'\;\n\	\/\/ config\.uiColor \= \'\#AADC6E\'\;\n    config\.filebrowserBrowseUrl \= \'\.\.\/assets\/js\/kcfinder\/browse\.php\?opener\=ckeditor\&amp;type\=files\'\;\n    config\.filebrowserImageBrowseUrl \= \'\.\.\/assets\/js\/kcfinder\/browse\.php\?opener\=ckeditor\&amp;type\=images\'\;\n    config\.filebrowserFlashBrowseUrl \= \'\.\.\/assets\/js\/kcfinder\/browse\.php\?opener\=ckeditor\&amp;type\=flash\'\;\n    config\.filebrowserUploadUrl \= \'\.\.\/assets\/js\/kcfinder\/upload\.php\?opener\=ckeditor\&amp;type\=files\'\;\n    config\.filebrowserImageUploadUrl \= \'\.\.\/assets\/js\/kcfinder\/upload\.php\?opener\=ckeditor\&amp;type\=images\'\;\n    config\.filebrowserFlashUploadUrl \= \'\.\.\/assets\/js\/kcfinder\/upload\.php\?opener\=ckeditor\&amp;type\=flash\'\;\n\}\;\n</find>
+      <find>resultok</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -455,57 +1257,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/admin/register_admin.php" />
-        <option value="$PROJECT_DIR$/admin/confirm_admin.php" />
-        <option value="$PROJECT_DIR$/admin/logout_admin.php" />
-        <option value="$PROJECT_DIR$/admin/login_admin.php" />
-        <option value="$PROJECT_DIR$/reset.php" />
-        <option value="$PROJECT_DIR$/view.php" />
-        <option value="$PROJECT_DIR$/assets/css/scss/_index.scss" />
-        <option value="$PROJECT_DIR$/login.php" />
-        <option value="$PROJECT_DIR$/assets/js/kcfinder/conf/config.php" />
-        <option value="$PROJECT_DIR$/assets/css/scss/main.scss" />
-        <option value="$PROJECT_DIR$/assets/js/grid/AnimOnScroll.js" />
-        <option value="$PROJECT_DIR$/index3.html" />
-        <option value="$PROJECT_DIR$/index3.php" />
-        <option value="$PROJECT_DIR$/templates/slider.php" />
+        <option value="$PROJECT_DIR$/admin/index.php" />
+        <option value="$PROJECT_DIR$/admin/material_edit.php" />
+        <option value="$PROJECT_DIR$/assets/js/ckeditor/config.js" />
+        <option value="$PROJECT_DIR$/assets/js/kcfinder/upload.php" />
+        <option value="$PROJECT_DIR$/test.php" />
+        <option value="$PROJECT_DIR$/assets/kcfinder/conf/config.php" />
         <option value="$PROJECT_DIR$/assets/css/scss/_default.scss" />
-        <option value="$PROJECT_DIR$/templates/header.php" />
+        <option value="$PROJECT_DIR$/assets/ckeditor/contents.css" />
+        <option value="$PROJECT_DIR$/assets/ckeditor/config.js" />
+        <option value="$PROJECT_DIR$/admin/couture_admin.php" />
+        <option value="$PROJECT_DIR$/admin/category.php" />
+        <option value="$PROJECT_DIR$/admin/difficulty.php" />
+        <option value="$PROJECT_DIR$/admin/enfant_admin.php" />
+        <option value="$PROJECT_DIR$/admin/material.php" />
+        <option value="$PROJECT_DIR$/admin/tricot_admin.php" />
+        <option value="$PROJECT_DIR$/admin/crochet_admin.php" />
+        <option value="$PROJECT_DIR$/assets/css/scss/_footer.scss" />
         <option value="$PROJECT_DIR$/templates/footer.php" />
-        <option value="$PROJECT_DIR$/assets/css/scss/_slider.scss" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/includes/functions.php" />
+        <option value="$PROJECT_DIR$/admin/article.php" />
+        <option value="$PROJECT_DIR$/admin/article_edit.php" />
+        <option value="$PROJECT_DIR$/assets/js/main.js" />
+        <option value="$PROJECT_DIR$/templates/header.php" />
+        <option value="$PROJECT_DIR$/templates/admin_footer.php" />
+        <option value="$PROJECT_DIR$/templates/admin_header.php" />
+        <option value="$PROJECT_DIR$/article.php" />
+        <option value="$PROJECT_DIR$/assets/css/scss/_reset.scss" />
+        <option value="$PROJECT_DIR$/assets/css/scss/_article.scss" />
+        <option value="$PROJECT_DIR$/assets/css/scss/_index.scss" />
+        <option value="$PROJECT_DIR$/account.php" />
+        <option value="$PROJECT_DIR$/login.php" />
+        <option value="$PROJECT_DIR$/register.php" />
+        <option value="$PROJECT_DIR$/reset.php" />
+        <option value="$PROJECT_DIR$/forget.php" />
+        <option value="$PROJECT_DIR$/assets/css/scss/_account.scss" />
+        <option value="$PROJECT_DIR$/assets/css/scss/_forget.scss" />
+        <option value="$PROJECT_DIR$/assets/css/scss/_register.scss" />
+        <option value="$PROJECT_DIR$/assets/css/scss/_login.scss" />
+        <option value="$PROJECT_DIR$/couture.php" />
+        <option value="$PROJECT_DIR$/assets/css/scss/_page_categorys.scss" />
+        <option value="$PROJECT_DIR$/assets/css/scss/_crochet.scss" />
         <option value="$PROJECT_DIR$/assets/css/scss/_couture.scss" />
-        <option value="$PROJECT_DIR$/admin/tricot.php" />
+        <option value="$PROJECT_DIR$/assets/css/scss/_tricot.scss" />
+        <option value="$PROJECT_DIR$/assets/css/scss/_enfant.scss" />
         <option value="$PROJECT_DIR$/tricot.php" />
         <option value="$PROJECT_DIR$/enfant.php" />
         <option value="$PROJECT_DIR$/crochet.php" />
-        <option value="$PROJECT_DIR$/assets/css/scss/_header.scss" />
-        <option value="$PROJECT_DIR$/article.php" />
-        <option value="$PROJECT_DIR$/couture.php" />
-        <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/assets/js/main.js" />
-        <option value="$PROJECT_DIR$/templates/prefooter.php" />
-        <option value="$PROJECT_DIR$/assets/css/scss/_footer.scss" />
-        <option value="$PROJECT_DIR$/.htaccess" />
-        <option value="$PROJECT_DIR$/includes/auth.php" />
-        <option value="$PROJECT_DIR$/includes/includes.php" />
-        <option value="$PROJECT_DIR$/includes/functions.php" />
-        <option value="$PROJECT_DIR$/templates/admin_header.php" />
-        <option value="$PROJECT_DIR$/templates/admin_footer.php" />
-        <option value="$PROJECT_DIR$/admin/article.php" />
-        <option value="$PROJECT_DIR$/admin/article_edit.php" />
-        <option value="$PROJECT_DIR$/admin/category.php" />
-        <option value="$PROJECT_DIR$/admin/category_edit.php" />
-        <option value="$PROJECT_DIR$/admin/couture_admin.php" />
-        <option value="$PROJECT_DIR$/admin/crochet_admin.php" />
-        <option value="$PROJECT_DIR$/admin/difficulty.php" />
-        <option value="$PROJECT_DIR$/admin/difficulty_edit.php" />
-        <option value="$PROJECT_DIR$/admin/enfant_admin.php" />
-        <option value="$PROJECT_DIR$/admin/index.php" />
-        <option value="$PROJECT_DIR$/admin/material.php" />
-        <option value="$PROJECT_DIR$/admin/material_edit.php" />
-        <option value="$PROJECT_DIR$/admin/tricot_admin.php" />
-        <option value="$PROJECT_DIR$/forget.php" />
-        <option value="$PROJECT_DIR$/assets/js/kcfinder/upload.php" />
+        <option value="$PROJECT_DIR$/assets/css/scss/main.scss" />
+        <option value="$PROJECT_DIR$/assets/css/scss/_contact.scss" />
+        <option value="$PROJECT_DIR$/contact.php" />
       </list>
     </option>
   </component>
@@ -521,9 +1323,9 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="73" />
-    <option name="y" value="50" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="74" />
+    <option name="y" value="42" />
     <option name="width" value="1801" />
     <option name="height" value="1007" />
   </component>
@@ -533,7 +1335,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -555,34 +1356,30 @@
               <item name="project_X" type="b2602c69:ProjectViewProjectNode" />
               <item name="project_X" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project_X" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project_X" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="scss" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="project_X" type="b2602c69:ProjectViewProjectNode" />
               <item name="project_X" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="ckeditor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project_X" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project_X" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="kcfinder" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project_X" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project_X" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="kcfinder" type="462c0819:PsiDirectoryNode" />
-              <item name="upload" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="project_X" type="b2602c69:ProjectViewProjectNode" />
               <item name="project_X" type="462c0819:PsiDirectoryNode" />
               <item name="includes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project_X" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project_X" type="462c0819:PsiDirectoryNode" />
+              <item name="PHPMailer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="project_X" type="b2602c69:ProjectViewProjectNode" />
@@ -593,6 +1390,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -681,20 +1479,25 @@
       <workItem from="1536305439341" duration="26096000" />
       <workItem from="1536397336214" duration="21404000" />
       <workItem from="1536479339253" duration="28504000" />
-      <workItem from="1536563909278" duration="28187000" />
+      <workItem from="1536563909278" duration="33734000" />
+      <workItem from="1536650601483" duration="15616000" />
+      <workItem from="1536735768688" duration="12622000" />
+      <workItem from="1536767182741" duration="4478000" />
+      <workItem from="1536823492484" duration="1960000" />
+      <workItem from="1536838422929" duration="7527000" />
+      <workItem from="1536846293561" duration="5142000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="429713000" />
+    <option name="totallyTimeSpent" value="482605000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
-    <editor active="true" />
+    <frame x="74" y="42" width="1801" height="1007" extended-state="0" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.1337953" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.14072372" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -705,7 +1508,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.0845987" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.17067583" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.329718" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -715,9 +1518,9 @@
     <layout-to-restore>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.15778251" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.12953092" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -726,12 +1529,12 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.19414316" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.16160521" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.329718" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.09808102" />
+      <window_info anchor="right" id="Database" order="3" weight="0.09808102" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -741,17 +1544,25 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/slider.php">
+    <entry file="file://$PROJECT_DIR$/test.php" />
+    <entry file="file://$PROJECT_DIR$/admin/difficulty_edit.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="34" column="70" selection-start-line="34" selection-start-column="70" selection-end-line="34" selection-end-column="70" />
+        <state>
+          <caret column="5" selection-start-column="5" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/scss/_slider.scss">
+    <entry file="file://$PROJECT_DIR$/assets/ckeditor/contents.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="76" column="25" selection-start-line="76" selection-start-column="21" selection-end-line="76" selection-end-column="25" />
+        <state relative-caret-position="207">
+          <caret line="9" column="131" selection-start-line="9" selection-start-column="131" selection-end-line="9" selection-end-column="131" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/scss/_footer.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -762,306 +1573,279 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/header.php">
+    <entry file="file://$PROJECT_DIR$/assets/css/scss/_slider.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-759">
-          <caret line="36" column="36" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="36" />
+        <state relative-caret-position="679">
+          <caret line="76" column="25" selection-start-line="76" selection-start-column="21" selection-end-line="76" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/tricot.php">
+    <entry file="file://$PROJECT_DIR$/templates/slider.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="17" column="16" lean-forward="true" selection-end-line="43" selection-end-column="40" />
+        <state relative-caret-position="679">
+          <caret line="34" column="70" selection-start-line="34" selection-start-column="70" selection-end-line="34" selection-end-column="70" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ricot.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/enfant.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="20" column="60" selection-start-line="20" selection-start-column="60" selection-end-line="20" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crochet.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="20" column="56" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tricot.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="989">
-          <caret line="43" column="40" selection-start-line="43" selection-start-column="40" selection-end-line="43" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index3.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="28" column="36" selection-end-line="138" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-161">
-          <caret line="5" column="11" selection-end-line="33" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/scss/_couture.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="192" column="23" selection-start-line="192" selection-start-column="23" selection-end-line="192" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/scss/_header.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="151" column="43" selection-start-line="151" selection-start-column="43" selection-end-line="151" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="42" column="41" selection-start-line="42" selection-start-column="41" selection-end-line="42" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/prefooter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="122" selection-start-line="5" selection-start-column="122" selection-end-line="5" selection-end-column="122" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/scss/_footer.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="146" column="20" selection-start-line="146" selection-start-column="20" selection-end-line="146" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/article.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="34" column="35" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/constants.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/session.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="5" selection-start-column="5" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/auth.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/includes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/footer_admin.php">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/footer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="44" column="180" lean-forward="true" selection-start-line="44" selection-end-line="45" selection-end-column="202" />
+        <state relative-caret-position="874">
+          <caret line="38" column="14" selection-start-line="37" selection-end-line="39" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/admin_header.php">
+    <entry file="file://$PROJECT_DIR$/templates/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="636">
-          <caret line="55" column="62" lean-forward="true" selection-start-line="55" selection-start-column="62" selection-end-line="55" selection-end-column="62" />
-          <folding>
-            <element signature="n#style#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/article.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/article_edit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="644">
-          <caret line="223" column="51" selection-start-line="223" selection-start-column="51" selection-end-line="223" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/category.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="56" column="51" selection-start-line="56" selection-start-column="51" selection-end-line="56" selection-end-column="51" />
+        <state relative-caret-position="184">
+          <caret line="23" column="215" selection-start-line="23" selection-start-column="215" selection-end-line="23" selection-end-column="215" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/admin_footer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
-          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/category_edit.php">
+    <entry file="file://$PROJECT_DIR$/admin/article.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="658">
-          <caret line="65" column="51" selection-start-line="65" selection-start-column="51" selection-end-line="65" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/couture_admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="644">
-          <caret line="63" column="51" selection-start-line="63" selection-start-column="51" selection-end-line="63" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/crochet_admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="644">
-          <caret line="59" column="51" selection-start-line="59" selection-start-column="51" selection-end-line="59" selection-end-column="51" />
+        <state relative-caret-position="1334">
+          <caret line="58" selection-start-line="58" selection-end-line="58" selection-end-column="51" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/difficulty.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="644">
-          <caret line="50" column="51" selection-start-line="50" selection-start-column="51" selection-end-line="50" selection-end-column="51" />
+        <state relative-caret-position="207">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/difficulty_edit.php">
+    <entry file="file://$PROJECT_DIR$/admin/category.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="658">
-          <caret line="49" column="51" selection-start-line="49" selection-start-column="51" selection-end-line="49" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/enfant_admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="644">
-          <caret line="59" column="51" selection-start-line="59" selection-start-column="51" selection-end-line="59" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="51" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/material.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="51" column="51" selection-start-line="51" selection-start-column="51" selection-end-line="51" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/material_edit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="658">
-          <caret line="53" column="51" selection-start-line="53" selection-start-column="51" selection-end-line="53" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/tricot_admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="644">
-          <caret line="59" column="51" selection-start-line="59" selection-start-column="51" selection-end-line="59" selection-end-column="51" />
+        <state relative-caret-position="207">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/includes/functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1909">
-          <caret line="85" lean-forward="true" selection-start-line="85" selection-end-line="85" />
+        <state relative-caret-position="161">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="54" column="12" selection-start-line="54" selection-start-column="12" selection-end-line="54" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/category_edit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-908" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/article.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="518">
+          <caret line="47" column="122" selection-start-line="47" selection-start-column="122" selection-end-line="47" selection-end-column="122" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/couture_admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/admin_header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="4" column="112" selection-start-line="4" selection-start-column="89" selection-end-line="4" selection-end-column="113" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/scss/_index.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/scss/_default.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/scss/_header.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="851">
+          <caret line="151" column="43" selection-start-line="151" selection-start-column="43" selection-end-line="151" selection-end-column="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/account.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contact.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/couture.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="10" selection-start-line="5" selection-end-line="11" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reset.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-161" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logout.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="644">
-          <caret line="53" column="45" selection-start-line="53" selection-start-column="45" selection-end-line="53" selection-end-column="45" />
+        <state relative-caret-position="414">
+          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/confirm.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/register.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-483" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/forget.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="74" selection-start-line="12" selection-start-column="74" selection-end-line="12" selection-end-column="74" />
+        <state relative-caret-position="506">
+          <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/kcfinder/upload.php">
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="587">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="30" column="33" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logout.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="51" column="33" selection-start-line="51" selection-start-column="33" selection-end-line="51" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/scss/_home.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-552" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/scss/_account.scss" />
+    <entry file="file://$PROJECT_DIR$/reset.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="736">
+          <caret line="32" column="33" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/scss/_reset.scss" />
+    <entry file="file://$PROJECT_DIR$/assets/css/scss/_forget.scss" />
+    <entry file="file://$PROJECT_DIR$/assets/css/scss/_article.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="736">
+          <caret line="32" column="23" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/scss/_register.scss" />
+    <entry file="file://$PROJECT_DIR$/assets/css/scss/_page_categorys.scss" />
+    <entry file="file://$PROJECT_DIR$/assets/css/scss/_login.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/scss/_couture.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4232">
+          <caret line="184" column="21" selection-start-line="184" selection-start-column="21" selection-end-line="184" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/scss/_crochet.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4232">
+          <caret line="184" column="21" selection-start-line="184" selection-start-column="21" selection-end-line="184" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/scss/_tricot.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4232">
+          <caret line="184" column="21" selection-start-line="184" selection-start-column="21" selection-end-line="184" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/couture.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
-          <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+          <caret line="15" column="2" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/article_edit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="679">
+          <caret line="220" column="51" selection-start-line="220" selection-start-column="51" selection-end-line="220" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHPMailer/Exception.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="36" column="21" lean-forward="true" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/enfant.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="26" column="37" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crochet.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="8" column="35" lean-forward="true" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/scss/_enfant.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="191" column="18" lean-forward="true" selection-end-line="241" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/scss/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="497">
+          <caret line="30" column="16" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tricot.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="26" column="33" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/scss/_contact.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contact.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="108" column="26" selection-start-line="108" selection-start-column="26" selection-end-line="108" selection-end-column="26" />
         </state>
       </provider>
     </entry>

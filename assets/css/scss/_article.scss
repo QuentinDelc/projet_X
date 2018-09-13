@@ -1,0 +1,44 @@
+.container.article {
+  h1 {
+    color: #000;
+  }
+
+  h2,
+  h3 {
+    font-weight: bold;
+  }
+
+  img {
+    clear: both;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  ul {
+    list-style: inside;
+    margin-left: 3%;
+  }
+
+  .pdf {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    a.download-pdf {
+      text-decoration: none;
+      color: #fff;
+      background-color: $button-color;
+      border: 1px solid $button-color;
+      border-radius: 12px;
+      padding: 10px;
+
+      &:hover,
+      &focus {
+        color: $button-color;
+        background-color: #fff;
+        transition: .3s ease-in all;
+      }
+    }
+  }
+}

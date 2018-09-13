@@ -42,13 +42,14 @@ $('.owl-carousel').owlCarousel({
     fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
 
+
 /*************** STICKY MENU ******************/
-window.onscroll = function() {myFunction()};
+window.onscroll = function() {stickyMenu()};
 
 var navbar = document.getElementById("navbar");
 var sticky = navbar.offsetTop;
 
-function myFunction() {
+function stickyMenu() {
     if (window.pageYOffset >= sticky) {
         navbar.classList.add("sticky")
     } else {

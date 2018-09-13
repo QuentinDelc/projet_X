@@ -130,34 +130,39 @@ body {
 }
 
 /* line 22, scss/_default.scss */
+span {
+  font-family: "RobotoSlab-Regular", sans-serif;
+}
+
+/* line 26, scss/_default.scss */
 .container {
   max-width: 1170px;
   margin: 0 auto;
 }
 
-/* line 27, scss/_default.scss */
+/* line 31, scss/_default.scss */
 .grid-container {
   max-width: 1170px;
   margin: 0 auto;
 }
 
-/* line 32, scss/_default.scss */
+/* line 36, scss/_default.scss */
 .form-control:focus {
   box-shadow: none;
   border: 2px solid #654EA3;
 }
 
-/* line 37, scss/_default.scss */
+/* line 41, scss/_default.scss */
 .primary:focus {
   box-shadow: none;
 }
 
-/* line 41, scss/_default.scss */
+/* line 45, scss/_default.scss */
 .btn:focus {
   box-shadow: none;
 }
 
-/* line 45, scss/_default.scss */
+/* line 49, scss/_default.scss */
 a {
   text-decoration: none;
 }
@@ -893,49 +898,48 @@ header .separate-nav .navbar #navbarSupportedContent .nav-item a:hover:before, h
 /* line 2, scss/_footer.scss */
 .footer-width {
   position: relative;
-  height: 100%;
   border-top: 1px dashed #D27497;
 }
-/* line 7, scss/_footer.scss */
+/* line 6, scss/_footer.scss */
 .footer-width .align-items-center {
   margin-top: 20px;
   margin-bottom: 20px;
   justify-content: space-between;
 }
 @media (max-width: 990px) {
-  /* line 12, scss/_footer.scss */
+  /* line 11, scss/_footer.scss */
   .footer-width .align-items-center .col-md-6 {
     text-align: center;
   }
 }
-/* line 18, scss/_footer.scss */
+/* line 17, scss/_footer.scss */
 .footer-width .align-items-center .logo-footer {
   width: 200px;
 }
 @media (max-width: 990px) {
-  /* line 18, scss/_footer.scss */
+  /* line 17, scss/_footer.scss */
   .footer-width .align-items-center .logo-footer {
     text-align: center;
     margin-bottom: 20px;
   }
 }
-/* line 26, scss/_footer.scss */
+/* line 25, scss/_footer.scss */
 .footer-width .align-items-center .logo-footer .title-logo {
   color: #654EA3;
 }
 @media (max-width: 990px) {
-  /* line 26, scss/_footer.scss */
+  /* line 25, scss/_footer.scss */
   .footer-width .align-items-center .logo-footer .title-logo {
     text-align: center;
   }
 }
 @media (max-width: 768px) {
-  /* line 35, scss/_footer.scss */
+  /* line 34, scss/_footer.scss */
   .footer-width .align-items-center .footer {
     margin-bottom: 30px;
   }
 }
-/* line 41, scss/_footer.scss */
+/* line 40, scss/_footer.scss */
 .footer-width .align-items-center h2 {
   position: relative;
   text-transform: uppercase;
@@ -960,12 +964,12 @@ header .separate-nav .navbar #navbarSupportedContent .nav-item a:hover:before, h
       }*/
 }
 @media (max-width: 768px) {
-  /* line 41, scss/_footer.scss */
+  /* line 40, scss/_footer.scss */
   .footer-width .align-items-center h2 {
     margin-bottom: 10px;
   }
 }
-/* line 69, scss/_footer.scss */
+/* line 68, scss/_footer.scss */
 .footer-width .align-items-center h2.follow::before {
   position: absolute;
   content: "";
@@ -980,36 +984,36 @@ header .separate-nav .navbar #navbarSupportedContent .nav-item a:hover:before, h
     left: 168px;
   }*/
 }
-/* line 86, scss/_footer.scss */
+/* line 85, scss/_footer.scss */
 .footer-width .align-items-center ul {
   padding-left: 10px;
 }
-/* line 90, scss/_footer.scss */
+/* line 89, scss/_footer.scss */
 .footer-width .align-items-center ul li a {
   color: #000;
   list-style: none;
   font-size: 13px;
 }
-/* line 95, scss/_footer.scss */
+/* line 94, scss/_footer.scss */
 .footer-width .align-items-center ul li a:hover, .footer-width .align-items-center ul li a:focus {
   text-decoration: none;
   color: rgba(224, 46, 45, 0.7);
   transition: .3s ease-in all;
 }
-/* line 105, scss/_footer.scss */
+/* line 104, scss/_footer.scss */
 .footer-width .align-items-center .social {
   text-align: center;
 }
-/* line 108, scss/_footer.scss */
+/* line 107, scss/_footer.scss */
 .footer-width .align-items-center .social a {
   color: #8f9294;
 }
-/* line 111, scss/_footer.scss */
+/* line 110, scss/_footer.scss */
 .footer-width .align-items-center .social a:hover {
   color: #D27497 !important;
   transition: .3s ease-in all;
 }
-/* line 119, scss/_footer.scss */
+/* line 118, scss/_footer.scss */
 .footer-width .copyright {
   font-size: 14px;
   text-align: center;
@@ -1017,42 +1021,42 @@ header .separate-nav .navbar #navbarSupportedContent .nav-item a:hover:before, h
   border-top: 1px dashed #D27497;
 }
 @media (max-width: 450px) {
-  /* line 119, scss/_footer.scss */
+  /* line 118, scss/_footer.scss */
   .footer-width .copyright {
     font-size: 12px;
   }
 }
 
-/* line 132, scss/_footer.scss */
+/* line 131, scss/_footer.scss */
 ul.map-list p,
 ul.map-list {
   margin-bottom: 0;
 }
 
-/* line 137, scss/_footer.scss */
+/* line 136, scss/_footer.scss */
 .social {
   padding-right: 30px;
 }
 
 /************* SOCIAL WIDGET***********************/
-/* line 143, scss/_footer.scss */
+/* line 142, scss/_footer.scss */
 #social {
   text-align: center;
 }
-/* line 146, scss/_footer.scss */
+/* line 145, scss/_footer.scss */
 #social .main-title-social {
   padding: 20px 0;
 }
-/* line 150, scss/_footer.scss */
+/* line 149, scss/_footer.scss */
 #social .social-media {
   padding-top: 20px;
 }
-/* line 154, scss/_footer.scss */
+/* line 153, scss/_footer.scss */
 #social .insta-widget {
   padding-bottom: 20px;
 }
 
-/* line 162, scss/_footer.scss */
+/* line 161, scss/_footer.scss */
 .title-social:after {
   margin-left: auto;
   margin-right: auto;
@@ -1307,18 +1311,18 @@ ul.map-list {
 }
 
 /* line 1, scss/_login.scss */
-.login {
+.container.log-account {
   margin-top: 20px;
 }
 /* line 4, scss/_login.scss */
-.login .main-title {
+.container.log-account .main-title {
   text-align: center;
   font-size: 30px;
   position: relative;
   color: #654EA3;
 }
 /* line 10, scss/_login.scss */
-.login .main-title:after {
+.container.log-account .main-title:after {
   position: absolute;
   content: "";
   width: 160px;
@@ -1332,362 +1336,57 @@ ul.map-list {
   background-image: url(../images/icones/souligne.svg);
 }
 /* line 25, scss/_login.scss */
-.login form {
+.container.log-account form {
   margin-top: 30px;
+  margin-bottom: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-/* line 31, scss/_login.scss */
-.login form .form-group {
+/* line 32, scss/_login.scss */
+.container.log-account form .form-group {
   width: 40%;
   margin-top: 30px;
 }
 @media (max-width: 768px) {
-  /* line 31, scss/_login.scss */
-  .login form .form-group {
+  /* line 32, scss/_login.scss */
+  .container.log-account form .form-group {
     width: 60%;
   }
 }
 @media (max-width: 550px) {
-  /* line 31, scss/_login.scss */
-  .login form .form-group {
+  /* line 32, scss/_login.scss */
+  .container.log-account form .form-group {
     width: 90%;
   }
 }
-/* line 43, scss/_login.scss */
-.login form .form-group label {
+/* line 44, scss/_login.scss */
+.container.log-account form .form-group label {
   position: relative;
   color: #654EA3;
 }
-/* line 47, scss/_login.scss */
-.login form .form-group label a {
+/* line 49, scss/_login.scss */
+.container.log-account form .form-group a {
   color: #C62168;
   text-decoration: none;
 }
-/* line 55, scss/_login.scss */
-.login button.btn.btn-primary {
-  margin-top: 20px;
-  background-color: #654EA3;
-  border-color: #654EA3;
+/* line 52, scss/_login.scss */
+.container.log-account form .form-group a:hover, .container.log-account form .form-group a:focus {
+  color: #654EA3;
 }
 /* line 60, scss/_login.scss */
-.login button.btn.btn-primary:hover, .login button.btn.btn-primary:focus {
-  color: #654EA3;
-  background-color: #fff;
-}
-
-/* line 1, scss/_register.scss */
-.register {
-  margin-top: 20px;
-}
-/* line 4, scss/_register.scss */
-.register .main-title {
-  text-align: center;
-  font-size: 30px;
-  position: relative;
-  color: #654EA3;
-}
-/* line 10, scss/_register.scss */
-.register .main-title:after {
-  position: absolute;
-  content: "";
-  width: 160px;
-  height: 10px;
-  left: 50%;
-  top: 45px;
-  margin-left: -80px;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-image: url(../images/icones/souligne.svg);
-}
-/* line 25, scss/_register.scss */
-.register form {
-  margin-top: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-/* line 31, scss/_register.scss */
-.register form .form-group {
-  width: 40%;
-  margin-top: 30px;
-}
-@media (max-width: 768px) {
-  /* line 31, scss/_register.scss */
-  .register form .form-group {
-    width: 60%;
-  }
-}
-@media (max-width: 550px) {
-  /* line 31, scss/_register.scss */
-  .register form .form-group {
-    width: 90%;
-  }
-}
-/* line 43, scss/_register.scss */
-.register form .form-group label {
-  position: relative;
-  color: #654EA3;
-}
-/* line 47, scss/_register.scss */
-.register form .form-group label::after {
-  position: absolute;
-  content: "";
-  width: 8px;
-  height: 8px;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-image: url(../images/icones/asterisk.svg);
-}
-/* line 58, scss/_register.scss */
-.register form .form-group label a {
-  color: #654EA3;
-  text-decoration: none;
-}
-/* line 66, scss/_register.scss */
-.register form button.btn.btn-primary {
+.container.log-account button.btn.btn-primary {
   margin-top: 20px;
   background-color: #654EA3;
   border-color: #654EA3;
 }
-/* line 71, scss/_register.scss */
-.register form button.btn.btn-primary:hover, .register form button.btn.btn-primary:focus {
+/* line 65, scss/_login.scss */
+.container.log-account button.btn.btn-primary:hover, .container.log-account button.btn.btn-primary:focus {
   color: #654EA3;
   background-color: #fff;
 }
 
-/* line 1, scss/_forget.scss */
-.forget {
-  margin-top: 20px;
-}
-/* line 4, scss/_forget.scss */
-.forget .main-title {
-  text-align: center;
-  font-size: 30px;
-  position: relative;
-  color: #654EA3;
-}
-/* line 10, scss/_forget.scss */
-.forget .main-title:after {
-  position: absolute;
-  content: "";
-  width: 160px;
-  height: 10px;
-  left: 50%;
-  top: 45px;
-  margin-left: -80px;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-image: url(../images/icones/souligne.svg);
-}
-/* line 25, scss/_forget.scss */
-.forget form {
-  margin-top: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-/* line 31, scss/_forget.scss */
-.forget form .form-group {
-  width: 40%;
-  margin-top: 30px;
-}
-@media (max-width: 768px) {
-  /* line 31, scss/_forget.scss */
-  .forget form .form-group {
-    width: 60%;
-  }
-}
-@media (max-width: 550px) {
-  /* line 31, scss/_forget.scss */
-  .forget form .form-group {
-    width: 90%;
-  }
-}
-/* line 43, scss/_forget.scss */
-.forget form .form-group label {
-  position: relative;
-  color: #654EA3;
-}
-/* line 47, scss/_forget.scss */
-.forget form .form-group label a {
-  color: #654EA3;
-  text-decoration: none;
-}
-/* line 55, scss/_forget.scss */
-.forget button.btn.btn-primary {
-  margin-top: 20px;
-  background-color: #654EA3;
-  border-color: #654EA3;
-}
-/* line 60, scss/_forget.scss */
-.forget button.btn.btn-primary:hover, .forget button.btn.btn-primary:focus {
-  color: #654EA3;
-  background-color: #fff;
-}
-
-/* line 1, scss/_account.scss */
-.account {
-  margin-top: 20px;
-}
-/* line 4, scss/_account.scss */
-.account .main-title {
-  text-align: center;
-  font-size: 30px;
-  position: relative;
-  color: #654EA3;
-}
-/* line 10, scss/_account.scss */
-.account .main-title:after {
-  position: absolute;
-  content: "";
-  width: 160px;
-  height: 10px;
-  left: 50%;
-  top: 45px;
-  margin-left: -80px;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-image: url(../images/icones/souligne.svg);
-}
-/* line 25, scss/_account.scss */
-.account form {
-  margin-top: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-/* line 31, scss/_account.scss */
-.account form .form-group {
-  width: 40%;
-  margin-top: 30px;
-}
-@media (max-width: 768px) {
-  /* line 31, scss/_account.scss */
-  .account form .form-group {
-    width: 60%;
-  }
-}
-@media (max-width: 550px) {
-  /* line 31, scss/_account.scss */
-  .account form .form-group {
-    width: 90%;
-  }
-}
-/* line 43, scss/_account.scss */
-.account form .form-group label {
-  position: relative;
-  color: #654EA3;
-}
-/* line 47, scss/_account.scss */
-.account form .form-group label a {
-  color: #654EA3;
-  text-decoration: none;
-}
-/* line 55, scss/_account.scss */
-.account button.btn.btn-primary {
-  margin-top: 20px;
-  background-color: #654EA3;
-  border-color: #654EA3;
-}
-/* line 60, scss/_account.scss */
-.account button.btn.btn-primary:hover, .account button.btn.btn-primary:focus {
-  color: #654EA3;
-  background-color: #fff;
-}
-
-/* line 1, scss/_contact.scss */
-.account {
-  margin-top: 20px;
-}
-/* line 4, scss/_contact.scss */
-.account .main-title {
-  text-align: center;
-  font-size: 30px;
-  position: relative;
-  color: #654EA3;
-}
-/* line 10, scss/_contact.scss */
-.account .main-title:after {
-  position: absolute;
-  content: "";
-  width: 160px;
-  height: 10px;
-  left: 50%;
-  top: 45px;
-  margin-left: -80px;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-image: url(../images/icones/souligne.svg);
-}
-/* line 25, scss/_contact.scss */
-.account form {
-  margin-top: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-/* line 31, scss/_contact.scss */
-.account form .form-group {
-  width: 40%;
-  margin-top: 30px;
-}
-@media (max-width: 768px) {
-  /* line 31, scss/_contact.scss */
-  .account form .form-group {
-    width: 60%;
-  }
-}
-@media (max-width: 550px) {
-  /* line 31, scss/_contact.scss */
-  .account form .form-group {
-    width: 90%;
-  }
-}
-/* line 43, scss/_contact.scss */
-.account form .form-group label {
-  position: relative;
-  color: #654EA3;
-}
-/* line 47, scss/_contact.scss */
-.account form .form-group label label {
-  position: relative;
-}
-/* line 50, scss/_contact.scss */
-.account form .form-group label label:after {
-  position: absolute;
-  content: "";
-  width: 15px;
-  height: 15px;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-image: url(../../images/icones/asterisk.svg);
-}
-/* line 61, scss/_contact.scss */
-.account form .form-group label label a {
-  color: #654EA3;
-  text-decoration: none;
-}
-/* line 69, scss/_contact.scss */
-.account form button.btn.btn-primary {
-  margin-top: 20px;
-  background-color: #654EA3;
-  border-color: #654EA3;
-}
-/* line 74, scss/_contact.scss */
-.account form button.btn.btn-primary:hover, .account form button.btn.btn-primary:focus {
-  color: #654EA3;
-  background-color: #fff;
-}
-
-/* line 5, scss/_index.scss */
+/* line 1, scss/_index.scss */
 #nav-icon0 span {
   display: block;
   position: absolute;
@@ -1705,34 +1404,34 @@ ul.map-list {
   transition: .25s ease-in-out;
 }
 
-/* line 22, scss/_index.scss */
+/* line 18, scss/_index.scss */
 #nav-icon0 span:nth-child(even) {
   left: 50%;
   border-radius: 0 9px 9px 0;
 }
 
-/* line 27, scss/_index.scss */
+/* line 23, scss/_index.scss */
 #nav-icon0 span:nth-child(odd) {
-  left: 0px;
+  left: 0;
   border-radius: 9px 0 0 9px;
 }
 
-/* line 32, scss/_index.scss */
+/* line 28, scss/_index.scss */
 #nav-icon0 span:nth-child(1), #nav-icon0 span:nth-child(2) {
-  top: 0px;
+  top: 0;
 }
 
-/* line 36, scss/_index.scss */
+/* line 32, scss/_index.scss */
 #nav-icon0 span:nth-child(3), #nav-icon0 span:nth-child(4) {
   top: 10px;
 }
 
-/* line 40, scss/_index.scss */
+/* line 36, scss/_index.scss */
 #nav-icon0 span:nth-child(5), #nav-icon0 span:nth-child(6) {
   top: 20px;
 }
 
-/* line 44, scss/_index.scss */
+/* line 40, scss/_index.scss */
 #nav-icon0.open span:nth-child(1), #nav-icon0.open span:nth-child(6) {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -1740,7 +1439,7 @@ ul.map-list {
   transform: rotate(45deg);
 }
 
-/* line 51, scss/_index.scss */
+/* line 47, scss/_index.scss */
 #nav-icon0.open span:nth-child(2), #nav-icon0.open span:nth-child(5) {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
@@ -1748,43 +1447,43 @@ ul.map-list {
   transform: rotate(-45deg);
 }
 
-/* line 58, scss/_index.scss */
+/* line 54, scss/_index.scss */
 #nav-icon0.open span:nth-child(1) {
   left: 0px;
   top: 9px;
 }
 
-/* line 63, scss/_index.scss */
+/* line 59, scss/_index.scss */
 #nav-icon0.open span:nth-child(2) {
   left: calc(50% - 5px);
   top: 9px;
 }
 
-/* line 68, scss/_index.scss */
+/* line 64, scss/_index.scss */
 #nav-icon0.open span:nth-child(3) {
   left: -50%;
   opacity: 0;
 }
 
-/* line 73, scss/_index.scss */
+/* line 69, scss/_index.scss */
 #nav-icon0.open span:nth-child(4) {
   left: 100%;
   opacity: 0;
 }
 
-/* line 78, scss/_index.scss */
+/* line 74, scss/_index.scss */
 #nav-icon0.open span:nth-child(5) {
-  left: 0px;
+  left: 0;
   top: 19px;
 }
 
-/* line 83, scss/_index.scss */
+/* line 79, scss/_index.scss */
 #nav-icon0.open span:nth-child(6) {
   left: calc(50% - 5px);
   top: 19px;
 }
 
-/* line 89, scss/_index.scss */
+/* line 85, scss/_index.scss */
 .pimg1, .pimg2, .pimg3 {
   position: relative;
   opacity: 0.70;
@@ -1798,37 +1497,37 @@ ul.map-list {
   background-attachment: fixed;
 }
 
-/* line 103, scss/_index.scss */
+/* line 99, scss/_index.scss */
 .pimg2 {
   background-image: url("../images/slider/couture.jpg");
   min-height: 600px;
 }
 
-/* line 108, scss/_index.scss */
+/* line 104, scss/_index.scss */
 .pimg3 {
   background-image: url("../images/slider/fabric-scissor.jpg");
   min-height: 600px;
 }
 
-/* line 113, scss/_index.scss */
+/* line 109, scss/_index.scss */
 .section {
   text-align: center;
   padding: 50px 80px;
 }
 
-/* line 118, scss/_index.scss */
+/* line 114, scss/_index.scss */
 .section-light {
   background-color: #f4f4f4;
   color: #666;
 }
 
-/* line 123, scss/_index.scss */
+/* line 119, scss/_index.scss */
 .section-dark {
   background-color: #282e34;
   color: #ddd;
 }
 
-/* line 128, scss/_index.scss */
+/* line 124, scss/_index.scss */
 .ptext {
   position: absolute;
   top: 50%;
@@ -1840,20 +1539,20 @@ ul.map-list {
   text-transform: uppercase;
 }
 
-/* line 139, scss/_index.scss */
+/* line 135, scss/_index.scss */
 .ptext .border {
   background-color: #111;
   color: #fff;
   padding: 20px;
 }
 
-/* line 145, scss/_index.scss */
+/* line 141, scss/_index.scss */
 .ptext .border.trans {
   background-color: transparent;
 }
 
 @media (max-width: 568px) {
-  /* line 150, scss/_index.scss */
+  /* line 146, scss/_index.scss */
   .pimg1, .pimg2, .pimg3 {
     background-attachment: scroll;
   }
@@ -1861,7 +1560,7 @@ ul.map-list {
 /******************* BANNER ****************************/
 /* line 2, scss/_couture.scss */
 .banner.couture {
-  background-image: url("../images/banner/ban-couture1.jpg");
+  background-image: url("../images/banner/couture.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1916,28 +1615,6 @@ ul.map-list {
   vertical-align: middle;
   display: flex;
   flex-wrap: wrap;
-  /*
-          .box-banner_title::before {
-            position: absolute;
-            content: '';
-            display: block;
-            height: 1px;
-            width: 60px;
-            background: #fff;
-            left: 400px;
-            top: 272px;
-          }
-  
-          .box-banner_title::after {
-            position: absolute;
-            content: '';
-            display: block;
-            height: 1px;
-            width: 60px;
-            background: #fff;
-            left: 705px;
-            top: 272px;
-          }*/
 }
 @media (max-width: 500px) {
   /* line 32, scss/_couture.scss */
@@ -1951,7 +1628,7 @@ ul.map-list {
   line-height: 1.3;
   letter-spacing: 6.8px;
 }
-/* line 85, scss/_couture.scss */
+/* line 63, scss/_couture.scss */
 .banner.couture .banner_overlay .banner_container .banner_arrow-bottom {
   width: 42px;
   height: 40px;
@@ -1966,7 +1643,7 @@ ul.map-list {
 }
 
 /**************** END BANNER *******************/
-/* line 103, scss/_couture.scss */
+/* line 81, scss/_couture.scss */
 .container h1 {
   text-align: center;
   font-size: 44px;
@@ -1974,14 +1651,14 @@ ul.map-list {
   margin-bottom: 27px;
   color: #fff;
 }
-/* line 111, scss/_couture.scss */
+/* line 89, scss/_couture.scss */
 .container .grid {
   max-width: 69em;
   list-style: none;
   margin: 30px auto;
   padding: 0;
 }
-/* line 117, scss/_couture.scss */
+/* line 95, scss/_couture.scss */
 .container .grid li {
   display: block;
   float: left;
@@ -1990,25 +1667,25 @@ ul.map-list {
   opacity: 0;
 }
 @media (max-width: 900px) {
-  /* line 117, scss/_couture.scss */
+  /* line 95, scss/_couture.scss */
   .container .grid li {
     width: 50%;
   }
 }
 @media (max-width: 500px) {
-  /* line 117, scss/_couture.scss */
+  /* line 95, scss/_couture.scss */
   .container .grid li {
     width: 100%;
   }
 }
-/* line 133, scss/_couture.scss */
+/* line 111, scss/_couture.scss */
 .container .grid li a.img {
   outline: none;
   border: none;
   display: block;
   max-width: 100%;
 }
-/* line 142, scss/_couture.scss */
+/* line 120, scss/_couture.scss */
 .container .grid .text-content {
   position: relative;
   display: inline-block;
@@ -2019,12 +1696,12 @@ ul.map-list {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
   z-index: 2;
 }
-/* line 152, scss/_couture.scss */
+/* line 130, scss/_couture.scss */
 .container .grid .text-content * {
   -webkit-transition: all 0.35s;
   transition: all 0.35s;
 }
-/* line 157, scss/_couture.scss */
+/* line 135, scss/_couture.scss */
 .container .grid .text-content img {
   /* La transition s'applique ├á la fois sur la largeur et la hauteur, avec une dur├®e d'une seconde.*/
   max-width: 100%;
@@ -2039,7 +1716,7 @@ ul.map-list {
   /* Opera*/
   transition: all 1s ease;
 }
-/* line 168, scss/_couture.scss */
+/* line 146, scss/_couture.scss */
 .container .grid .text-content:hover img {
   /* L'image est grossie de 10%*/
   -webkit-transform: scale(1.3);
@@ -2055,7 +1732,7 @@ ul.map-list {
   -moz-box-shadow: 1px 3px 28px -2px #654ea3;
   box-shadow: 1px 3px 28px -2px #654ea3;
 }
-/* line 180, scss/_couture.scss */
+/* line 158, scss/_couture.scss */
 .container .grid .text-content figcaption {
   position: absolute;
   height: 45px;
@@ -2067,7 +1744,7 @@ ul.map-list {
   background-color: rgba(255, 255, 255, 0.83);
   border: 2px dashed #D27497;
 }
-/* line 191, scss/_couture.scss */
+/* line 169, scss/_couture.scss */
 .container .grid .text-content figcaption h3 {
   text-transform: uppercase;
   font-size: 17px;
@@ -2075,37 +1752,18 @@ ul.map-list {
   line-height: 24px;
   text-align: center;
 }
-/* line 199, scss/_couture.scss */
+/* line 177, scss/_couture.scss */
 .container .grid .text-content figcaption p {
   position: relative;
   padding: 0;
   margin: 0;
   font-size: 0.9em;
   color: #000;
-  margin-top: 45px;
+  margin-top: 27px;
   text-align: center;
   z-index: 1;
-  /*&::after {
-  position: absolute;
-  height: 1px;
-  width: 60%;
-  top: 0;
-  left: 20%;
-  background-color: rgba(171,141,92,1);
-  content: '';
-  -webkit-transition: transform 220ms ease;
-  -ms-transition: transform 220ms ease;
-  transition: transform 220ms ease;
-  -webkit-transform: scaleX(0);
-  -ms-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transform-origin: center;
-  -ms-transform-origin: center;
-  transform-origin: center;
-  z-index: 7;
-}*/
 }
-/* line 230, scss/_couture.scss */
+/* line 188, scss/_couture.scss */
 .container .grid .text-content figcaption a {
   position: absolute;
   text-decoration: none;
@@ -2115,26 +1773,1093 @@ ul.map-list {
   top: 8px;
   color: #654EA3;
 }
-/* line 239, scss/_couture.scss */
+/* line 197, scss/_couture.scss */
 .container .grid .text-content figcaption a.btn-discover {
   top: 150px;
   text-align: center;
   text-decoration: none;
 }
-/* line 248, scss/_couture.scss */
+/* line 206, scss/_couture.scss */
 .container .grid .text-content:hover figcaption,
 .container .grid .text-content.hover figcaption {
   height: calc(85%);
 }
 
-/* line 255, scss/_couture.scss */
+/* line 213, scss/_couture.scss */
 .grid li.shown,
 .no-js .grid li,
 .no-cssanimations .grid li {
   opacity: 1;
 }
 
-/* line 261, scss/_couture.scss */
+/* line 219, scss/_couture.scss */
+.grid.effect li.animate {
+  -webkit-transform: scale(0.6);
+  transform: scale(0.6);
+  -webkit-animation: scaleUp 0.65s ease-in-out forwards;
+  animation: scaleUp 0.65s ease-in-out forwards;
+}
+
+@-webkit-keyframes scaleUp {
+  100% {
+    -webkit-transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes scaleUp {
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+/******************* BANNER ****************************/
+/* line 2, scss/_tricot.scss */
+.banner.tricot {
+  background-image: url("../images/banner/pelote.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+/* line 8, scss/_tricot.scss */
+.banner.tricot .banner_overlay {
+  background: rgba(66, 64, 64, 0.45);
+  border-bottom: 1px solid #D27497;
+}
+/* line 12, scss/_tricot.scss */
+.banner.tricot .banner_overlay .banner_container {
+  height: 550px;
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+@media (max-width: 990px) {
+  /* line 12, scss/_tricot.scss */
+  .banner.tricot .banner_overlay .banner_container {
+    margin-top: -87px;
+  }
+}
+@media (max-width: 550px) {
+  /* line 12, scss/_tricot.scss */
+  .banner.tricot .banner_overlay .banner_container {
+    margin-top: 0;
+  }
+}
+/* line 32, scss/_tricot.scss */
+.banner.tricot .banner_overlay .banner_container .box-banner {
+  background: rgba(101, 78, 163, 0.3);
+  border: 6px solid transparent;
+  outline: 2px dashed #D27497;
+  display: -ms-inline-flexbox;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  background-clip: padding-box;
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  width: auto;
+  padding: 0 130px;
+  vertical-align: middle;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (max-width: 500px) {
+  /* line 32, scss/_tricot.scss */
+  .banner.tricot .banner_overlay .banner_container .box-banner {
+    padding: 0 35px;
+  }
+}
+/* line 56, scss/_tricot.scss */
+.banner.tricot .banner_overlay .banner_container .box-banner .box-banner-big .box-banner_title {
+  position: relative;
+  line-height: 1.3;
+  letter-spacing: 6.8px;
+}
+/* line 63, scss/_tricot.scss */
+.banner.tricot .banner_overlay .banner_container .banner_arrow-bottom {
+  width: 42px;
+  height: 40px;
+  display: block;
+  background: url(../images/icones/down-arrow.png) center no-repeat;
+  background-size: 26px auto;
+  position: absolute;
+  bottom: 27px;
+  border: 1px solid #D27497;
+  background-color: rgba(101, 78, 163, 0.3);
+  padding: 23px 30px;
+}
+
+/**************** END BANNER *******************/
+/* line 81, scss/_tricot.scss */
+.container h1 {
+  text-align: center;
+  font-size: 44px;
+  margin-top: 20px;
+  margin-bottom: 27px;
+  color: #fff;
+}
+/* line 89, scss/_tricot.scss */
+.container .grid {
+  max-width: 69em;
+  list-style: none;
+  margin: 30px auto;
+  padding: 0;
+}
+/* line 95, scss/_tricot.scss */
+.container .grid li {
+  display: block;
+  float: left;
+  padding: 17px;
+  width: 33%;
+  opacity: 0;
+}
+@media (max-width: 900px) {
+  /* line 95, scss/_tricot.scss */
+  .container .grid li {
+    width: 50%;
+  }
+}
+@media (max-width: 500px) {
+  /* line 95, scss/_tricot.scss */
+  .container .grid li {
+    width: 100%;
+  }
+}
+/* line 111, scss/_tricot.scss */
+.container .grid li a.img {
+  outline: none;
+  border: none;
+  display: block;
+  max-width: 100%;
+}
+/* line 120, scss/_tricot.scss */
+.container .grid .text-content {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  margin: 8px;
+  width: 100%;
+  font-size: 16px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  z-index: 2;
+}
+/* line 130, scss/_tricot.scss */
+.container .grid .text-content * {
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+/* line 135, scss/_tricot.scss */
+.container .grid .text-content img {
+  /* La transition s'applique ├á la fois sur la largeur et la hauteur, avec une dur├®e d'une seconde.*/
+  max-width: 100%;
+  vertical-align: top;
+  -webkit-transition: all 1s ease;
+  /* Safari et Chrome*/
+  -moz-transition: all 1s ease;
+  /* Firefox*/
+  -ms-transition: all 1s ease;
+  /* Internet Explorer 9*/
+  -o-transition: all 1s ease;
+  /* Opera*/
+  transition: all 1s ease;
+}
+/* line 146, scss/_tricot.scss */
+.container .grid .text-content:hover img {
+  /* L'image est grossie de 10%*/
+  -webkit-transform: scale(1.3);
+  /* Safari et Chrome*/
+  -moz-transform: scale(1.3);
+  /* Firefox*/
+  -ms-transform: scale(1.3);
+  /* Internet Explorer 9*/
+  -o-transform: scale(1.3);
+  /* Opera*/
+  transform: scale(1.3);
+  -webkit-box-shadow: 1px 3px 28px -2px #654ea3;
+  -moz-box-shadow: 1px 3px 28px -2px #654ea3;
+  box-shadow: 1px 3px 28px -2px #654ea3;
+}
+/* line 158, scss/_tricot.scss */
+.container .grid .text-content figcaption {
+  position: absolute;
+  height: 45px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  overflow: hidden;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.83);
+  border: 2px dashed #D27497;
+}
+/* line 169, scss/_tricot.scss */
+.container .grid .text-content figcaption h3 {
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+}
+/* line 177, scss/_tricot.scss */
+.container .grid .text-content figcaption p {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9em;
+  color: #000;
+  margin-top: 27px;
+  text-align: center;
+  z-index: 1;
+}
+/* line 188, scss/_tricot.scss */
+.container .grid .text-content figcaption a {
+  position: absolute;
+  text-decoration: none;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 8px;
+  color: #654EA3;
+}
+/* line 197, scss/_tricot.scss */
+.container .grid .text-content figcaption a.btn-discover {
+  top: 150px;
+  text-align: center;
+  text-decoration: none;
+}
+/* line 206, scss/_tricot.scss */
+.container .grid .text-content:hover figcaption,
+.container .grid .text-content.hover figcaption {
+  height: calc(85%);
+}
+
+/* line 213, scss/_tricot.scss */
+.grid li.shown,
+.no-js .grid li,
+.no-cssanimations .grid li {
+  opacity: 1;
+}
+
+/* line 219, scss/_tricot.scss */
+.grid.effect li.animate {
+  -webkit-transform: scale(0.6);
+  transform: scale(0.6);
+  -webkit-animation: scaleUp 0.65s ease-in-out forwards;
+  animation: scaleUp 0.65s ease-in-out forwards;
+}
+
+@-webkit-keyframes scaleUp {
+  100% {
+    -webkit-transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes scaleUp {
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+/******************* BANNER ****************************/
+/* line 2, scss/_crochet.scss */
+.banner.crochet {
+  background-image: url("../images/banner/crochet.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+/* line 8, scss/_crochet.scss */
+.banner.crochet .banner_overlay {
+  background: rgba(66, 64, 64, 0.45);
+  border-bottom: 1px solid #D27497;
+}
+/* line 12, scss/_crochet.scss */
+.banner.crochet .banner_overlay .banner_container {
+  height: 550px;
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+@media (max-width: 990px) {
+  /* line 12, scss/_crochet.scss */
+  .banner.crochet .banner_overlay .banner_container {
+    margin-top: -87px;
+  }
+}
+@media (max-width: 550px) {
+  /* line 12, scss/_crochet.scss */
+  .banner.crochet .banner_overlay .banner_container {
+    margin-top: 0;
+  }
+}
+/* line 32, scss/_crochet.scss */
+.banner.crochet .banner_overlay .banner_container .box-banner {
+  background: rgba(101, 78, 163, 0.3);
+  border: 6px solid transparent;
+  outline: 2px dashed #D27497;
+  display: -ms-inline-flexbox;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  background-clip: padding-box;
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  width: auto;
+  padding: 0 130px;
+  vertical-align: middle;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (max-width: 500px) {
+  /* line 32, scss/_crochet.scss */
+  .banner.crochet .banner_overlay .banner_container .box-banner {
+    padding: 0 35px;
+  }
+}
+/* line 56, scss/_crochet.scss */
+.banner.crochet .banner_overlay .banner_container .box-banner .box-banner-big .box-banner_title {
+  position: relative;
+  line-height: 1.3;
+  letter-spacing: 6.8px;
+}
+/* line 63, scss/_crochet.scss */
+.banner.crochet .banner_overlay .banner_container .banner_arrow-bottom {
+  width: 42px;
+  height: 40px;
+  display: block;
+  background: url(../images/icones/down-arrow.png) center no-repeat;
+  background-size: 26px auto;
+  position: absolute;
+  bottom: 27px;
+  border: 1px solid #D27497;
+  background-color: rgba(101, 78, 163, 0.3);
+  padding: 23px 30px;
+}
+
+/**************** END BANNER *******************/
+/* line 81, scss/_crochet.scss */
+.container h1 {
+  text-align: center;
+  font-size: 44px;
+  margin-top: 20px;
+  margin-bottom: 27px;
+  color: #fff;
+}
+/* line 89, scss/_crochet.scss */
+.container .grid {
+  max-width: 69em;
+  list-style: none;
+  margin: 30px auto;
+  padding: 0;
+}
+/* line 95, scss/_crochet.scss */
+.container .grid li {
+  display: block;
+  float: left;
+  padding: 17px;
+  width: 33%;
+  opacity: 0;
+}
+@media (max-width: 900px) {
+  /* line 95, scss/_crochet.scss */
+  .container .grid li {
+    width: 50%;
+  }
+}
+@media (max-width: 500px) {
+  /* line 95, scss/_crochet.scss */
+  .container .grid li {
+    width: 100%;
+  }
+}
+/* line 111, scss/_crochet.scss */
+.container .grid li a.img {
+  outline: none;
+  border: none;
+  display: block;
+  max-width: 100%;
+}
+/* line 120, scss/_crochet.scss */
+.container .grid .text-content {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  margin: 8px;
+  width: 100%;
+  font-size: 16px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  z-index: 2;
+}
+/* line 130, scss/_crochet.scss */
+.container .grid .text-content * {
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+/* line 135, scss/_crochet.scss */
+.container .grid .text-content img {
+  /* La transition s'applique ├á la fois sur la largeur et la hauteur, avec une dur├®e d'une seconde.*/
+  max-width: 100%;
+  vertical-align: top;
+  -webkit-transition: all 1s ease;
+  /* Safari et Chrome*/
+  -moz-transition: all 1s ease;
+  /* Firefox*/
+  -ms-transition: all 1s ease;
+  /* Internet Explorer 9*/
+  -o-transition: all 1s ease;
+  /* Opera*/
+  transition: all 1s ease;
+}
+/* line 146, scss/_crochet.scss */
+.container .grid .text-content:hover img {
+  /* L'image est grossie de 10%*/
+  -webkit-transform: scale(1.3);
+  /* Safari et Chrome*/
+  -moz-transform: scale(1.3);
+  /* Firefox*/
+  -ms-transform: scale(1.3);
+  /* Internet Explorer 9*/
+  -o-transform: scale(1.3);
+  /* Opera*/
+  transform: scale(1.3);
+  -webkit-box-shadow: 1px 3px 28px -2px #654ea3;
+  -moz-box-shadow: 1px 3px 28px -2px #654ea3;
+  box-shadow: 1px 3px 28px -2px #654ea3;
+}
+/* line 158, scss/_crochet.scss */
+.container .grid .text-content figcaption {
+  position: absolute;
+  height: 45px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  overflow: hidden;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.83);
+  border: 2px dashed #D27497;
+}
+/* line 169, scss/_crochet.scss */
+.container .grid .text-content figcaption h3 {
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+}
+/* line 177, scss/_crochet.scss */
+.container .grid .text-content figcaption p {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9em;
+  color: #000;
+  margin-top: 27px;
+  text-align: center;
+  z-index: 1;
+}
+/* line 188, scss/_crochet.scss */
+.container .grid .text-content figcaption a {
+  position: absolute;
+  text-decoration: none;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 8px;
+  color: #654EA3;
+}
+/* line 197, scss/_crochet.scss */
+.container .grid .text-content figcaption a.btn-discover {
+  top: 150px;
+  text-align: center;
+  text-decoration: none;
+}
+/* line 206, scss/_crochet.scss */
+.container .grid .text-content:hover figcaption,
+.container .grid .text-content.hover figcaption {
+  height: calc(85%);
+}
+
+/* line 213, scss/_crochet.scss */
+.grid li.shown,
+.no-js .grid li,
+.no-cssanimations .grid li {
+  opacity: 1;
+}
+
+/* line 219, scss/_crochet.scss */
+.grid.effect li.animate {
+  -webkit-transform: scale(0.6);
+  transform: scale(0.6);
+  -webkit-animation: scaleUp 0.65s ease-in-out forwards;
+  animation: scaleUp 0.65s ease-in-out forwards;
+}
+
+@-webkit-keyframes scaleUp {
+  100% {
+    -webkit-transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes scaleUp {
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+/******************* BANNER ****************************/
+/* line 2, scss/_enfant.scss */
+.banner.enfant {
+  background-image: url("../images/banner/enfant.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+/* line 8, scss/_enfant.scss */
+.banner.enfant .banner_overlay {
+  background: rgba(66, 64, 64, 0.45);
+  border-bottom: 1px solid #D27497;
+}
+/* line 12, scss/_enfant.scss */
+.banner.enfant .banner_overlay .banner_container {
+  height: 550px;
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+@media (max-width: 990px) {
+  /* line 12, scss/_enfant.scss */
+  .banner.enfant .banner_overlay .banner_container {
+    margin-top: -87px;
+  }
+}
+@media (max-width: 550px) {
+  /* line 12, scss/_enfant.scss */
+  .banner.enfant .banner_overlay .banner_container {
+    margin-top: 0;
+  }
+}
+/* line 32, scss/_enfant.scss */
+.banner.enfant .banner_overlay .banner_container .box-banner {
+  background: rgba(101, 78, 163, 0.3);
+  border: 6px solid transparent;
+  outline: 2px dashed #D27497;
+  display: -ms-inline-flexbox;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  background-clip: padding-box;
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  width: auto;
+  padding: 0 130px;
+  vertical-align: middle;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (max-width: 500px) {
+  /* line 32, scss/_enfant.scss */
+  .banner.enfant .banner_overlay .banner_container .box-banner {
+    padding: 0 35px;
+  }
+}
+/* line 56, scss/_enfant.scss */
+.banner.enfant .banner_overlay .banner_container .box-banner .box-banner-big .box-banner_title {
+  position: relative;
+  line-height: 1.3;
+  letter-spacing: 6.8px;
+}
+/* line 63, scss/_enfant.scss */
+.banner.enfant .banner_overlay .banner_container .banner_arrow-bottom {
+  width: 42px;
+  height: 40px;
+  display: block;
+  background: url(../images/icones/down-arrow.png) center no-repeat;
+  background-size: 26px auto;
+  position: absolute;
+  bottom: 27px;
+  border: 1px solid #D27497;
+  background-color: rgba(101, 78, 163, 0.3);
+  padding: 23px 30px;
+}
+
+/**************** END BANNER *******************/
+/* line 81, scss/_enfant.scss */
+.container h1 {
+  text-align: center;
+  font-size: 44px;
+  margin-top: 20px;
+  margin-bottom: 27px;
+  color: #fff;
+}
+/* line 89, scss/_enfant.scss */
+.container .grid {
+  max-width: 69em;
+  list-style: none;
+  margin: 30px auto;
+  padding: 0;
+}
+/* line 95, scss/_enfant.scss */
+.container .grid li {
+  display: block;
+  float: left;
+  padding: 17px;
+  width: 33%;
+  opacity: 0;
+}
+@media (max-width: 900px) {
+  /* line 95, scss/_enfant.scss */
+  .container .grid li {
+    width: 50%;
+  }
+}
+@media (max-width: 500px) {
+  /* line 95, scss/_enfant.scss */
+  .container .grid li {
+    width: 100%;
+  }
+}
+/* line 111, scss/_enfant.scss */
+.container .grid li a.img {
+  outline: none;
+  border: none;
+  display: block;
+  max-width: 100%;
+}
+/* line 120, scss/_enfant.scss */
+.container .grid .text-content {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  margin: 8px;
+  width: 100%;
+  font-size: 16px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  z-index: 2;
+}
+/* line 130, scss/_enfant.scss */
+.container .grid .text-content * {
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+/* line 135, scss/_enfant.scss */
+.container .grid .text-content img {
+  /* La transition s'applique ├á la fois sur la largeur et la hauteur, avec une dur├®e d'une seconde.*/
+  max-width: 100%;
+  vertical-align: top;
+  -webkit-transition: all 1s ease;
+  /* Safari et Chrome*/
+  -moz-transition: all 1s ease;
+  /* Firefox*/
+  -ms-transition: all 1s ease;
+  /* Internet Explorer 9*/
+  -o-transition: all 1s ease;
+  /* Opera*/
+  transition: all 1s ease;
+}
+/* line 146, scss/_enfant.scss */
+.container .grid .text-content:hover img {
+  /* L'image est grossie de 10%*/
+  -webkit-transform: scale(1.3);
+  /* Safari et Chrome*/
+  -moz-transform: scale(1.3);
+  /* Firefox*/
+  -ms-transform: scale(1.3);
+  /* Internet Explorer 9*/
+  -o-transform: scale(1.3);
+  /* Opera*/
+  transform: scale(1.3);
+  -webkit-box-shadow: 1px 3px 28px -2px #654ea3;
+  -moz-box-shadow: 1px 3px 28px -2px #654ea3;
+  box-shadow: 1px 3px 28px -2px #654ea3;
+}
+/* line 158, scss/_enfant.scss */
+.container .grid .text-content figcaption {
+  position: absolute;
+  height: 45px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  overflow: hidden;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.83);
+  border: 2px dashed #D27497;
+}
+/* line 169, scss/_enfant.scss */
+.container .grid .text-content figcaption h3 {
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+}
+/* line 177, scss/_enfant.scss */
+.container .grid .text-content figcaption p {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9em;
+  color: #000;
+  margin-top: 27px;
+  text-align: center;
+  z-index: 1;
+}
+/* line 188, scss/_enfant.scss */
+.container .grid .text-content figcaption a {
+  position: absolute;
+  text-decoration: none;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 8px;
+  color: #654EA3;
+}
+/* line 197, scss/_enfant.scss */
+.container .grid .text-content figcaption a.btn-discover {
+  top: 150px;
+  text-align: center;
+  text-decoration: none;
+}
+/* line 206, scss/_enfant.scss */
+.container .grid .text-content:hover figcaption,
+.container .grid .text-content.hover figcaption {
+  height: calc(85%);
+}
+
+/* line 213, scss/_enfant.scss */
+.grid li.shown,
+.no-js .grid li,
+.no-cssanimations .grid li {
+  opacity: 1;
+}
+
+/* line 219, scss/_enfant.scss */
+.grid.effect li.animate {
+  -webkit-transform: scale(0.6);
+  transform: scale(0.6);
+  -webkit-animation: scaleUp 0.65s ease-in-out forwards;
+  animation: scaleUp 0.65s ease-in-out forwards;
+}
+
+@-webkit-keyframes scaleUp {
+  100% {
+    -webkit-transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes scaleUp {
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+/* line 2, scss/_article.scss */
+.container.article h1 {
+  color: #000;
+}
+/* line 6, scss/_article.scss */
+.container.article h2,
+.container.article h3 {
+  font-weight: bold;
+}
+/* line 11, scss/_article.scss */
+.container.article img {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 18, scss/_article.scss */
+.container.article ul {
+  list-style: inside;
+  margin-left: 3%;
+}
+/* line 23, scss/_article.scss */
+.container.article .pdf {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+/* line 28, scss/_article.scss */
+.container.article .pdf a.download-pdf {
+  text-decoration: none;
+  color: #fff;
+  background-color: #654EA3;
+  border: 1px solid #654EA3;
+  border-radius: 12px;
+  padding: 10px;
+}
+/* line 36, scss/_article.scss */
+.container.article .pdf a.download-pdf:hover, .container.article .pdf a.download-pdffocus {
+  color: #654EA3;
+  background-color: #fff;
+  transition: .3s ease-in all;
+}
+
+/******************* BANNER ****************************/
+/* line 2, scss/_contact.scss */
+.banner.contact {
+  background-image: url("../images/banner/phone.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+/* line 8, scss/_contact.scss */
+.banner.contact .banner_overlay {
+  background: rgba(66, 64, 64, 0.45);
+  border-bottom: 1px solid #D27497;
+}
+/* line 12, scss/_contact.scss */
+.banner.contact .banner_overlay .banner_container {
+  height: 550px;
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+@media (max-width: 990px) {
+  /* line 12, scss/_contact.scss */
+  .banner.contact .banner_overlay .banner_container {
+    margin-top: -87px;
+  }
+}
+@media (max-width: 550px) {
+  /* line 12, scss/_contact.scss */
+  .banner.contact .banner_overlay .banner_container {
+    margin-top: 0;
+  }
+}
+/* line 32, scss/_contact.scss */
+.banner.contact .banner_overlay .banner_container .box-banner {
+  background: rgba(101, 78, 163, 0.3);
+  border: 6px solid transparent;
+  outline: 2px dashed #D27497;
+  display: -ms-inline-flexbox;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  background-clip: padding-box;
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  width: auto;
+  padding: 0 130px;
+  vertical-align: middle;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (max-width: 500px) {
+  /* line 32, scss/_contact.scss */
+  .banner.contact .banner_overlay .banner_container .box-banner {
+    padding: 0 35px;
+  }
+}
+/* line 56, scss/_contact.scss */
+.banner.contact .banner_overlay .banner_container .box-banner .box-banner-big .box-banner_title {
+  position: relative;
+  line-height: 1.3;
+  letter-spacing: 6.8px;
+}
+/* line 63, scss/_contact.scss */
+.banner.contact .banner_overlay .banner_container .banner_arrow-bottom {
+  width: 42px;
+  height: 40px;
+  display: block;
+  background: url(../images/icones/down-arrow.png) center no-repeat;
+  background-size: 26px auto;
+  position: absolute;
+  bottom: 27px;
+  border: 1px solid #D27497;
+  background-color: rgba(101, 78, 163, 0.3);
+  padding: 23px 30px;
+}
+
+/**************** END BANNER *******************/
+/* line 81, scss/_contact.scss */
+.container h1 {
+  text-align: center;
+  font-size: 44px;
+  margin-top: 20px;
+  margin-bottom: 27px;
+  color: #fff;
+}
+/* line 89, scss/_contact.scss */
+.container .grid {
+  max-width: 69em;
+  list-style: none;
+  margin: 30px auto;
+  padding: 0;
+}
+/* line 95, scss/_contact.scss */
+.container .grid li {
+  display: block;
+  float: left;
+  padding: 17px;
+  width: 33%;
+  opacity: 0;
+}
+@media (max-width: 900px) {
+  /* line 95, scss/_contact.scss */
+  .container .grid li {
+    width: 50%;
+  }
+}
+@media (max-width: 500px) {
+  /* line 95, scss/_contact.scss */
+  .container .grid li {
+    width: 100%;
+  }
+}
+/* line 111, scss/_contact.scss */
+.container .grid li a.img {
+  outline: none;
+  border: none;
+  display: block;
+  max-width: 100%;
+}
+/* line 120, scss/_contact.scss */
+.container .grid .text-content {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  margin: 8px;
+  width: 100%;
+  font-size: 16px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  z-index: 2;
+}
+/* line 130, scss/_contact.scss */
+.container .grid .text-content * {
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+/* line 135, scss/_contact.scss */
+.container .grid .text-content img {
+  /* La transition s'applique ├á la fois sur la largeur et la hauteur, avec une dur├®e d'une seconde.*/
+  max-width: 100%;
+  vertical-align: top;
+  -webkit-transition: all 1s ease;
+  /* Safari et Chrome*/
+  -moz-transition: all 1s ease;
+  /* Firefox*/
+  -ms-transition: all 1s ease;
+  /* Internet Explorer 9*/
+  -o-transition: all 1s ease;
+  /* Opera*/
+  transition: all 1s ease;
+}
+/* line 146, scss/_contact.scss */
+.container .grid .text-content:hover img {
+  /* L'image est grossie de 10%*/
+  -webkit-transform: scale(1.3);
+  /* Safari et Chrome*/
+  -moz-transform: scale(1.3);
+  /* Firefox*/
+  -ms-transform: scale(1.3);
+  /* Internet Explorer 9*/
+  -o-transform: scale(1.3);
+  /* Opera*/
+  transform: scale(1.3);
+  -webkit-box-shadow: 1px 3px 28px -2px #654ea3;
+  -moz-box-shadow: 1px 3px 28px -2px #654ea3;
+  box-shadow: 1px 3px 28px -2px #654ea3;
+}
+/* line 158, scss/_contact.scss */
+.container .grid .text-content figcaption {
+  position: absolute;
+  height: 45px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  overflow: hidden;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.83);
+  border: 2px dashed #D27497;
+}
+/* line 169, scss/_contact.scss */
+.container .grid .text-content figcaption h3 {
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+}
+/* line 177, scss/_contact.scss */
+.container .grid .text-content figcaption p {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9em;
+  color: #000;
+  margin-top: 27px;
+  text-align: center;
+  z-index: 1;
+}
+/* line 188, scss/_contact.scss */
+.container .grid .text-content figcaption a {
+  position: absolute;
+  text-decoration: none;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 8px;
+  color: #654EA3;
+}
+/* line 197, scss/_contact.scss */
+.container .grid .text-content figcaption a.btn-discover {
+  top: 150px;
+  text-align: center;
+  text-decoration: none;
+}
+/* line 206, scss/_contact.scss */
+.container .grid .text-content:hover figcaption,
+.container .grid .text-content.hover figcaption {
+  height: calc(85%);
+}
+
+/* line 213, scss/_contact.scss */
+.grid li.shown,
+.no-js .grid li,
+.no-cssanimations .grid li {
+  opacity: 1;
+}
+
+/* line 219, scss/_contact.scss */
 .grid.effect li.animate {
   -webkit-transform: scale(0.6);
   transform: scale(0.6);

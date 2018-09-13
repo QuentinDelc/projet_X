@@ -19,6 +19,10 @@ body {
 	letter-spacing: .98px;
 }
 
+span {
+	font-family: $regular-font;
+}
+
 .container {
 	max-width: 1170px;
 	margin: 0 auto;

@@ -49,7 +49,7 @@ if(empty($errors)){
 }
 ?>
 <?php require 'templates/header.php'; ?>
-<div class="container register">
+<div class="container log-account">
     <h1 class="main-title">Je créer mon compte</h1>
     <?php if(!empty($errors)): ?>
     <div class="alert alert-danger">

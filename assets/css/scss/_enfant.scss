@@ -1,0 +1,242 @@
+/******************* BANNER ****************************/
+.banner.enfant {
+  background-image: url('../images/banner/enfant.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  .banner_overlay {
+    background: rgba(66, 64, 64, .45);
+    border-bottom: 1px solid $second-color;
+
+    .banner_container {
+      height: 550px;
+      position: relative;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -ms-flex-align: center;
+      align-items: center;
+
+      @media(max-width: 990px) {
+        margin-top: -87px;
+      }
+
+      @media(max-width: 550px) {
+        margin-top: 0;
+      }
+
+      .box-banner {
+        background: rgba(101, 78, 163, 0.3);
+        border: 6px solid transparent;
+        outline: 2px dashed $second-color;
+        display: -ms-inline-flexbox;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-pack: center;
+        justify-content: center;
+        text-align: center;
+        background-clip: padding-box;
+        font-size: 12px;
+        letter-spacing: 1.2px;
+        text-transform: uppercase;
+        width: auto;
+        padding: 0 130px;
+        vertical-align: middle;
+        display: flex;
+        flex-wrap: wrap;
+
+        @media (max-width: 500px) {
+          padding: 0 35px;
+        }
+
+        .box-banner-big .box-banner_title {
+          position: relative;
+          line-height: 1.3;
+          letter-spacing: 6.8px;
+        }
+      }
+
+      .banner_arrow-bottom {
+        width: 42px;
+        height: 40px;
+        display: block;
+        background: url(../images/icones/down-arrow.png) center no-repeat;
+        background-size: 26px auto;
+        position: absolute;
+        bottom: 27px;
+        border: 1px solid $second-color;
+        background-color: rgba(101, 78, 163, 0.3);
+        padding: 23px 30px;
+      }
+    }
+  }
+}
+/**************** END BANNER *******************/
+
+.container {
+  h1 {
+    text-align: center;
+    font-size: 44px;
+    margin-top: 20px;
+    margin-bottom: 27px;
+    color: #fff;
+  }
+
+  .grid {
+    max-width: 69em;
+    list-style: none;
+    margin: 30px auto;
+    padding: 0;
+
+    li {
+      display: block;
+      float: left;
+      padding: 17px;
+      width: 33%;
+      opacity: 0;
+
+      @media(max-width: 900px) {
+        width: 50%;
+      }
+
+      @media(max-width: 500px) {
+        width: 100%;
+      }
+
+      a {
+        &.img {
+          outline: none;
+          border: none;
+          display: block;
+          max-width: 100%;
+        }
+      }
+    }
+
+    .text-content {
+      position: relative;
+      display: inline-block;
+      overflow: hidden;
+      margin: 8px;
+      width: 100%;
+      font-size: 16px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+      z-index: 2;
+
+      * {
+        -webkit-transition: all 0.35s;
+        transition: all 0.35s;
+      }
+
+      img {
+        /* La transition s'applique à la fois sur la largeur et la hauteur, avec une durée d'une seconde.*/
+        max-width: 100%;
+        vertical-align: top;
+        -webkit-transition: all 1s ease; /* Safari et Chrome*/
+        -moz-transition: all 1s ease; /* Firefox*/
+        -ms-transition: all 1s ease; /* Internet Explorer 9*/
+        -o-transition: all 1s ease; /* Opera*/
+        transition: all 1s ease;
+      }
+
+      &:hover img {
+        /* L'image est grossie de 10%*/
+        -webkit-transform:scale(1.3); /* Safari et Chrome*/
+        -moz-transform:scale(1.3); /* Firefox*/
+        -ms-transform:scale(1.3); /* Internet Explorer 9*/
+        -o-transform:scale(1.3); /* Opera*/
+        transform:scale(1.3);
+        -webkit-box-shadow: 1px 3px 28px -2px rgba(101,78,163,1);
+        -moz-box-shadow: 1px 3px 28px -2px rgba(101,78,163,1);
+        box-shadow: 1px 3px 28px -2px rgba(101,78,163,1);
+      }
+
+      figcaption {
+        position: absolute;
+        height: 45px;
+        left: 15px;
+        right: 15px;
+        bottom: 15px;
+        overflow: hidden;
+        padding: 15px;
+        background-color: rgba(255, 255, 255, 0.83);
+        border: 2px dashed #D27497;
+
+        h3 {
+          text-transform: uppercase;
+          font-size: 17px;
+          font-weight: 400;
+          line-height: 24px;
+          text-align: center;
+        }
+
+        p {
+          position: relative;
+          padding: 0;
+          margin: 0;
+          font-size: 0.9em;
+          color: #000;
+          margin-top: 27px;
+          text-align: center;
+          z-index: 1;
+        }
+
+        a {
+          position: absolute;
+          text-decoration: none;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          top: 8px;
+          color: $button-color;
+
+          &.btn-discover {
+            top: 150px;
+            text-align: center;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
+    .text-content:hover figcaption,
+    .text-content.hover figcaption {
+      height: calc(85%);
+    }
+  }
+}
+
+.grid li.shown,
+.no-js .grid li,
+.no-cssanimations .grid li {
+  opacity: 1;
+}
+
+.grid.effect li.animate {
+  -webkit-transform: scale(0.6);
+  transform: scale(0.6);
+  -webkit-animation: scaleUp 0.65s ease-in-out forwards;
+  animation: scaleUp 0.65s ease-in-out forwards;
+}
+
+@-webkit-keyframes scaleUp {
+  0% { }
+  100% {
+    -webkit-transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes scaleUp {
+  0% { }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); opacity: 1;
+  }
+}
+
+////////////////////////////////////////////////////

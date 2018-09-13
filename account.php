@@ -16,7 +16,7 @@ if(!empty($_POST)){
 }
 require 'templates/header.php';
 ?>
-<div class="container account">
+<div class="container log-account">
     <h1 class="main-title">Bonjour <?= $_SESSION['auth']->username; ?></h1>
     <form action="" method="post">
         <div class="form-group">

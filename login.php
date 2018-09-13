@@ -14,6 +14,7 @@ if(!empty($_POST) && !empty($_POST['username']) && !empty($_POST['password'])){
         $_SESSION['auth'] = $user;
         //setFlash('Vous êtes maintenant connecté');
 $_SESSION['flash']['success'] = 'Vous êtes maintenant connecté';
+
 if($_POST['remember']){
     $remember_token = str_random(250);
     $pdo->prepare('UPDATE user SET remember_token = ? WHERE id = ?')->execute([$remember_token, $user->id]);
@@ -27,7 +28,7 @@ if($_POST['remember']){
 }
 ?>
 <?php require 'templates/header.php'; ?>
-<div class="container login">
+<div class="container log-account">
     <h1 class="main-title">CONNECTEZ-VOUS</h1>
     <form action="" method="POST">
         <div class="form-group">
@@ -35,8 +36,9 @@ if($_POST['remember']){
             <?= input('username'); ?>
         </div>
         <div class="form-group">
-            <label for="password">Mot de passe <a href="forget.php">(J'ai oublié mon mot de passe)</a></label>
+            <label for="password">Mot de passe</label>
             <input type="password" name="password" class="form-control"/>
+            <a href="forget.php">(J'ai oublié mon mot de passe)</a>
         </div>
         <div class="form-group">
             <label>

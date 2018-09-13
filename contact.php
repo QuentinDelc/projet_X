@@ -17,14 +17,14 @@ $email = $_POST['email'];
 $message = $_POST['message'];
 
 $mail = new PHPMailer(true);
-$mail->Host = "xxxxxxxxxxxx";
+$mail->Host = "mail.biarritz.yo.fr";
 $mail->isSMTP();
 $mail->SMTPAuth = true;
-$mail->Username = 'xxxxxxxxxxxxxxxxxx';
-$mail->Password = 'xxxxxxxxxxxxxxxxxxx';
+$mail->Username = 'contact@biarritz.yo.fr';
+$mail->Password = 'tutocoutureadmin64200';
 $mail->SMTPSecure = "ssl"; //TLS
 $mail->Port = 465; //587
-$mail->addAddress('address', 'name');
+$mail->addAddress('delclooquentin@gmail.com', 'Quentin');
 /*$mail->addReplyTo($_POST['email'], $_POST['name']);*/
 $mail->setFrom($email, $name);
 $mail->Subject = $subject;
@@ -36,7 +36,7 @@ $mail->Body = $message;
 $headers  = 'MIME-Version: 1.0' . "\r\n";
 $headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
 $headers .= $email . "\r\n";
-$to = 'xxxxxxxxxxxxxxxxx';
+$to = 'tutocoutureadmin64200';
 
 // Texte
 $body = '
@@ -78,10 +78,12 @@ $file_content .= "Message : " . "\n".$message;
 file_put_contents($upload_dir .$file_name. '.txt', $file_content);
 
 if ($mail->send()) {
-$resultok='<div class="alert alert-success">Votre message a bien été envoyé.</div>';
+    $resultok='<div class="alert alert-success">Votre message a bien été envoyé.</div>';
+    echo $resultok;
 } else {
-$resultko='<div class="alert alert-danger">Une erreur est survenu.</div>';
-}
+    $resultko='<div class="alert alert-danger">Une erreur est survenu.</div>';
+    echo $resultko;
+    }
 }
 
 function checkDirorCreate($path) {
@@ -104,15 +106,18 @@ return $str;
 }
 ?>
 
-<div class="container contact">
+<div class="banner contact">
+    <div class="banner_overlay">
+        <div class="container banner_container">
+            <div class="box-banner box-banner-big">
+                <h1 class="box-banner_title">Contact</h1>
+            </div><a class="banner_arrow-bottom js-scrollto" href="#contact"></a>
+        </div>
+    </div>
+</div>
+<div class="container log-account" id="contact">
     <h1 class="main-title">Contactez nous</h1>
-    <div class="validation-message">
-        <?php echo $resultok; ?>
-    </div>
-    <div class="error-message">
-        <?php echo $resultko; ?>
-    </div>
-    <div class="col-sm-6 formulaire">
+    <div class="formulaire">
         <form method="post" class="">
             <div class="form-group">
                 <label for="name">Votre nom</label>

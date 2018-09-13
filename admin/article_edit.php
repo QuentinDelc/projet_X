@@ -25,7 +25,7 @@ if(isset($_POST['name']) && isset($_POST['slug']) && isset($_POST['description']
             $id = $pdo->quote($_GET['id']);
             $pdo->query("UPDATE article SET name=$name, slug=$slug, description=$description, content=$content, difficultyId=$difficultyId WHERE id=$id");
         } else {
-            $pdo->query("INSERT INTO article (name, description, content, slug) 
+            $pdo->query("INSERT INTO article (name, description, content, slug)
             VALUES ('name', 'description', 'content', 'slug')");
             $pdo->query("INSERT INTO difficulty (name) VALUES ('difficultId')");
 */
@@ -33,7 +33,6 @@ if(isset($_POST['name']) && isset($_POST['slug']) && isset($_POST['description']
             $_GET['id'] = $pdo->lastInsertId();
             $articleId = $_GET['id'];
             $pdo->query("INSERT INTO category_article SET categoryId=$categoryId, articleId=$articleId");
-
         }
         $_SESSION['flash']['success'] = 'L\'article a bien été ajouté';
 
@@ -159,12 +158,10 @@ if(isset($_GET['id'])) {
     $pdfs = array();
 }
 
-//var_dump(csrf());
 require_once '../templates/admin_header.php';
 ?>
 
     <h1>Ajouter un article</h1>
-
 
         <form action="" method="POST" enctype="multipart/form-data">
             <div class="col-sm-9">
@@ -212,13 +209,13 @@ require_once '../templates/admin_header.php';
                 </div>
                 <?php foreach($pdfs as $k => $pdf): ?>
                     <p>
-                        <a href="?delete_pdf=<?= $pdf['id']; ?>&<?=csrf(); ?>" onclick="return confirm('Voulez vous supprimer le pdf de l\'article?);">Supprimer le pdf</a>
+                        <a href="?delete_pdf=<?= $pdf['id']; ?>&<?=csrf(); ?>" onclick="myFunction()confirm('Voulez vous supprimer le pdf de l\'article?);">Supprimer le pdf</a>
                     </p>
                 <?php endforeach; ?>
             </div>
         </form>
 
-    <script type="text/javascript" src="../assets/js/ckeditor/ckeditor.js"></script>
+    <script type="text/javascript" src="../assets/ckeditor/ckeditor.js"></script>
 
 
 <?php require_once '../templates/admin_footer.php';

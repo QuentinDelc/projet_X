@@ -7,7 +7,7 @@ logged_only();
  * SUPPRESSION
  */
 if(isset($_GET['delete'])) {
-    checkCsrfDelete();
+    checkCsrf();
     $delete = $pdo->quote($_GET['delete']);
     $pdo->query("DELETE FROM material id=$delete");
     $_SESSION['flash']['success'] = 'Le matériel a bien été supprimé';

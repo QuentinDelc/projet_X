@@ -2,7 +2,7 @@
 if(session_status() == PHP_SESSION_NONE){
     session_start();
 }
-if (empty($_SESSION['auth']) && basename($_SERVER['SCRIPT_FILENAME']) !== 'login.php' || isset($_SESSION['auth']  ) && !$_SESSION['auth']->isAdmin && basename($_SERVER['SCRIPT_FILENAME']) !== 'login.php') {
+if (empty($_SESSION['auth']) && basename($_SERVER['SCRIPT_FILENAME']) !== 'login.php' || isset($_SESSION['auth']) && !$_SESSION['auth']->isAdmin && basename($_SERVER['SCRIPT_FILENAME']) !== 'login.php') {
     if (isset($_SESSION['auth']) && !$_SESSION['auth']->isAdmin) {
         header('Location: ../login.php');
     }

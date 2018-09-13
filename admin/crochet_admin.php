@@ -8,7 +8,7 @@ logged_only();
  * SUPPRESSION
  */
 if(isset($_GET['delete'])) {
-    checkCsrfDelete();
+    checkCsrf();
     $delete = $pdo->quote($_GET['delete']);
     $pdo->query("DELETE FROM article WHERE id=$delete");
     $_SESSION['flash']['success'] = 'L\'article a bien été supprimée';
