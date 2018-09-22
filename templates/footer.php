@@ -27,10 +27,10 @@
                 <div class="social col-lg-2 col-md-6 col-sm-12">
                     <h2 class="follow">Nous suivre</h2>
                     <div class="social-link">
-                        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.pinterest.com" target="_blank"><i class="fab fa-pinterest"></i></a>
-                        <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/MondialTissus/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/mondialtissus/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.pinterest.fr/mondialtissus/" target="_blank"><i class="fab fa-pinterest"></i></a>
+                        <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
                     </div>
                 </div>
             </div>

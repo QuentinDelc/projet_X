@@ -13,13 +13,12 @@ if(isset($_POST['name']) && isset($_POST['slug'])) {
             $id = $pdo->quote($_GET['id']);
             $pdo->query("UPDATE category SET name=$name, slug=$slug WHERE id=$id");
         } else {
-            $pdo->query("INSERT INTO category SET name=$name, slug=$slug");
-            /*$pdo->query("INSERT INTO category_article SET id=$id WHERE categoryId=$id");*/
+            $pdo->query("INSERT INTO category (name, slug) VALUES ($name, $slug)");
         }
         $_SESSION['flash']['success'] = 'La catégorie a bien été ajoutée';
         header('Location: category.php');
         die();
-    }else{
+    } else {
         $_SESSION['flash']['danger'] = 'La catégorie n\'a pas été ajouté car le slug n\'est pas valide';
         header('Location: category_edit.php');
     }

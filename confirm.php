@@ -11,7 +11,7 @@ if($user && $user->confirmation_token == $token ){
     $pdo->prepare('UPDATE user SET confirmation_token = NULL, confirmed_at = NOW() WHERE id = ?')->execute([$user_id]);
     $_SESSION['flash']['success'] = 'Votre compte a bien été validé';
     $_SESSION['auth'] = $user;
-    header('Location: account.php');
+    header('Location: .php');
 }else{
     $_SESSION['flash']['danger'] = "Ce token n'est plus valide";
     header('Location: login.php');

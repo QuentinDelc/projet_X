@@ -19,7 +19,7 @@ if(isset($_GET['delete'])) {
 /**
  * CATEGORYS
  */
-$select = $pdo->query('SELECT id, name, description, slug 
+$select = $pdo->query('SELECT article.id, name, description, slug 
                                  FROM article
                                  INNER JOIN category_article 
                                  ON article.id = articleId

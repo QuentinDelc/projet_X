@@ -1,0 +1,29 @@
+.main-title {
+  text-align: center;
+  font-size: 24px;
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 50px;
+
+  &:after {
+    position: absolute;
+    content: "";
+    width: 160px;
+    height: 10px;
+    left: 50%;
+    top: 45px;
+    margin-left: -80px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../images/icones/souligne.svg);
+
+    @media(max-width: 650px) {
+      display: none;
+    }
+  }
+}
+
+.facebook-widget {
+  margin-bottom: 30px;
+}

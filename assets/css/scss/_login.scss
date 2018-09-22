@@ -49,10 +49,26 @@
       a {
         color: #C62168;
         text-decoration: none;
+
         &:hover,
         &:focus {
           color: $button-color;
         }
+      }
+    }
+
+    p {
+      margin-top: 20px;
+      color: $button-color;
+    }
+
+    a {
+      color: #C62168;
+      text-decoration: none;
+
+      &:hover,
+      &:focus {
+        color: $button-color;
       }
     }
   }

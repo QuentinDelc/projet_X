@@ -1,5 +1,5 @@
 <div id="social">
-    <h2 class="main-title-social">Découvrez nos dernières actus sur les réseaux sociaux</h2>
+    <h2 class="main-title">Découvrez nos dernières actus sur les réseaux sociaux</h2>
     <div class="container social-media">
         <div class="row">
             <div class="col-sm-6 facebook-widget">

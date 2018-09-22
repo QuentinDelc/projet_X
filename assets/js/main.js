@@ -19,7 +19,7 @@ $('.owl-carousel').owlCarousel({
     loop:true,
     margin:0,
     nav:true,
-    autoplay:false,
+    autoplay:true,
     responsive:{
         0:{
             items:1
@@ -44,14 +44,19 @@ $('.owl-carousel').owlCarousel({
 
 
 /*************** STICKY MENU ******************/
+//Exécute la fonction lors du scroll
 window.onscroll = function() {stickyMenu()};
 
 var navbar = document.getElementById("navbar");
+//Récupère la position supérieure par rapport au sommet de la page
 var sticky = navbar.offsetTop;
 
 function stickyMenu() {
+    //Renvoi le nombre de pixel que le document fait actuellement défiler sur l'axe vertical
     if (window.pageYOffset >= sticky) {
+        //Ajoute une class lorsque la nav arrive en haut
         navbar.classList.add("sticky")
+        //Supprime la class lorsque la nav retrouve sa position initiale
     } else {
         navbar.classList.remove("sticky");
     }
@@ -65,9 +70,19 @@ $(document).ready(function(){
 });
 
 
-/************ AFFICHAGE DES MINIATURES AU SCROLL **************/
-new AnimOnScroll( document.getElementById( 'grid' ), {
-    minDuration : 0.6,
-    maxDuration : 0.9,
-    viewportFactor : 0.2
-} );
+/*************** SCROLL TOP *************************/
+$(window).scroll(function() {
+    // Si la page est scrollé à plus de 800px on ajoute le bouton
+    if ($(this).scrollTop() >= 800) {
+        $('#return-to-top').fadeIn(200);
+    } else {
+        // Sinon on enlève le bouton
+        $('#return-to-top').fadeOut(200);
+    }
+});
+$('#return-to-top').click(function() {
+    // Lorsque l'on click sur le bouton on revient en haut de page
+    $('body,html').animate({
+        scrollTop : 0
+    }, 500);
+});

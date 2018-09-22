@@ -144,7 +144,7 @@
       }
 
       &:hover img {
-        /* L'image est grossie de 10%*/
+        /* L'image est grossie de 13%*/
         -webkit-transform:scale(1.3); /* Safari et Chrome*/
         -moz-transform:scale(1.3); /* Firefox*/
         -ms-transform:scale(1.3); /* Internet Explorer 9*/
@@ -183,6 +183,10 @@
           margin-top: 27px;
           text-align: center;
           z-index: 1;
+
+          @media(max-width: 320px) {
+            font-size: 0.8em!important;
+          }
         }
 
         a {
@@ -198,6 +202,10 @@
             top: 150px;
             text-align: center;
             text-decoration: none;
+
+            @media(max-width: 320px) {
+              top: 125px!important;
+            }
           }
         }
       }
@@ -214,6 +222,8 @@
 .no-js .grid li,
 .no-cssanimations .grid li {
   opacity: 1;
+  padding-left: 0!important;
+  padding-top: 0!important;
 }
 
 .grid.effect li.animate {
@@ -221,6 +231,8 @@
   transform: scale(0.6);
   -webkit-animation: scaleUp 0.65s ease-in-out forwards;
   animation: scaleUp 0.65s ease-in-out forwards;
+  padding-left: 0!important;
+  padding-top: 0!important;
 }
 
 @-webkit-keyframes scaleUp {

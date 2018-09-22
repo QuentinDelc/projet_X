@@ -3,6 +3,12 @@
     color: #000;
   }
 
+  .difficulty {
+    text-align: center;
+    margin-bottom: 30px;
+    color: $button-color;
+  }
+
   h2,
   h3 {
     font-weight: bold;
@@ -13,6 +19,12 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+    max-width: 720px;
+    width: 100%!important;
+    height: auto!important;
+
+    @media(max-width: 990px) {
+    }
   }
 
   ul {
@@ -20,12 +32,19 @@
     margin-left: 3%;
   }
 
-  .pdf {
+  .pdf, .comment {
     text-align: center;
     margin-top: 30px;
     margin-bottom: 30px;
 
-    a.download-pdf {
+    .message {
+      color: $button-color;
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
+
+    a.download-pdf,
+    a.comment {
       text-decoration: none;
       color: #fff;
       background-color: $button-color;
@@ -38,6 +57,14 @@
         color: $button-color;
         background-color: #fff;
         transition: .3s ease-in all;
+      }
+
+      textarea {
+        width: 70%;
+      }
+
+      @media(max-width: 450px) {
+        font-size: 12px;
       }
     }
   }

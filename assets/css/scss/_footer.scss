@@ -48,6 +48,10 @@
         margin-bottom: 10px;
       }
 
+      @media(max-width: 320px) {
+        font-size: 15px;
+      }
+
   /*    &.after::after {
         position: absolute;
         content: "";
@@ -76,14 +80,22 @@
         background-repeat: no-repeat;
         background-image: url(../images/icones/souligne.svg);
 
-        /*@media(max-width: 990px) {
-          left: 168px;
-        }*/
+        @media(max-width: 375px) {
+          right: 122px;
+        }
+
+        @media(max-width: 320px) {
+          right: 97px;
+        }
       }
     }
 
     ul {
       padding-left: 10px;
+
+      @media(max-width: 768px) {
+          padding-left: 0;
+      }
 
       li {
         a {
@@ -103,6 +115,11 @@
 
     .social {
       text-align: center;
+      padding-right: 30px;
+
+      @media(max-width: 768px) {
+        padding-right: 0;
+      }
 
       a {
         color: #8f9294;
@@ -133,11 +150,6 @@ ul.map-list {
 	margin-bottom: 0;
 }
 
-.social {
-	padding-right: 30px;
-}
-
-
 /************* SOCIAL WIDGET***********************/
 #social {
   text-align: center;
@@ -155,8 +167,6 @@ ul.map-list {
   }
 
 }
-
-
 
 .title-social:after {
   margin-left: auto;

@@ -4,7 +4,7 @@ require_once '../templates/admin_header.php';
 logged_only();
 
 /************* INSERTION ET EDITION D'UN ARTICLE ************************/
-if(isset($_POST['name']) && isset($_POST['slug']) && isset($_POST['description']) && isset($_POST['content']) && isset ($_POST['categoryId']) && isset($_POST['difficultyId'])) {
+if(isset($_POST['name']) && isset($_POST['slug']) && isset($_POST['description']) && isset($_POST['content']) && isset ($_POST['categoryId']) && isset($_POST['difficultyId']) && ISSET ($_POST['authorId'])) {
     checkCsrf();
     $slug = $_POST['slug'];
     if(preg_match('/^[a-z\-0-9]+$/', $slug)) {
@@ -14,25 +14,19 @@ if(isset($_POST['name']) && isset($_POST['slug']) && isset($_POST['description']
         $content = $pdo->quote($_POST['content']);
         $categoryId = $pdo->quote($_POST['categoryId']);
         $difficultyId = $pdo->quote($_POST['difficultyId']);
+        $authorId = $pdo->quote($_POST['authorId']);
 
         if (isset($_GET['id'])) {
             $id = $pdo->quote($_GET['id']);
-            $pdo->query("UPDATE article SET name=$name, slug=$slug, description=$description, content=$content, difficultyId=$difficultyId WHERE id=$id");
+            $pdo->query("UPDATE article SET name=$name, slug=$slug, description=$description, content=$content, difficultyId=$difficultyId, authorId=$authorId WHERE id=$id");
+            $pdo->query("UPDATE category_article SET categoryId=$categoryId WHERE articleId = $id");
         } else {
-            $pdo->query("INSERT INTO article SET name=$name, description=$description, slug=$slug, content=$content, difficultyId=$difficultyId");
-/*
-        if (isset($_GET['id'])) {
-            $id = $pdo->quote($_GET['id']);
-            $pdo->query("UPDATE article SET name=$name, slug=$slug, description=$description, content=$content, difficultyId=$difficultyId WHERE id=$id");
-        } else {
-            $pdo->query("INSERT INTO article (name, description, content, slug)
-            VALUES ('name', 'description', 'content', 'slug')");
-            $pdo->query("INSERT INTO difficulty (name) VALUES ('difficultId')");
-*/
+            $pdo->query("INSERT INTO article (name, description, slug, content, difficultyId, authorId) VALUES ($name, $description, $slug, $content, $difficultyId, $authorId)");
+
             /**********REQUETE TABLE RELATIONNELLE CATEGORY ***********/
             $_GET['id'] = $pdo->lastInsertId();
             $articleId = $_GET['id'];
-            $pdo->query("INSERT INTO category_article SET categoryId=$categoryId, articleId=$articleId");
+            $pdo->query("INSERT INTO category_article (categoryId, articleId) VALUES ($categoryId, $articleId)");
         }
         $_SESSION['flash']['success'] = 'L\'article a bien été ajouté';
 
@@ -41,7 +35,7 @@ if(isset($_POST['name']) && isset($_POST['slug']) && isset($_POST['description']
         $files = $_FILES['image'];
         $extension = strtolower(pathinfo($files['name'], PATHINFO_EXTENSION));
         if(in_array($extension, array('jpg', 'png', 'jpeg'))) {
-            $pdo->query("INSERT INTO image SET articleId=$articleId");
+            $pdo->query("INSERT INTO image (articleId) VALUES ($articleId)");
             $imageId = $pdo->lastInsertId();
             $imageName = $imageId . '.' . $extension;
             move_uploaded_file($files['tmp_name'], IMAGES . '/articles/' . $imageName);
@@ -53,7 +47,7 @@ if(isset($_POST['name']) && isset($_POST['slug']) && isset($_POST['description']
         $files = $_FILES['pdf'];
         $extension = pathinfo($files['name'], PATHINFO_EXTENSION);
         if(in_array($extension, array('pdf'))) {
-            $pdo->query("INSERT INTO pdf SET articleId=$articleId");
+            $pdo->query("INSERT INTO pdf (articleId) VALUES ($articleId)");
             $pdfId = $pdo->lastInsertId();
             $pdfName = $pdfId . '.' . $extension;
             move_uploaded_file($files['tmp_name'], IMAGES . '/pdf/' . $pdfName);
@@ -83,7 +77,7 @@ if(isset($_GET['id'])) {
 }
 
 /***************** AFFICHAGE DES CATEGORYS ********************/
-$select = $pdo->query('SELECT id, name FROM category ORDER BY name ASC');
+$select = $pdo->query('SELECT id, name FROM category ORDER BY id ASC');
 $select->setFetchMode(PDO::FETCH_ASSOC);
 $categorys = $select->fetchAll();
 $categorysList = array();
@@ -98,6 +92,15 @@ $difficultys = $select->fetchAll();
 $difficultysList = array();
 foreach($difficultys as $difficulty) {
     $difficultysList[$difficulty['id']] = $difficulty['name'];
+}
+
+/***************** AFFICHAGE DES AUTEURS ********************/
+$select = $pdo->query('SELECT id, username, isAdmin FROM user WHERE isAdmin = 1 ORDER BY id ASC');
+$select->setFetchMode(PDO::FETCH_ASSOC);
+$users = $select->fetchAll();
+$usersList = array();
+foreach($users as $user) {
+    $usersList[$user['id']] = $user['username'];
 }
 
 /************* SUPRESSION MINIATURE ********************/
@@ -188,6 +191,10 @@ require_once '../templates/admin_header.php';
                     <label for="difficultyId">Difficulté</label>
                     <?= select('difficultyId', $difficultysList); ?>
                 </div>
+                <div class="form-group">
+                    <label for="authorId">Auteur</label>
+                    <?= select('authorId', $usersList); ?>
+                </div>
                 <?= csrfInput(); ?>
                 <button type="submit" class="btn btn-primary">Enregistrer</button>
             </div>
@@ -218,4 +225,3 @@ require_once '../templates/admin_header.php';
     <script type="text/javascript" src="../assets/ckeditor/ckeditor.js"></script>
 
 
-<?php require_once '../templates/admin_footer.php';

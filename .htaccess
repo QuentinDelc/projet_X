@@ -1,4 +1,5 @@
 <IfModule mod_rewrite.c>
+  RewriteRule ^couture/([a-z0-9\-]+)$ article.php?slug=$1
   RewriteEngine on
 # Custom php
   RewriteCond %{REQUEST_URI} !/sites/custom_php/[^/]*\.php$

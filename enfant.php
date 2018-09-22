@@ -42,3 +42,12 @@ $articles = $select->fetchAll();
     </div>
 
 <?php require 'templates/footer.php'; ?>
+<script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+        new AnimOnScroll(document.getElementById('grid'), {
+            minDuration : 0.6,
+            maxDuration : 0.9,
+            viewportFactor : 0.2
+        });
+    });
+</script>

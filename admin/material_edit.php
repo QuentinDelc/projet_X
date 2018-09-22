@@ -10,7 +10,7 @@ if(isset($_POST['name'])) {
         $id = $pdo->quote($_GET['id']);
         $pdo->query("UPDATE material SET name=$name WHERE id=$id");
     } else {
-        $pdo->query("INSERT INTO material SET name=$name");
+        $pdo->query("INSERT INTO material (name) VALUES ($name)");
         /*$pdo->query("INSERT INTO category_article SET id=$id WHERE categoryId=$id");*/
     }
     $_SESSION['flash']['success'] = 'Le matériel a bien été ajoutée';

@@ -12,13 +12,14 @@ if(!empty($_POST) && !empty($_POST['username']) && !empty($_POST['password'])){
     $user = $req->fetch();
     if(password_verify($_POST['password'], $user->password)){
         $_SESSION['auth'] = $user;
-        //setFlash('Vous êtes maintenant connecté');
 $_SESSION['flash']['success'] = 'Vous êtes maintenant connecté';
-
+var_dump($_POST['remember']);
 if($_POST['remember']){
     $remember_token = str_random(250);
     $pdo->prepare('UPDATE user SET remember_token = ? WHERE id = ?')->execute([$remember_token, $user->id]);
-    setcookie('remember', $user->id . '==' . $remember_token . sha1($user->id . ''), time() + 60 * 60 * 24 * 7);
+    // 1er paramètre remember pour tout sauvegarder, user-> en 1er paramètre de la clé remember_token je sépara par ==,
+    // je cripte l'id suivie de la clé liametava, enfin en 3eme paramètre le temps du cookie qui expire dans 7 jours
+    setcookie('remember', $user->id . '==' . $remember_token . sha1($user->id . 'liametava'), time() + 60 * 60 * 24 * 7);
 }
         header('Location: index.php');
         die();
@@ -46,6 +47,8 @@ if($_POST['remember']){
             </label>
         </div>
         <button type="submit" class="btn btn-primary">Se connecter</button>
+        <p>Vous n'êtes pas encore inscrit ?</p>
+        <a href="register.php">C'est par ici !</a>
     </form>
 </div>
 

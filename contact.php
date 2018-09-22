@@ -53,18 +53,14 @@ $body .= "<p>Nom : " .$name. '</p>'. "\r\n";
 $body .= "<p>E-mail : " .$email. '</p>'. "\r\n";
 $body .= "<p>Sujet : " .$subject. '</p>'. "\r\n";
 $body .= "<p>Message : ". '</p><p>' .$message. '</p>';
-
 $body .=
 '</body>
 </html>';
 
 // Dossier d'upload des fichiers de traçage d'emails
 $upload_dir = $_SERVER['DOCUMENT_ROOT']. '/../mails/' .date('Y'). '/' .date('m'). '/';
-
 checkDirorCreate($_SERVER['DOCUMENT_ROOT']. '/../mails/');
-
 checkDirorCreate($_SERVER['DOCUMENT_ROOT']. '/../mails/' .date('Y'));
-
 checkDirorCreate($_SERVER['DOCUMENT_ROOT']. '/../mails/' .date('Y') .'/'. date('m'));
 
 $file_name  = '' .date('Y-m-d'). '_';
@@ -81,17 +77,16 @@ if ($mail->send()) {
     $resultok='<div class="alert alert-success">Votre message a bien été envoyé.</div>';
     echo $resultok;
 } else {
-    $resultko='<div class="alert alert-danger">Une erreur est survenu.</div>';
+    $resultko='<div class="alert alert-danger">Une erreur est survenue.</div>';
     echo $resultko;
     }
 }
 
 function checkDirorCreate($path) {
 
-if (file_exists($path) == false)
-{
-mkdir($path);
-}
+if (file_exists($path) == false) {
+    mkdir($path);
+    }
 }
 
 function wd_remove_accents($str, $charset='utf-8') {

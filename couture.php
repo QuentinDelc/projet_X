@@ -31,7 +31,7 @@ $articles = $select->fetchAll();
                 <figure class="text-content image">
                     <img src="assets/images/articles/<?= $article['imageName']; ?>" alt="">
                     <figcaption>
-                        <h3><a href="article.php?id=<?= $article['id']; ?>" class="title-article"><?= $article['name']; ?></a></h3>
+                        <h3><a href="article.php?id=<?= $article['slug']; ?>" class="title-article"><?= $article['name']; ?></a></h3>
                         <p><?= $article['description']; ?></p>
                         <a class="btn-discover" href="article.php?id=<?= $article['id']; ?>">DÉCOUVRIR</a>
                     </figcaption>
@@ -42,3 +42,13 @@ $articles = $select->fetchAll();
 </div>
 
 <?php require 'templates/footer.php'; ?>
+<script>
+    /* Exécute le script une fois que le ocument html est complètement chargé */
+    document.addEventListener("DOMContentLoaded", function(event) {
+        new AnimOnScroll(document.getElementById('grid'), {
+            minDuration : 0.6,
+            maxDuration : 0.9,
+            viewportFactor : 0.2
+        });
+    });
+</script>

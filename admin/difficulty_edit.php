@@ -5,19 +5,21 @@ logged_only();
 
 if(isset($_POST['name'])) {
     checkCsrf();
-    $name = $pdo->quote($_POST['name']);
-        if(isset($_GET['id'])) {
+    $name = $_POST['name'];
+    if (preg_match('/^[a-z\-0-9]+$/', $name)) {
+        $name = $pdo->quote($_POST['name']);
+        if (isset($_GET['id'])) {
             $id = $pdo->quote($_GET['id']);
             $pdo->query("UPDATE difficulty SET name=$name WHERE id=$id");
         } else {
-            $pdo->query("INSERT INTO difficulty SET name=$name");
+            $pdo->query("INSERT INTO difficulty (name) VALUES ($name)");
         }
         $_SESSION['flash']['success'] = 'La difficulté a bien été ajoutée';
         header('Location: difficulty.php');
         die();
-    }else{
+    } else {
         $_SESSION['flash']['danger'] = 'La difficulté n\'a pas été ajouté';
-        //header('Location: difficulty_edit.php');
+    }
 }
 
 if(isset($_GET['id'])) {

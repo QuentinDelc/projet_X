@@ -33,13 +33,14 @@ if(session_status() == PHP_SESSION_NONE){
 
 <body>
 <header>
+    <a href="javascript:" id="return-to-top"><i class="fas fa-angle-up"></i></a>
     <div class="top-header">
         <div class="container header">
             <div class="col-md-12 col-lg-6 widget-account">
                 <div class="top-bar-account">
                     <ul>
                         <?php if (isset($_SESSION['auth'])): ?>
-                            <li><a href="account.php" class="nav-links">Bonjour <?= $_SESSION['auth']->username; ?> !</a></li>
+                            <li class="nav-links user">Bonjour <?= $_SESSION['auth']->username; ?> !</li>
                             <li><a href="logout.php" class="nav-links">Se déconnecter</a></li>
                             <li><a href="account.php" class="nav-links">Mon compte</a></li>
                         <?php else: ?>
@@ -51,10 +52,10 @@ if(session_status() == PHP_SESSION_NONE){
             </div>
             <div class="col-md-6 top-bar-text">
                 <div class="social-media">
-                    <a href=""><i class="fab fa-facebook-f"></i></a>
-                    <a href=""><i class="fab fa-instagram"></i></a>
-                    <a href=""><i class="fab fa-pinterest"></i></a>
-                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/MondialTissus/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/mondialtissus/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.pinterest.fr/mondialtissus/" target="_blank"><i class="fab fa-pinterest"></i></a>
+                    <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
                 </div>
                 <!--<div class="search-bar">
                     <form method="get" class="form-inline">

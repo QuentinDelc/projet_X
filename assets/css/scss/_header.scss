@@ -1,3 +1,46 @@
+#return-to-top {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  background: rgba(101, 78, 163, 0.5);
+  width: 65px;
+  height: 65px;
+  display: block;
+  text-decoration: none;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  border-radius: 35px;
+  display: none;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+
+  i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 20px;
+    top: 13px;
+    font-size: 40px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+
+  &:hover {
+    background: rgba(101, 78, 163, 0.9);
+  }
+
+  &:hover i {
+    color: #fff;
+    top: 0;
+  }
+}
+
 .top-header {
   height: 50px;
   font-size: 18px;
@@ -14,8 +57,10 @@
     text-align: center;
     overflow: hidden;
     clear: both;
-    border-left: 1px dashed #D27497;
-    border-right: 1px dashed #D27497;
+
+    .nav-links.user {
+      color: $button-color;
+    }
 
     .top-bar-text {
       float: right;
@@ -64,7 +109,6 @@
     float: left;
     margin-bottom: 0;
     text-align: left;
-    /*border-left: 1px dashed #D27497;*/
     padding-bottom: 6px;
 
     @media(max-width: 990px) {
@@ -195,7 +239,7 @@ header {
           text-align: center;
 
           @media(max-width: 550px) {
-            margin-top: 90px;
+            margin-top: 88px;
             width: 111%;
           }
         }
@@ -209,10 +253,6 @@ header {
             margin-top: 10px;
             font-size: 24px;
             color: #000;
-
-            &:last-child {
-              /*border-bottom: 1px dashed $button-color;*/
-            }
           }
         }
 

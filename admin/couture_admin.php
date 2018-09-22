@@ -23,7 +23,7 @@ FROM c = category, a = article, ca = category_article
 WHERE c.id = ca.categoryId, ca.articleId = article.id
 c.id = 1
 */
-$select = $pdo->query('SELECT id, name, description, slug 
+$select = $pdo->query('SELECT article.id, name, description, slug 
                                  FROM article
                                  INNER JOIN category_article 
                                  ON article.id = articleId

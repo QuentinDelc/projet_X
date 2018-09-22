@@ -17,27 +17,41 @@ function logged_only(){
 }
 
 function reconnect_from_cookie(){
+    //Si l'utilisateur n'est pas connecté
     if(session_status() == PHP_SESSION_NONE){
         session_start();
     }
     if(isset($_COOKIE['remember']) && !isset($_SESSION['auth']) ){
         require_once 'db.php';
         if(!isset($pdo)){
+            // Afin de pouvoir accès à la varialble $pdo je la met en global car le requier est déjà fait ailleurs
             global $pdo;
         }
         $remember_token = $_COOKIE['remember'];
+        //je sépare le cookie par == avec la fonction explode() qui coupe une chaîne de caractères en segments
+        //et je sauvegarde ceci dans une variable
+        //Je récupère l'id de l'utilisateur qui sera la première partie
+        //Ensuite je fais une requête pour récupérer le premier utilisateur qui correspond
+        //et je récupère le premier résultat
         $parts = explode('==', $remember_token);
         $user_id = $parts[0];
         $req = $pdo->prepare('SELECT * FROM user WHERE id = ?');
         $req->execute([$user_id]);
         $user = $req->fetch();
         if($user){
-            $expected = $user_id . '==' . $user->remember_token . sha1($user_id . 'toto');
+            // si j'ai une info je vais vérifier que le token correspond
+            //en pasant en paramètre le $userId, ensuite le remember_token que je récupère en base de données
+            $expected = $user_id . '==' . $user->remember_token . sha1($user_id . 'liametava');
+            // et je demande que si $exepected et égale au token qui est stocké dans le cookie
+            // et bien je fait une connexion automatique
             if($expected == $remember_token){
                 session_start();
                 $_SESSION['auth'] = $user;
+                //si l'utilisateur correspond je refais un cookie en repassant en paramètre
+                // le token qui est remember_token et lui réinitialise la date
                 setcookie('remember', $remember_token, time() + 60 * 60 * 24 * 7);
             } else{
+                //Si l'utilisateur ne correspond pas je détreuit le cookie comme avant
                 setcookie('remember', null, -1);
             }
         }else{
@@ -84,26 +98,6 @@ function select($id, $options = array()) {
 }
 
 
-/*
-function convertSize($octet) {
-    $unit = ['octets', 'ko', 'mo', 'go'];
-
-    if ($octet < 1000) : // Octet
-        $result = $octet . ' ' . $unit[0];
-    elseif ($octet < 1000000) : // Ko
-        $ko     = round($octet/1024, 2);
-        $result = $ko . ' ' . $unit[1];
-    elseif ($octet < 1000000000) : // Mo
-        $mo     = round($octet/(1024*1024), 2);
-        $result = $mo . ' ' . $unit[2];
-    else : // Go
-        $go     = round($octet/(1024*1024*1024), 2);
-        $result = $go . ' ' . $unit[3];
-    endif;
-
-    return $result;
-}*/
-
 function resizeImage($file, $width, $height) {
     $info = pathinfo($file);
     $return = '';
@@ -113,9 +107,5 @@ function resizeImage($file, $width, $height) {
     $return .= $info['filename'] . "_$width" . "x$height." . $info['extension'];
     return $return;
 }
-
-
-/**************FONCTION ONCLICK ****************/
-
 
 ?>
