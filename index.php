@@ -4,40 +4,43 @@ require_once 'templates/header.php';
 require_once 'templates/slider.php';
 ?>
   <section class="section section-light">
-    <h2>Première section</h2>
-    <p>
-
-    </p>
+      <blockquote cite="">
+          <p class="cite">Pour réaliser de grandes choses, il faut d'abord rêver</p>
+      </blockquote>
+      <cite>– Coco Chanel</cite>
   </section>
 
   <div class="pimg2">
     <div class="ptext">
       <span class="border trans">
-        JE PEUX METTRE QUELQUE CHOSE
+          <a href="couture.php">Découvrez la couture</a>
       </span>
     </div>
   </div>
-
-  <section class="section section-dark">
-    <h2>Deuxième section</h2>
-    <p>
-
-    </p>
-  </section>
 
   <div class="pimg3">
     <div class="ptext">
       <span class="border trans">
-        JE PEUX METTRE QUELQUE CHOSE
+          <a href="couture.php">Découvrez le tricot</a>
       </span>
     </div>
   </div>
 
-  <section class="section section-dark">
-    <h2>Troisième section</h2>
-    <p>
-    </p>
-  </section>
+  <div class="pimg4">
+    <div class="ptext">
+      <span class="border trans">
+          <a href="couture.php">Découvrez le crochet</a>
+      </span>
+    </div>
+  </div>
+
+  <div class="pimg5">
+    <div class="ptext">
+      <span class="border trans">
+          <a href="couture.php">Découvrez les enfants</a>
+      </span>
+    </div>
+  </div>
 
 <?php
 $select = $pdo->query("

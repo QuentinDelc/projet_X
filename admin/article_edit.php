@@ -62,7 +62,6 @@ if(isset($_POST['name']) && isset($_POST['slug']) && isset($_POST['description']
     }
 }
 
-
 /******************************************/
 if(isset($_GET['id'])) {
     $id = $pdo->quote($_GET['id']);

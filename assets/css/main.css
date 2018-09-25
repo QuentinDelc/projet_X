@@ -507,7 +507,7 @@ header .separate-nav .navbar #navbarSupportedContent .nav-item a:hover:before, h
   background-color: #f7f7f7;
   background-image: url("../images/logo/logo.svg");
   background-repeat: no-repeat;
-  background-position: left;
+  background-position: 15%;
   top: 0;
   width: 100%;
   margin-top: 0 !important;
@@ -1271,7 +1271,7 @@ ul.map-list {
 @media (max-width: 430px) {
   /* line 102, scss/_slider.scss */
   .slider-section__carousel .main-carousel__slide .main-carousel__overlay .content-slide a.main-carousel__btn.btn {
-    margin-top: 20px;
+    margin-top: 10px;
   }
 }
 /* line 130, scss/_slider.scss */
@@ -1527,7 +1527,7 @@ ul.map-list {
 
 /* line 54, scss/_index.scss */
 #nav-icon0.open span:nth-child(1) {
-  left: 0px;
+  left: 0;
   top: 9px;
 }
 
@@ -1562,50 +1562,60 @@ ul.map-list {
 }
 
 /* line 85, scss/_index.scss */
-.pimg1, .pimg2, .pimg3 {
+.pimg1, .pimg2, .pimg3, .pimg4, .pimg5 {
   position: relative;
   opacity: 0.70;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  /*
-    fixed = parallax
-    scroll = normal
-  */
   background-attachment: fixed;
+  min-height: 600px;
+}
+@media (max-width: 768px) {
+  /* line 85, scss/_index.scss */
+  .pimg1, .pimg2, .pimg3, .pimg4, .pimg5 {
+    min-height: 340px;
+  }
 }
 
 /* line 99, scss/_index.scss */
 .pimg2 {
-  background-image: url("../images/slider/couture.jpg");
-  min-height: 600px;
-}
-
-/* line 104, scss/_index.scss */
-.pimg3 {
   background-image: url("../images/slider/fabric-scissor.jpg");
-  min-height: 600px;
 }
 
-/* line 109, scss/_index.scss */
+/* line 103, scss/_index.scss */
+.pimg3 {
+  background-image: url("../images/slider/ban-crochet.jpg");
+}
+
+/* line 107, scss/_index.scss */
+.pimg4 {
+  background-image: url("../images/slider/crochetparallax.jpg");
+}
+
+/* line 111, scss/_index.scss */
+.pimg5 {
+  background-image: url("../images/slider/enfantparallax.jpg");
+}
+
+/* line 115, scss/_index.scss */
 .section {
   text-align: center;
   padding: 50px 80px;
 }
 
-/* line 114, scss/_index.scss */
+/* line 120, scss/_index.scss */
 .section-light {
   background-color: #f4f4f4;
   color: #666;
 }
-
-/* line 119, scss/_index.scss */
-.section-dark {
-  background-color: #282e34;
-  color: #ddd;
+/* line 124, scss/_index.scss */
+.section-light p {
+  font-size: 22px;
+  margin-bottom: 15px;
 }
 
-/* line 124, scss/_index.scss */
+/* line 130, scss/_index.scss */
 .ptext {
   position: absolute;
   top: 50%;
@@ -1613,25 +1623,60 @@ ul.map-list {
   text-align: center;
   color: #000;
   font-size: 27px;
+  font-weight: bold;
   letter-spacing: 8px;
   text-transform: uppercase;
 }
+/* line 141, scss/_index.scss */
+.ptext a {
+  color: #000;
+  text-decoration: none;
+}
+@media (max-width: 570px) {
+  /* line 130, scss/_index.scss */
+  .ptext {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 4px;
+  }
+}
+@media (max-width: 378px) {
+  /* line 130, scss/_index.scss */
+  .ptext {
+    font-size: 16px;
+  }
+}
 
-/* line 135, scss/_index.scss */
+/* line 157, scss/_index.scss */
 .ptext .border {
   background-color: #111;
   color: #fff;
   padding: 20px;
 }
+@media (max-width: 570px) {
+  /* line 157, scss/_index.scss */
+  .ptext .border {
+    padding: 10px;
+  }
+}
 
-/* line 141, scss/_index.scss */
+/* line 167, scss/_index.scss */
 .ptext .border.trans {
   background-color: transparent;
 }
+/* line 170, scss/_index.scss */
+.ptext .border.trans:hover, .ptext .border.trans:focus {
+  background-color: rgba(100, 94, 163, 0.6);
+}
+
+/* line 176, scss/_index.scss */
+.border {
+  border: 2px dashed #D27497 !important;
+}
 
 @media (max-width: 568px) {
-  /* line 146, scss/_index.scss */
-  .pimg1, .pimg2, .pimg3 {
+  /* line 181, scss/_index.scss */
+  .pimg1, .pimg2, .pimg3, .pimg4, .pimg5 {
     background-attachment: scroll;
   }
 }
@@ -3016,8 +3061,9 @@ ul.map-list {
   position: relative;
   margin-top: 30px;
   margin-bottom: 50px;
+  color: #654EA3;
 }
-/* line 8, scss/_prefooter.scss */
+/* line 9, scss/_prefooter.scss */
 .main-title:after {
   position: absolute;
   content: "";
@@ -3032,13 +3078,13 @@ ul.map-list {
   background-image: url(../images/icones/souligne.svg);
 }
 @media (max-width: 650px) {
-  /* line 8, scss/_prefooter.scss */
+  /* line 9, scss/_prefooter.scss */
   .main-title:after {
     display: none;
   }
 }
 
-/* line 27, scss/_prefooter.scss */
+/* line 28, scss/_prefooter.scss */
 .facebook-widget {
   margin-bottom: 30px;
 }

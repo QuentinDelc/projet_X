@@ -52,7 +52,7 @@
 }
 
 #nav-icon0.open span:nth-child(1) {
-  left: 0px;
+  left: 0;
   top: 9px;
 }
 
@@ -82,68 +82,103 @@
 }
 
 
-.pimg1, .pimg2, .pimg3{
-  position:relative;
-  opacity:0.70;
-  background-position:center;
-  background-size:cover;
-  background-repeat:no-repeat;
+.pimg1, .pimg2, .pimg3, .pimg4, .pimg5 {
+  position: relative;
+  opacity: 0.70;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 600px;
 
-  /*
-    fixed = parallax
-    scroll = normal
-  */
-  background-attachment:fixed;
+  @media (max-width: 768px) {
+    min-height: 340px;
+  }
 }
 
-.pimg2{
-  background-image:url('../images/slider/couture.jpg');
-  min-height:600px;
-}
-
-.pimg3{
+.pimg2 {
   background-image:url('../images/slider/fabric-scissor.jpg');
-  min-height:600px;
 }
 
-.section{
-  text-align:center;
-  padding:50px 80px;
+.pimg3 {
+  background-image:url('../images/slider/ban-crochet.jpg');
 }
 
-.section-light{
-  background-color:#f4f4f4;
-  color:#666;
+.pimg4 {
+  background-image:url('../images/slider/crochetparallax.jpg');
 }
 
-.section-dark{
-  background-color:#282e34;
-  color:#ddd;
+.pimg5 {
+  background-image: url('../images/slider/enfantparallax.jpg');
 }
 
-.ptext{
-  position:absolute;
-  top:50%;
-  width:100%;
-  text-align:center;
-  color:#000;
-  font-size:27px;
-  letter-spacing:8px;
-  text-transform:uppercase;
+.section {
+  text-align: center;
+  padding: 50px 80px;
 }
 
-.ptext .border{
-  background-color:#111;
-  color:#fff;
-  padding:20px;
+.section-light {
+  background-color: #f4f4f4;
+  color: #666;
+
+  p {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
 }
 
-.ptext .border.trans{
-  background-color:transparent;
+.ptext {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-size: 27px;
+  font-weight: bold;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+
+  @media (max-width: 570px) {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 4px;
+  }
+
+  @media (max-width: 378px) {
+    font-size: 16px;
+  }
 }
 
-@media(max-width:568px){
-  .pimg1, .pimg2, .pimg3{
+.ptext .border {
+  background-color: #111;
+  color: #fff;
+  padding: 20px;
+
+  @media (max-width: 570px) {
+    padding: 10px;
+  }
+}
+
+.ptext .border.trans {
+  background-color: transparent;
+
+  &:hover,
+  &:focus {
+    background-color: rgba(100, 94, 163, 0.6);
+  }
+}
+
+.border {
+  border: 2px dashed $second-color!important;
+}
+
+@media(max-width:568px) {
+  .pimg1, .pimg2, .pimg3, .pimg4, .pimg5 {
     background-attachment:scroll;
   }
 }

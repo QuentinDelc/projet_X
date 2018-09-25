@@ -21,7 +21,7 @@ $close = '<button type="button" class="close" data-dismiss="alert" aria-label="C
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
+    <link rel="shortcut icon" type="image/png" href="../assets/images/icones/logo.ico" />
     <title>Mon administration</title>
     <link href="../assets/css/bootstrap.css" rel="stylesheet">
     <link href="../assets/css/style.css" rel="stylesheet">

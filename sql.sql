@@ -41,9 +41,7 @@ CREATE TABLE IF NOT EXISTS `projet_x`.`difficulty` (
   ENGINE = InnoDB;
 
 
--- -----------------------------------------------------
--- Table `projet_x`.`article`
--- -----------------------------------------------------
+
 -- -----------------------------------------------------
 -- Schema projet_x
 -- -----------------------------------------------------
@@ -56,9 +54,8 @@ CREATE TABLE IF NOT EXISTS `projet_x`.`article` (
   `description` VARCHAR(255) NOT NULL,
   `content` LONGTEXT NOT NULL,
   `slug` VARCHAR(255) NOT NULL,
-  `imageId` INT NOT NULL,
   `difficultyId` INT NOT NULL,
-  `authorId` VARCHAR(45) NOT NULL,
+  `authorId` INT NOT NULL,
   PRIMARY KEY (`id`),
   INDEX `fk_article_user1_idx` (`authorId` ASC),
   INDEX `fk_article_difficulty1_idx` (`difficultyId` ASC))

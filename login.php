@@ -12,18 +12,18 @@ if(!empty($_POST) && !empty($_POST['username']) && !empty($_POST['password'])){
     $user = $req->fetch();
     if(password_verify($_POST['password'], $user->password)){
         $_SESSION['auth'] = $user;
-$_SESSION['flash']['success'] = 'Vous êtes maintenant connecté';
-var_dump($_POST['remember']);
-if($_POST['remember']){
-    $remember_token = str_random(250);
-    $pdo->prepare('UPDATE user SET remember_token = ? WHERE id = ?')->execute([$remember_token, $user->id]);
-    // 1er paramètre remember pour tout sauvegarder, user-> en 1er paramètre de la clé remember_token je sépara par ==,
-    // je cripte l'id suivie de la clé liametava, enfin en 3eme paramètre le temps du cookie qui expire dans 7 jours
-    setcookie('remember', $user->id . '==' . $remember_token . sha1($user->id . 'liametava'), time() + 60 * 60 * 24 * 7);
-}
+        $_SESSION['flash']['success'] = 'Vous êtes maintenant connecté';
+        var_dump($_POST['remember']);
+        if($_POST['remember']){
+            $remember_token = str_random(250);
+            $pdo->prepare('UPDATE user SET remember_token = ? WHERE id = ?')->execute([$remember_token, $user->id]);
+            // 1er paramètre remember pour tout sauvegarder, user-> en 1er paramètre de la clé remember_token je sépara par ==,
+            // je cripte l'id suivie de la clé liametava, enfin en 3eme paramètre le temps du cookie qui expire dans 7 jours
+            setcookie('remember', $user->id . '==' . $remember_token . sha1($user->id . 'liametava'), time() + 60 * 60 * 24 * 7);
+        }
         header('Location: index.php');
         die();
-    }else{
+    } else {
         $_SESSION['flash']['danger'] = 'Identifiant ou mot de passe incorrecte';
     }
 }

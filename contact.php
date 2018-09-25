@@ -21,11 +21,10 @@ $mail->Host = "mail.biarritz.yo.fr";
 $mail->isSMTP();
 $mail->SMTPAuth = true;
 $mail->Username = 'contact@biarritz.yo.fr';
-$mail->Password = 'tutocoutureadmin64200';
+$mail->Password = 'rsnsKHCFi?mn';
 $mail->SMTPSecure = "ssl"; //TLS
 $mail->Port = 465; //587
 $mail->addAddress('delclooquentin@gmail.com', 'Quentin');
-/*$mail->addReplyTo($_POST['email'], $_POST['name']);*/
 $mail->setFrom($email, $name);
 $mail->Subject = $subject;
 $mail->isHTML(true);
@@ -36,7 +35,7 @@ $mail->Body = $message;
 $headers  = 'MIME-Version: 1.0' . "\r\n";
 $headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
 $headers .= $email . "\r\n";
-$to = 'tutocoutureadmin64200';
+$to = 'contact@biarritz.yo.fr';
 
 // Texte
 $body = '
